@@ -1,0 +1,8071 @@
+{
+ "retrieved": "2026-10-28",
+ "n_names_dash": 111,
+ "n_all_types": 614680,
+ "n_by_type": {
+  "1": 141306,
+  "5": 43391,
+  "7": 4761,
+  "14": 945,
+  "4613": 120939,
+  "7838": 3009,
+  "7839": 12205,
+  "7840": 15995,
+  "7841": 76888,
+  "7842": 14432,
+  "7843": 50524,
+  "7844": 62949,
+  "7845": 36022,
+  "7846": 31314
+ },
+ "n_rows": 286093,
+ "n_T": 62949,
+ "n_R": 141306,
+ "n_P": 50524,
+ "n_M": 31314,
+ "geocoded_pct": 82.1,
+ "not_geocoded_pct": 17.9,
+ "county_pct": 100.0,
+ "district_pct": 89.4,
+ "classified": {
+  "T": {
+   "n": 62949,
+   "classified": 40899,
+   "classified_pct": 65.0,
+   "by_family": {
+    "fish_chips": 7358,
+    "indian": 3574,
+    "chinese": 6908,
+    "pizza": 7055,
+    "kebab": 2697,
+    "chicken": 2684,
+    "burger": 887,
+    "thai": 297,
+    "japanese": 924,
+    "asian_other": 506,
+    "italian": 326,
+    "caribbean": 315,
+    "mexican": 195,
+    "greek_med": 303,
+    "sandwich": 3967,
+    "cafe": 2903,
+    "other": 22050
+   }
+  },
+  "R": {
+   "n": 141306,
+   "classified": 60503,
+   "classified_pct": 42.8,
+   "by_family": {
+    "fish_chips": 1293,
+    "indian": 4638,
+    "chinese": 1946,
+    "pizza": 2211,
+    "kebab": 1134,
+    "chicken": 2533,
+    "burger": 2730,
+    "thai": 1025,
+    "japanese": 1076,
+    "asian_other": 751,
+    "italian": 1528,
+    "caribbean": 459,
+    "mexican": 488,
+    "greek_med": 684,
+    "sandwich": 5537,
+    "cafe": 32470,
+    "other": 80803
+   }
+  },
+  "M": {
+   "n": 31314,
+   "classified": 10329,
+   "classified_pct": 33.0,
+   "by_family": {
+    "fish_chips": 682,
+    "indian": 329,
+    "chinese": 169,
+    "pizza": 1037,
+    "kebab": 446,
+    "chicken": 161,
+    "burger": 641,
+    "thai": 134,
+    "japanese": 40,
+    "asian_other": 57,
+    "italian": 146,
+    "caribbean": 186,
+    "mexican": 146,
+    "greek_med": 207,
+    "sandwich": 1122,
+    "cafe": 4826,
+    "other": 20985
+   }
+  }
+ },
+ "pop_total": 66831720,
+ "n_districts": 2820,
+ "n_districts_drawn": 2802,
+ "pop_sources": {
+  "Census 2021 (England and Wales)": {
+   "count": 2296,
+   "sum": 59579475
+  },
+  "Census 2021 (Northern Ireland)": {
+   "count": 80,
+   "sum": 1903179
+  },
+  "Scotland's Census 2022": {
+   "count": 444,
+   "sum": 5349066
+  }
+ },
+ "n_counties": 218,
+ "county_pop_year": "2025",
+ "min_pop_rank": 10000,
+ "min_pop_rank_county": 100000,
+ "nations": {
+  "England": {
+   "pop": 58834812,
+   "T_all": 51797,
+   "T_all_100k": 88.0,
+   "R_all": 118405,
+   "R_all_100k": 201.2,
+   "P_all": 42438,
+   "P_all_100k": 72.1,
+   "M_all": 25881,
+   "M_all_100k": 44.0,
+   "TR_all": 170202,
+   "TR_all_100k": 289.3,
+   "TR_fish_chips": 7303,
+   "TR_fish_chips_100k": 12.4,
+   "TR_indian": 6885,
+   "TR_indian_100k": 11.7,
+   "TR_chinese": 7126,
+   "TR_chinese_100k": 12.1,
+   "TR_pizza": 8074,
+   "TR_pizza_100k": 13.7,
+   "TR_kebab": 3248,
+   "TR_kebab_100k": 5.5,
+   "TR_chicken": 4702,
+   "TR_chicken_100k": 8.0,
+   "TR_burger": 3111,
+   "TR_burger_100k": 5.3,
+   "TR_thai": 1181,
+   "TR_thai_100k": 2.0,
+   "TR_japanese": 1807,
+   "TR_japanese_100k": 3.1,
+   "TR_asian_other": 1095,
+   "TR_asian_other_100k": 1.9,
+   "TR_italian": 1590,
+   "TR_italian_100k": 2.7,
+   "TR_caribbean": 748,
+   "TR_caribbean_100k": 1.3,
+   "TR_mexican": 610,
+   "TR_mexican_100k": 1.0,
+   "TR_greek_med": 901,
+   "TR_greek_med_100k": 1.5,
+   "TR_sandwich": 7902,
+   "TR_sandwich_100k": 13.4,
+   "TR_cafe": 29486,
+   "TR_cafe_100k": 50.1,
+   "T_fish_chips": 6219,
+   "T_fish_chips_100k": 10.6,
+   "T_indian": 2797,
+   "T_indian_100k": 4.8,
+   "T_chinese": 5487,
+   "T_chinese_100k": 9.3,
+   "T_pizza": 6127,
+   "T_pizza_100k": 10.4,
+   "T_kebab": 2208,
+   "T_kebab_100k": 3.8,
+   "T_chicken": 2471,
+   "T_chicken_100k": 4.2,
+   "T_burger": 733,
+   "T_burger_100k": 1.2,
+   "T_thai": 245,
+   "T_thai_100k": 0.4,
+   "T_japanese": 822,
+   "T_japanese_100k": 1.4,
+   "T_asian_other": 418,
+   "T_asian_other_100k": 0.7,
+   "T_italian": 256,
+   "T_italian_100k": 0.4,
+   "T_caribbean": 309,
+   "T_caribbean_100k": 0.5,
+   "T_mexican": 174,
+   "T_mexican_100k": 0.3,
+   "T_greek_med": 271,
+   "T_greek_med_100k": 0.5,
+   "T_sandwich": 3224,
+   "T_sandwich_100k": 5.5,
+   "T_cafe": 2378,
+   "T_cafe_100k": 4.0,
+   "ratio_TR": 0.44
+  },
+  "Northern Ireland": {
+   "pop": 1928446,
+   "T_all": 1759,
+   "T_all_100k": 91.2,
+   "R_all": 3420,
+   "R_all_100k": 177.3,
+   "P_all": 1001,
+   "P_all_100k": 51.9,
+   "M_all": 851,
+   "M_all_100k": 44.1,
+   "TR_all": 5179,
+   "TR_all_100k": 268.6,
+   "TR_fish_chips": 219,
+   "TR_fish_chips_100k": 11.4,
+   "TR_indian": 142,
+   "TR_indian_100k": 7.4,
+   "TR_chinese": 281,
+   "TR_chinese_100k": 14.6,
+   "TR_pizza": 311,
+   "TR_pizza_100k": 16.1,
+   "TR_kebab": 85,
+   "TR_kebab_100k": 4.4,
+   "TR_chicken": 91,
+   "TR_chicken_100k": 4.7,
+   "TR_burger": 75,
+   "TR_burger_100k": 3.9,
+   "TR_thai": 21,
+   "TR_thai_100k": 1.1,
+   "TR_japanese": 31,
+   "TR_japanese_100k": 1.6,
+   "TR_asian_other": 34,
+   "TR_asian_other_100k": 1.8,
+   "TR_italian": 26,
+   "TR_italian_100k": 1.3,
+   "TR_caribbean": 5,
+   "TR_caribbean_100k": 0.3,
+   "TR_mexican": 10,
+   "TR_mexican_100k": 0.5,
+   "TR_greek_med": 3,
+   "TR_greek_med_100k": 0.2,
+   "TR_sandwich": 241,
+   "TR_sandwich_100k": 12.5,
+   "TR_cafe": 892,
+   "TR_cafe_100k": 46.3,
+   "T_fish_chips": 187,
+   "T_fish_chips_100k": 9.7,
+   "T_indian": 75,
+   "T_indian_100k": 3.9,
+   "T_chinese": 251,
+   "T_chinese_100k": 13.0,
+   "T_pizza": 245,
+   "T_pizza_100k": 12.7,
+   "T_kebab": 75,
+   "T_kebab_100k": 3.9,
+   "T_chicken": 32,
+   "T_chicken_100k": 1.7,
+   "T_burger": 19,
+   "T_burger_100k": 1.0,
+   "T_thai": 13,
+   "T_thai_100k": 0.7,
+   "T_japanese": 18,
+   "T_japanese_100k": 0.9,
+   "T_asian_other": 18,
+   "T_asian_other_100k": 0.9,
+   "T_italian": 7,
+   "T_italian_100k": 0.4,
+   "T_caribbean": 0,
+   "T_caribbean_100k": 0.0,
+   "T_mexican": 3,
+   "T_mexican_100k": 0.2,
+   "T_greek_med": 0,
+   "T_greek_med_100k": 0.0,
+   "T_sandwich": 35,
+   "T_sandwich_100k": 1.8,
+   "T_cafe": 70,
+   "T_cafe_100k": 3.6,
+   "ratio_TR": 0.51
+  },
+  "Scotland": {
+   "pop": 5545500,
+   "T_all": 6231,
+   "T_all_100k": 112.4,
+   "R_all": 12551,
+   "R_all_100k": 226.3,
+   "P_all": 3961,
+   "P_all_100k": 71.4,
+   "M_all": 2767,
+   "M_all_100k": 49.9,
+   "TR_all": 18782,
+   "TR_all_100k": 338.7,
+   "TR_fish_chips": 563,
+   "TR_fish_chips_100k": 10.2,
+   "TR_indian": 786,
+   "TR_indian_100k": 14.2,
+   "TR_chinese": 921,
+   "TR_chinese_100k": 16.6,
+   "TR_pizza": 463,
+   "TR_pizza_100k": 8.3,
+   "TR_kebab": 267,
+   "TR_kebab_100k": 4.8,
+   "TR_chicken": 265,
+   "TR_chicken_100k": 4.8,
+   "TR_burger": 252,
+   "TR_burger_100k": 4.5,
+   "TR_thai": 67,
+   "TR_thai_100k": 1.2,
+   "TR_japanese": 109,
+   "TR_japanese_100k": 2.0,
+   "TR_asian_other": 99,
+   "TR_asian_other_100k": 1.8,
+   "TR_italian": 166,
+   "TR_italian_100k": 3.0,
+   "TR_caribbean": 17,
+   "TR_caribbean_100k": 0.3,
+   "TR_mexican": 45,
+   "TR_mexican_100k": 0.8,
+   "TR_greek_med": 53,
+   "TR_greek_med_100k": 1.0,
+   "TR_sandwich": 994,
+   "TR_sandwich_100k": 17.9,
+   "TR_cafe": 3317,
+   "TR_cafe_100k": 59.8,
+   "T_fish_chips": 474,
+   "T_fish_chips_100k": 8.5,
+   "T_indian": 483,
+   "T_indian_100k": 8.7,
+   "T_chinese": 730,
+   "T_chinese_100k": 13.2,
+   "T_pizza": 339,
+   "T_pizza_100k": 6.1,
+   "T_kebab": 209,
+   "T_kebab_100k": 3.8,
+   "T_chicken": 110,
+   "T_chicken_100k": 2.0,
+   "T_burger": 87,
+   "T_burger_100k": 1.6,
+   "T_thai": 23,
+   "T_thai_100k": 0.4,
+   "T_japanese": 52,
+   "T_japanese_100k": 0.9,
+   "T_asian_other": 54,
+   "T_asian_other_100k": 1.0,
+   "T_italian": 47,
+   "T_italian_100k": 0.8,
+   "T_caribbean": 6,
+   "T_caribbean_100k": 0.1,
+   "T_mexican": 14,
+   "T_mexican_100k": 0.3,
+   "T_greek_med": 21,
+   "T_greek_med_100k": 0.4,
+   "T_sandwich": 546,
+   "T_sandwich_100k": 9.8,
+   "T_cafe": 352,
+   "T_cafe_100k": 6.3,
+   "ratio_TR": 0.5
+  },
+  "Wales": {
+   "pop": 3175181,
+   "T_all": 3162,
+   "T_all_100k": 99.6,
+   "R_all": 6930,
+   "R_all_100k": 218.3,
+   "P_all": 3124,
+   "P_all_100k": 98.4,
+   "M_all": 1815,
+   "M_all_100k": 57.2,
+   "TR_all": 10092,
+   "TR_all_100k": 317.8,
+   "TR_fish_chips": 566,
+   "TR_fish_chips_100k": 17.8,
+   "TR_indian": 399,
+   "TR_indian_100k": 12.6,
+   "TR_chinese": 526,
+   "TR_chinese_100k": 16.6,
+   "TR_pizza": 418,
+   "TR_pizza_100k": 13.2,
+   "TR_kebab": 231,
+   "TR_kebab_100k": 7.3,
+   "TR_chicken": 159,
+   "TR_chicken_100k": 5.0,
+   "TR_burger": 179,
+   "TR_burger_100k": 5.6,
+   "TR_thai": 53,
+   "TR_thai_100k": 1.7,
+   "TR_japanese": 53,
+   "TR_japanese_100k": 1.7,
+   "TR_asian_other": 29,
+   "TR_asian_other_100k": 0.9,
+   "TR_italian": 72,
+   "TR_italian_100k": 2.3,
+   "TR_caribbean": 4,
+   "TR_caribbean_100k": 0.1,
+   "TR_mexican": 18,
+   "TR_mexican_100k": 0.6,
+   "TR_greek_med": 30,
+   "TR_greek_med_100k": 0.9,
+   "TR_sandwich": 367,
+   "TR_sandwich_100k": 11.6,
+   "TR_cafe": 1678,
+   "TR_cafe_100k": 52.8,
+   "T_fish_chips": 478,
+   "T_fish_chips_100k": 15.1,
+   "T_indian": 219,
+   "T_indian_100k": 6.9,
+   "T_chinese": 440,
+   "T_chinese_100k": 13.9,
+   "T_pizza": 344,
+   "T_pizza_100k": 10.8,
+   "T_kebab": 205,
+   "T_kebab_100k": 6.5,
+   "T_chicken": 71,
+   "T_chicken_100k": 2.2,
+   "T_burger": 48,
+   "T_burger_100k": 1.5,
+   "T_thai": 16,
+   "T_thai_100k": 0.5,
+   "T_japanese": 32,
+   "T_japanese_100k": 1.0,
+   "T_asian_other": 16,
+   "T_asian_other_100k": 0.5,
+   "T_italian": 16,
+   "T_italian_100k": 0.5,
+   "T_caribbean": 0,
+   "T_caribbean_100k": 0.0,
+   "T_mexican": 4,
+   "T_mexican_100k": 0.1,
+   "T_greek_med": 11,
+   "T_greek_med_100k": 0.3,
+   "T_sandwich": 162,
+   "T_sandwich_100k": 5.1,
+   "T_cafe": 103,
+   "T_cafe_100k": 3.2,
+   "ratio_TR": 0.46
+  },
+  "United Kingdom": {
+   "pop": 69483939,
+   "T_all": 62949,
+   "T_all_100k": 90.6,
+   "R_all": 141306,
+   "R_all_100k": 203.4,
+   "P_all": 50524,
+   "P_all_100k": 72.7,
+   "M_all": 31314,
+   "M_all_100k": 45.1,
+   "TR_all": 204255,
+   "TR_all_100k": 294.0,
+   "TR_fish_chips": 8651,
+   "TR_fish_chips_100k": 12.5,
+   "TR_indian": 8212,
+   "TR_indian_100k": 11.8,
+   "TR_chinese": 8854,
+   "TR_chinese_100k": 12.7,
+   "TR_pizza": 9266,
+   "TR_pizza_100k": 13.3,
+   "TR_kebab": 3831,
+   "TR_kebab_100k": 5.5,
+   "TR_chicken": 5217,
+   "TR_chicken_100k": 7.5,
+   "TR_burger": 3617,
+   "TR_burger_100k": 5.2,
+   "TR_thai": 1322,
+   "TR_thai_100k": 1.9,
+   "TR_japanese": 2000,
+   "TR_japanese_100k": 2.9,
+   "TR_asian_other": 1257,
+   "TR_asian_other_100k": 1.8,
+   "TR_italian": 1854,
+   "TR_italian_100k": 2.7,
+   "TR_caribbean": 774,
+   "TR_caribbean_100k": 1.1,
+   "TR_mexican": 683,
+   "TR_mexican_100k": 1.0,
+   "TR_greek_med": 987,
+   "TR_greek_med_100k": 1.4,
+   "TR_sandwich": 9504,
+   "TR_sandwich_100k": 13.7,
+   "TR_cafe": 35373,
+   "TR_cafe_100k": 50.9,
+   "T_fish_chips": 7358,
+   "T_fish_chips_100k": 10.6,
+   "T_indian": 3574,
+   "T_indian_100k": 5.1,
+   "T_chinese": 6908,
+   "T_chinese_100k": 9.9,
+   "T_pizza": 7055,
+   "T_pizza_100k": 10.2,
+   "T_kebab": 2697,
+   "T_kebab_100k": 3.9,
+   "T_chicken": 2684,
+   "T_chicken_100k": 3.9,
+   "T_burger": 887,
+   "T_burger_100k": 1.3,
+   "T_thai": 297,
+   "T_thai_100k": 0.4,
+   "T_japanese": 924,
+   "T_japanese_100k": 1.3,
+   "T_asian_other": 506,
+   "T_asian_other_100k": 0.7,
+   "T_italian": 326,
+   "T_italian_100k": 0.5,
+   "T_caribbean": 315,
+   "T_caribbean_100k": 0.5,
+   "T_mexican": 195,
+   "T_mexican_100k": 0.3,
+   "T_greek_med": 303,
+   "T_greek_med_100k": 0.4,
+   "T_sandwich": 3967,
+   "T_sandwich_100k": 5.7,
+   "T_cafe": 2903,
+   "T_cafe_100k": 4.2,
+   "ratio_TR": 0.45
+  }
+ },
+ "stories": {
+  "fish_chips": {
+   "county_top": [
+    {
+     "name": "Blackpool",
+     "rate": 34.1,
+     "n": 49,
+     "pop": 143492
+    },
+    {
+     "name": "North East Lincolnshire",
+     "rate": 26.2,
+     "n": 42,
+     "pop": 160101
+    },
+    {
+     "name": "Walsall",
+     "rate": 25.4,
+     "n": 75,
+     "pop": 295722
+    },
+    {
+     "name": "Conwy",
+     "rate": 24.5,
+     "n": 28,
+     "pop": 114421
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 23.3,
+     "n": 41,
+     "pop": 176078
+    },
+    {
+     "name": "Gwynedd",
+     "rate": 23.3,
+     "n": 28,
+     "pop": 120295
+    },
+    {
+     "name": "Sandwell",
+     "rate": 22.7,
+     "n": 80,
+     "pop": 352918
+    },
+    {
+     "name": "Pembrokeshire",
+     "rate": 22.2,
+     "n": 28,
+     "pop": 125849
+    },
+    {
+     "name": "Norfolk",
+     "rate": 22.1,
+     "n": 209,
+     "pop": 945427
+    },
+    {
+     "name": "County Durham",
+     "rate": 21.9,
+     "n": 118,
+     "pop": 539146
+    }
+   ],
+   "district_top": [
+    {
+     "name": "PE25",
+     "rate": 129.6,
+     "n": 30,
+     "pop": 23145,
+     "county": "Lincolnshire"
+    },
+    {
+     "name": "YO15",
+     "rate": 90.4,
+     "n": 12,
+     "pop": 13281,
+     "county": "East Riding of Yorkshire"
+    },
+    {
+     "name": "YO14",
+     "rate": 69.7,
+     "n": 8,
+     "pop": 11472,
+     "county": "North Yorkshire"
+    },
+    {
+     "name": "FY1",
+     "rate": 69.7,
+     "n": 24,
+     "pop": 34436,
+     "county": "Blackpool"
+    },
+    {
+     "name": "YO11",
+     "rate": 58.6,
+     "n": 14,
+     "pop": 23897,
+     "county": "North Yorkshire"
+    },
+    {
+     "name": "DN35",
+     "rate": 58.3,
+     "n": 19,
+     "pop": 32616,
+     "county": "North East Lincolnshire"
+    },
+    {
+     "name": "YO21",
+     "rate": 58.1,
+     "n": 8,
+     "pop": 13764,
+     "county": "North Yorkshire"
+    },
+    {
+     "name": "NR30",
+     "rate": 57.6,
+     "n": 18,
+     "pop": 31259,
+     "county": "Norfolk"
+    },
+    {
+     "name": "WV1",
+     "rate": 54.7,
+     "n": 9,
+     "pop": 16454,
+     "county": "Wolverhampton"
+    },
+    {
+     "name": "TR26",
+     "rate": 54.5,
+     "n": 6,
+     "pop": 11001,
+     "county": "Cornwall"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Bracknell Forest",
+     "rate": 3.0,
+     "n": 4,
+     "pop": 132145
+    },
+    {
+     "name": "Wokingham",
+     "rate": 3.2,
+     "n": 6,
+     "pop": 189024
+    },
+    {
+     "name": "Harrow",
+     "rate": 3.7,
+     "n": 10,
+     "pop": 272612
+    },
+    {
+     "name": "Brent",
+     "rate": 3.7,
+     "n": 13,
+     "pop": 352201
+    },
+    {
+     "name": "Barnet",
+     "rate": 3.9,
+     "n": 16,
+     "pop": 408087
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "Isles of Scilly",
+     "rate": 130.5,
+     "n": 3,
+     "pop": 2299
+    },
+    {
+     "name": "Blackpool",
+     "rate": 34.1,
+     "n": 49,
+     "pop": 143492
+    },
+    {
+     "name": "Merthyr Tydfil",
+     "rate": 32.6,
+     "n": 19,
+     "pop": 58362
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Walsall",
+     "rate": 23.3,
+     "n": 69,
+     "pop": 295722
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 22.7,
+     "n": 40,
+     "pop": 176078
+    },
+    {
+     "name": "Blackpool",
+     "rate": 22.3,
+     "n": 32,
+     "pop": 143492
+    },
+    {
+     "name": "North East Lincolnshire",
+     "rate": 21.9,
+     "n": 35,
+     "pop": 160101
+    },
+    {
+     "name": "Sandwell",
+     "rate": 21.5,
+     "n": 76,
+     "pop": 352918
+    },
+    {
+     "name": "Wolverhampton",
+     "rate": 20.3,
+     "n": 57,
+     "pop": 281434
+    },
+    {
+     "name": "County Durham",
+     "rate": 18.9,
+     "n": 102,
+     "pop": 539146
+    },
+    {
+     "name": "Norfolk",
+     "rate": 18.7,
+     "n": 177,
+     "pop": 945427
+    },
+    {
+     "name": "Wigan",
+     "rate": 18.2,
+     "n": 63,
+     "pop": 347089
+    },
+    {
+     "name": "Redcar and Cleveland",
+     "rate": 17.9,
+     "n": 25,
+     "pop": 139541
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "B32",
+     "county": "Birmingham",
+     "share": 24.3,
+     "n": 9,
+     "of": 37
+    },
+    {
+     "name": "DH2",
+     "county": "County Durham",
+     "share": 21.2,
+     "n": 7,
+     "of": 33
+    },
+    {
+     "name": "WV4",
+     "county": "Staffordshire",
+     "share": 19.6,
+     "n": 9,
+     "of": 46
+    },
+    {
+     "name": "WR5",
+     "county": "Worcestershire",
+     "share": 18.8,
+     "n": 6,
+     "of": 32
+    },
+    {
+     "name": "DL17",
+     "county": "County Durham",
+     "share": 17.6,
+     "n": 6,
+     "of": 34
+    },
+    {
+     "name": "WV14",
+     "county": "Wolverhampton",
+     "share": 17.6,
+     "n": 18,
+     "of": 102
+    },
+    {
+     "name": "B71",
+     "county": "Sandwell",
+     "share": 17.5,
+     "n": 10,
+     "of": 57
+    },
+    {
+     "name": "NP22",
+     "county": "Blaenau Gwent",
+     "share": 17.4,
+     "n": 8,
+     "of": 46
+    },
+    {
+     "name": "BN15",
+     "county": "West Sussex",
+     "share": 17.3,
+     "n": 9,
+     "of": 52
+    },
+    {
+     "name": "B77",
+     "county": "Staffordshire",
+     "share": 16.7,
+     "n": 10,
+     "of": 60
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Walsall",
+     "share": 11.5,
+     "n": 75
+    },
+    {
+     "name": "Halton",
+     "share": 10.4,
+     "n": 21
+    },
+    {
+     "name": "Caerphilly",
+     "share": 10.2,
+     "n": 41
+    },
+    {
+     "name": "Wolverhampton",
+     "share": 9.0,
+     "n": 61
+    },
+    {
+     "name": "Sandwell",
+     "share": 8.8,
+     "n": 80
+    }
+   ]
+  },
+  "indian": {
+   "county_top": [
+    {
+     "name": "Hounslow",
+     "rate": 29.4,
+     "n": 88,
+     "pop": 299486
+    },
+    {
+     "name": "Westminster",
+     "rate": 26.8,
+     "n": 57,
+     "pop": 212367
+    },
+    {
+     "name": "Ealing",
+     "rate": 25.3,
+     "n": 98,
+     "pop": 387072
+    },
+    {
+     "name": "Leicester",
+     "rate": 24.5,
+     "n": 94,
+     "pop": 383116
+    },
+    {
+     "name": "Redbridge",
+     "rate": 23.0,
+     "n": 74,
+     "pop": 321829
+    },
+    {
+     "name": "Harrow",
+     "rate": 22.4,
+     "n": 61,
+     "pop": 272612
+    },
+    {
+     "name": "Camden",
+     "rate": 20.3,
+     "n": 44,
+     "pop": 216658
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 20.2,
+     "n": 132,
+     "pop": 654330
+    },
+    {
+     "name": "Gwynedd",
+     "rate": 20.0,
+     "n": 24,
+     "pop": 120295
+    },
+    {
+     "name": "Calderdale",
+     "rate": 19.9,
+     "n": 42,
+     "pop": 210734
+    }
+   ],
+   "district_top": [
+    {
+     "name": "TW3",
+     "rate": 91.9,
+     "n": 44,
+     "pop": 47894,
+     "county": "Hounslow"
+    },
+    {
+     "name": "LS2",
+     "rate": 84.0,
+     "n": 10,
+     "pop": 11904,
+     "county": "Leeds"
+    },
+    {
+     "name": "UB1",
+     "rate": 72.9,
+     "n": 32,
+     "pop": 43924,
+     "county": "Ealing"
+    },
+    {
+     "name": "M12",
+     "rate": 72.0,
+     "n": 14,
+     "pop": 19434,
+     "county": "Manchester"
+    },
+    {
+     "name": "G3",
+     "rate": 71.3,
+     "n": 13,
+     "pop": 18233,
+     "county": "Glasgow City"
+    },
+    {
+     "name": "BS1",
+     "rate": 69.3,
+     "n": 13,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    },
+    {
+     "name": "LE1",
+     "rate": 69.3,
+     "n": 13,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "GL50",
+     "rate": 63.1,
+     "n": 14,
+     "pop": 22178,
+     "county": "Gloucestershire"
+    },
+    {
+     "name": "NG1",
+     "rate": 60.4,
+     "n": 10,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "NE33",
+     "rate": 57.8,
+     "n": 15,
+     "pop": 25942,
+     "county": "South Tyneside"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Knowsley",
+     "rate": 3.1,
+     "n": 5,
+     "pop": 163723
+    },
+    {
+     "name": "Fermanagh and Omagh",
+     "rate": 3.4,
+     "n": 4,
+     "pop": 117663
+    },
+    {
+     "name": "Mid Ulster",
+     "rate": 3.9,
+     "n": 6,
+     "pop": 152292
+    },
+    {
+     "name": "Wokingham",
+     "rate": 4.2,
+     "n": 8,
+     "pop": 189024
+    },
+    {
+     "name": "Stockton-on-Tees",
+     "rate": 4.3,
+     "n": 9,
+     "pop": 207158
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 96.0,
+     "n": 15,
+     "pop": 15631
+    },
+    {
+     "name": "Hounslow",
+     "rate": 29.4,
+     "n": 88,
+     "pop": 299486
+    },
+    {
+     "name": "Westminster",
+     "rate": 26.8,
+     "n": 57,
+     "pop": 212367
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "North Lanarkshire",
+     "rate": 16.9,
+     "n": 58,
+     "pop": 343930
+    },
+    {
+     "name": "Dundee City",
+     "rate": 13.5,
+     "n": 20,
+     "pop": 148390
+    },
+    {
+     "name": "Blackburn with Darwen",
+     "rate": 13.4,
+     "n": 22,
+     "pop": 163801
+    },
+    {
+     "name": "Falkirk",
+     "rate": 13.1,
+     "n": 21,
+     "pop": 160230
+    },
+    {
+     "name": "Calderdale",
+     "rate": 12.8,
+     "n": 27,
+     "pop": 210734
+    },
+    {
+     "name": "Tameside",
+     "rate": 12.0,
+     "n": 29,
+     "pop": 240822
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 11.9,
+     "n": 78,
+     "pop": 654330
+    },
+    {
+     "name": "South Lanarkshire",
+     "rate": 11.7,
+     "n": 39,
+     "pop": 334330
+    },
+    {
+     "name": "East Ayrshire",
+     "rate": 11.5,
+     "n": 14,
+     "pop": 121350
+    },
+    {
+     "name": "Coventry",
+     "rate": 11.2,
+     "n": 41,
+     "pop": 364766
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "TW3",
+     "county": "Hounslow",
+     "share": 20.7,
+     "n": 44,
+     "of": 213
+    },
+    {
+     "name": "E12",
+     "county": "Newham",
+     "share": 18.9,
+     "n": 18,
+     "of": 95
+    },
+    {
+     "name": "UB1",
+     "county": "Ealing",
+     "share": 18.8,
+     "n": 32,
+     "of": 170
+    },
+    {
+     "name": "TW4",
+     "county": "Hounslow",
+     "share": 15.7,
+     "n": 11,
+     "of": 70
+    },
+    {
+     "name": "WS12",
+     "county": "Staffordshire",
+     "share": 15.5,
+     "n": 9,
+     "of": 58
+    },
+    {
+     "name": "CM17",
+     "county": "Essex",
+     "share": 15.2,
+     "n": 5,
+     "of": 33
+    },
+    {
+     "name": "HA0",
+     "county": "Brent",
+     "share": 14.4,
+     "n": 24,
+     "of": 167
+    },
+    {
+     "name": "AL7",
+     "county": "Hertfordshire",
+     "share": 14.0,
+     "n": 6,
+     "of": 43
+    },
+    {
+     "name": "B73",
+     "county": "Birmingham",
+     "share": 13.6,
+     "n": 9,
+     "of": 66
+    },
+    {
+     "name": "CB11",
+     "county": "Essex",
+     "share": 12.9,
+     "n": 4,
+     "of": 31
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Hounslow",
+     "share": 10.2,
+     "n": 88
+    },
+    {
+     "name": "Harrow",
+     "share": 8.6,
+     "n": 61
+    },
+    {
+     "name": "North Lanarkshire",
+     "share": 8.4,
+     "n": 63
+    },
+    {
+     "name": "Ealing",
+     "share": 7.6,
+     "n": 98
+    },
+    {
+     "name": "Swindon",
+     "share": 7.5,
+     "n": 34
+    }
+   ]
+  },
+  "chinese": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 42.9,
+     "n": 91,
+     "pop": 212367
+    },
+    {
+     "name": "Blackpool",
+     "rate": 27.2,
+     "n": 39,
+     "pop": 143492
+    },
+    {
+     "name": "Gwynedd",
+     "rate": 25.8,
+     "n": 31,
+     "pop": 120295
+    },
+    {
+     "name": "North East Lincolnshire",
+     "rate": 24.4,
+     "n": 39,
+     "pop": 160101
+    },
+    {
+     "name": "North Ayrshire",
+     "rate": 23.2,
+     "n": 31,
+     "pop": 133660
+    },
+    {
+     "name": "Dumfries and Galloway",
+     "rate": 22.7,
+     "n": 33,
+     "pop": 145490
+    },
+    {
+     "name": "Bridgend",
+     "rate": 22.5,
+     "n": 33,
+     "pop": 146986
+    },
+    {
+     "name": "East Ayrshire",
+     "rate": 22.2,
+     "n": 27,
+     "pop": 121350
+    },
+    {
+     "name": "Camden",
+     "rate": 22.2,
+     "n": 48,
+     "pop": 216658
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 21.8,
+     "n": 31,
+     "pop": 142028
+    }
+   ],
+   "district_top": [
+    {
+     "name": "B5",
+     "rate": 182.9,
+     "n": 24,
+     "pop": 13122,
+     "county": "Birmingham"
+    },
+    {
+     "name": "M1",
+     "rate": 144.1,
+     "n": 17,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "L1",
+     "rate": 112.4,
+     "n": 13,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "NE1",
+     "rate": 89.9,
+     "n": 12,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "S1",
+     "rate": 83.6,
+     "n": 9,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "EH8",
+     "rate": 68.0,
+     "n": 15,
+     "pop": 22072,
+     "county": "City of Edinburgh"
+    },
+    {
+     "name": "WR1",
+     "rate": 67.3,
+     "n": 7,
+     "pop": 10401,
+     "county": "Worcestershire"
+    },
+    {
+     "name": "BA20",
+     "rate": 67.3,
+     "n": 8,
+     "pop": 11894,
+     "county": "Somerset"
+    },
+    {
+     "name": "NG1",
+     "rate": 66.4,
+     "n": 11,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "PE25",
+     "rate": 64.8,
+     "n": 15,
+     "pop": 23145,
+     "county": "Lincolnshire"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Haringey",
+     "rate": 3.4,
+     "n": 9,
+     "pop": 266218
+    },
+    {
+     "name": "Harrow",
+     "rate": 4.8,
+     "n": 13,
+     "pop": 272612
+    },
+    {
+     "name": "Hounslow",
+     "rate": 5.3,
+     "n": 16,
+     "pop": 299486
+    },
+    {
+     "name": "Slough",
+     "rate": 5.4,
+     "n": 9,
+     "pop": 167450
+    },
+    {
+     "name": "Barnet",
+     "rate": 5.9,
+     "n": 24,
+     "pop": 408087
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 51.2,
+     "n": 8,
+     "pop": 15631
+    },
+    {
+     "name": "Westminster",
+     "rate": 42.9,
+     "n": 91,
+     "pop": 212367
+    },
+    {
+     "name": "Blackpool",
+     "rate": 27.2,
+     "n": 39,
+     "pop": 143492
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "North East Lincolnshire",
+     "rate": 23.7,
+     "n": 38,
+     "pop": 160101
+    },
+    {
+     "name": "Blackpool",
+     "rate": 23.0,
+     "n": 33,
+     "pop": 143492
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 20.4,
+     "n": 36,
+     "pop": 176078
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 20.4,
+     "n": 29,
+     "pop": 142028
+    },
+    {
+     "name": "Bridgend",
+     "rate": 20.4,
+     "n": 30,
+     "pop": 146986
+    },
+    {
+     "name": "Rhondda Cynon Taf",
+     "rate": 20.3,
+     "n": 49,
+     "pop": 241015
+    },
+    {
+     "name": "North Lanarkshire",
+     "rate": 19.8,
+     "n": 68,
+     "pop": 343930
+    },
+    {
+     "name": "North Ayrshire",
+     "rate": 18.7,
+     "n": 25,
+     "pop": 133660
+    },
+    {
+     "name": "Wakefield",
+     "rate": 17.9,
+     "n": 66,
+     "pop": 369450
+    },
+    {
+     "name": "Sunderland",
+     "rate": 17.4,
+     "n": 50,
+     "pop": 287070
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "PE4",
+     "county": "Peterborough",
+     "share": 20.9,
+     "n": 9,
+     "of": 43
+    },
+    {
+     "name": "GU12",
+     "county": "Surrey",
+     "share": 19.4,
+     "n": 6,
+     "of": 31
+    },
+    {
+     "name": "ME5",
+     "county": "Kent",
+     "share": 18.6,
+     "n": 8,
+     "of": 43
+    },
+    {
+     "name": "DH2",
+     "county": "County Durham",
+     "share": 18.2,
+     "n": 6,
+     "of": 33
+    },
+    {
+     "name": "G15",
+     "county": "Glasgow City",
+     "share": 17.6,
+     "n": 6,
+     "of": 34
+    },
+    {
+     "name": "CF39",
+     "county": "Rhondda Cynon Taf",
+     "share": 16.7,
+     "n": 9,
+     "of": 54
+    },
+    {
+     "name": "DA7",
+     "county": "Bexley",
+     "share": 16.7,
+     "n": 8,
+     "of": 48
+    },
+    {
+     "name": "NG21",
+     "county": "Nottinghamshire",
+     "share": 16.4,
+     "n": 9,
+     "of": 55
+    },
+    {
+     "name": "HP19",
+     "county": "Buckinghamshire",
+     "share": 16.1,
+     "n": 5,
+     "of": 31
+    },
+    {
+     "name": "DL16",
+     "county": "County Durham",
+     "share": 15.8,
+     "n": 6,
+     "of": 38
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Caerphilly",
+     "share": 9.4,
+     "n": 38
+    },
+    {
+     "name": "North Lanarkshire",
+     "share": 9.4,
+     "n": 71
+    },
+    {
+     "name": "North Ayrshire",
+     "share": 9.1,
+     "n": 31
+    },
+    {
+     "name": "Rhondda Cynon Taf",
+     "share": 8.7,
+     "n": 52
+    },
+    {
+     "name": "Walsall",
+     "share": 8.1,
+     "n": 53
+    }
+   ]
+  },
+  "pizza": {
+   "county_top": [
+    {
+     "name": "North East Lincolnshire",
+     "rate": 35.0,
+     "n": 56,
+     "pop": 160101
+    },
+    {
+     "name": "Redcar and Cleveland",
+     "rate": 34.4,
+     "n": 48,
+     "pop": 139541
+    },
+    {
+     "name": "Westminster",
+     "rate": 33.0,
+     "n": 70,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 31.8,
+     "n": 69,
+     "pop": 216658
+    },
+    {
+     "name": "County Durham",
+     "rate": 24.7,
+     "n": 133,
+     "pop": 539146
+    },
+    {
+     "name": "Kingston upon Hull, City of",
+     "rate": 24.2,
+     "n": 66,
+     "pop": 273257
+    },
+    {
+     "name": "Stockton-on-Tees",
+     "rate": 23.7,
+     "n": 49,
+     "pop": 207158
+    },
+    {
+     "name": "Newcastle upon Tyne",
+     "rate": 23.1,
+     "n": 74,
+     "pop": 320838
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 22.5,
+     "n": 32,
+     "pop": 142028
+    },
+    {
+     "name": "Blackpool",
+     "rate": 22.3,
+     "n": 32,
+     "pop": 143492
+    }
+   ],
+   "district_top": [
+    {
+     "name": "CH41",
+     "rate": 86.7,
+     "n": 17,
+     "pop": 19607,
+     "county": "Wirral"
+    },
+    {
+     "name": "L1",
+     "rate": 86.4,
+     "n": 10,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "NE1",
+     "rate": 82.4,
+     "n": 11,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "M1",
+     "rate": 76.3,
+     "n": 9,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "TN1",
+     "rate": 68.3,
+     "n": 8,
+     "pop": 11720,
+     "county": "Kent"
+    },
+    {
+     "name": "M4",
+     "rate": 67.8,
+     "n": 12,
+     "pop": 17700,
+     "county": "Manchester"
+    },
+    {
+     "name": "WR1",
+     "rate": 67.3,
+     "n": 7,
+     "pop": 10401,
+     "county": "Worcestershire"
+    },
+    {
+     "name": "DE1",
+     "rate": 60.9,
+     "n": 10,
+     "pop": 16419,
+     "county": "Derby"
+    },
+    {
+     "name": "NG1",
+     "rate": 60.4,
+     "n": 10,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "B66",
+     "rate": 60.2,
+     "n": 16,
+     "pop": 26576,
+     "county": "Sandwell"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Perth and Kinross",
+     "rate": 2.6,
+     "n": 4,
+     "pop": 154930
+    },
+    {
+     "name": "Angus",
+     "rate": 3.5,
+     "n": 4,
+     "pop": 114610
+    },
+    {
+     "name": "Midlothian",
+     "rate": 4.0,
+     "n": 4,
+     "pop": 100390
+    },
+    {
+     "name": "North Lanarkshire",
+     "rate": 4.4,
+     "n": 15,
+     "pop": 343930
+    },
+    {
+     "name": "Powys",
+     "rate": 4.4,
+     "n": 6,
+     "pop": 134843
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 76.8,
+     "n": 12,
+     "pop": 15631
+    },
+    {
+     "name": "North East Lincolnshire",
+     "rate": 35.0,
+     "n": 56,
+     "pop": 160101
+    },
+    {
+     "name": "Redcar and Cleveland",
+     "rate": 34.4,
+     "n": 48,
+     "pop": 139541
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Redcar and Cleveland",
+     "rate": 33.0,
+     "n": 46,
+     "pop": 139541
+    },
+    {
+     "name": "North East Lincolnshire",
+     "rate": 28.7,
+     "n": 46,
+     "pop": 160101
+    },
+    {
+     "name": "Stockton-on-Tees",
+     "rate": 23.2,
+     "n": 48,
+     "pop": 207158
+    },
+    {
+     "name": "Kingston upon Hull, City of",
+     "rate": 22.0,
+     "n": 60,
+     "pop": 273257
+    },
+    {
+     "name": "County Durham",
+     "rate": 21.9,
+     "n": 118,
+     "pop": 539146
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 21.8,
+     "n": 31,
+     "pop": 142028
+    },
+    {
+     "name": "Sandwell",
+     "rate": 21.0,
+     "n": 74,
+     "pop": 352918
+    },
+    {
+     "name": "Darlington",
+     "rate": 20.3,
+     "n": 23,
+     "pop": 113402
+    },
+    {
+     "name": "Sunderland",
+     "rate": 19.9,
+     "n": 57,
+     "pop": 287070
+    },
+    {
+     "name": "Liverpool",
+     "rate": 19.7,
+     "n": 100,
+     "pop": 507915
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "HP13",
+     "county": "Buckinghamshire",
+     "share": 21.4,
+     "n": 12,
+     "of": 56
+    },
+    {
+     "name": "DH4",
+     "county": "Sunderland",
+     "share": 20.3,
+     "n": 15,
+     "of": 74
+    },
+    {
+     "name": "TS23",
+     "county": "Stockton-on-Tees",
+     "share": 20.0,
+     "n": 12,
+     "of": 60
+    },
+    {
+     "name": "DL15",
+     "county": "County Durham",
+     "share": 18.2,
+     "n": 8,
+     "of": 44
+    },
+    {
+     "name": "DN40",
+     "county": "North Lincolnshire",
+     "share": 18.2,
+     "n": 6,
+     "of": 33
+    },
+    {
+     "name": "TS20",
+     "county": "Stockton-on-Tees",
+     "share": 17.9,
+     "n": 7,
+     "of": 39
+    },
+    {
+     "name": "WF16",
+     "county": "Kirklees",
+     "share": 17.5,
+     "n": 7,
+     "of": 40
+    },
+    {
+     "name": "S21",
+     "county": "Derbyshire",
+     "share": 17.1,
+     "n": 6,
+     "of": 35
+    },
+    {
+     "name": "S43",
+     "county": "Derbyshire",
+     "share": 16.7,
+     "n": 12,
+     "of": 72
+    },
+    {
+     "name": "WA9",
+     "county": "St. Helens",
+     "share": 16.7,
+     "n": 16,
+     "of": 96
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Stockton-on-Tees",
+     "share": 11.6,
+     "n": 49
+    },
+    {
+     "name": "Redcar and Cleveland",
+     "share": 11.2,
+     "n": 48
+    },
+    {
+     "name": "North East Lincolnshire",
+     "share": 11.1,
+     "n": 56
+    },
+    {
+     "name": "County Durham",
+     "share": 9.8,
+     "n": 133
+    },
+    {
+     "name": "St. Helens",
+     "share": 9.3,
+     "n": 37
+    }
+   ]
+  },
+  "kebab": {
+   "county_top": [
+    {
+     "name": "Islington",
+     "rate": 13.8,
+     "n": 31,
+     "pop": 224551
+    },
+    {
+     "name": "Hackney",
+     "rate": 13.1,
+     "n": 35,
+     "pop": 266241
+    },
+    {
+     "name": "Enfield",
+     "rate": 12.8,
+     "n": 42,
+     "pop": 329400
+    },
+    {
+     "name": "Gwynedd",
+     "rate": 11.6,
+     "n": 14,
+     "pop": 120295
+    },
+    {
+     "name": "Portsmouth",
+     "rate": 11.3,
+     "n": 24,
+     "pop": 211475
+    },
+    {
+     "name": "Bromley",
+     "rate": 11.3,
+     "n": 38,
+     "pop": 336048
+    },
+    {
+     "name": "Haringey",
+     "rate": 11.3,
+     "n": 30,
+     "pop": 266218
+    },
+    {
+     "name": "Camden",
+     "rate": 11.1,
+     "n": 24,
+     "pop": 216658
+    },
+    {
+     "name": "Sutton",
+     "rate": 10.7,
+     "n": 23,
+     "pop": 213972
+    },
+    {
+     "name": "Bexley",
+     "rate": 10.5,
+     "n": 27,
+     "pop": 257103
+    }
+   ],
+   "district_top": [
+    {
+     "name": "WR1",
+     "rate": 76.9,
+     "n": 8,
+     "pop": 10401,
+     "county": "Worcestershire"
+    },
+    {
+     "name": "L1",
+     "rate": 60.5,
+     "n": 7,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "DD1",
+     "rate": 59.8,
+     "n": 7,
+     "pop": 11700,
+     "county": "Dundee City"
+    },
+    {
+     "name": "NG1",
+     "rate": 54.3,
+     "n": 9,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "NE1",
+     "rate": 52.4,
+     "n": 7,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "LE1",
+     "rate": 48.0,
+     "n": 9,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "S1",
+     "rate": 46.4,
+     "n": 5,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "WV1",
+     "rate": 42.5,
+     "n": 7,
+     "pop": 16454,
+     "county": "Wolverhampton"
+    },
+    {
+     "name": "TS1",
+     "rate": 41.9,
+     "n": 7,
+     "pop": 16694,
+     "county": "Middlesbrough"
+    },
+    {
+     "name": "CV1",
+     "rate": 41.7,
+     "n": 15,
+     "pop": 35938,
+     "county": "Coventry"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Solihull",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 221449
+    },
+    {
+     "name": "Wokingham",
+     "rate": 0.5,
+     "n": 1,
+     "pop": 189024
+    },
+    {
+     "name": "Ards and North Down",
+     "rate": 0.6,
+     "n": 1,
+     "pop": 165407
+    },
+    {
+     "name": "Mid Ulster",
+     "rate": 1.3,
+     "n": 2,
+     "pop": 152292
+    },
+    {
+     "name": "North Tyneside",
+     "rate": 1.4,
+     "n": 3,
+     "pop": 215401
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "Merthyr Tydfil",
+     "rate": 17.1,
+     "n": 10,
+     "pop": 58362
+    },
+    {
+     "name": "Isle of Anglesey",
+     "rate": 16.0,
+     "n": 11,
+     "pop": 68607
+    },
+    {
+     "name": "Islington",
+     "rate": 13.8,
+     "n": 31,
+     "pop": 224551
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Gwynedd",
+     "rate": 10.0,
+     "n": 12,
+     "pop": 120295
+    },
+    {
+     "name": "Rhondda Cynon Taf",
+     "rate": 10.0,
+     "n": 24,
+     "pop": 241015
+    },
+    {
+     "name": "Sutton",
+     "rate": 9.8,
+     "n": 21,
+     "pop": 213972
+    },
+    {
+     "name": "Blackburn with Darwen",
+     "rate": 9.8,
+     "n": 16,
+     "pop": 163801
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 9.7,
+     "n": 17,
+     "pop": 176078
+    },
+    {
+     "name": "Wrexham",
+     "rate": 9.4,
+     "n": 13,
+     "pop": 137977
+    },
+    {
+     "name": "Islington",
+     "rate": 9.4,
+     "n": 21,
+     "pop": 224551
+    },
+    {
+     "name": "Bexley",
+     "rate": 9.3,
+     "n": 24,
+     "pop": 257103
+    },
+    {
+     "name": "Bromley",
+     "rate": 9.2,
+     "n": 31,
+     "pop": 336048
+    },
+    {
+     "name": "East Ayrshire",
+     "rate": 9.1,
+     "n": 11,
+     "pop": 121350
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "B20",
+     "county": "Birmingham",
+     "share": 12.1,
+     "n": 4,
+     "of": 33
+    },
+    {
+     "name": "PO2",
+     "county": "Portsmouth",
+     "share": 10.5,
+     "n": 8,
+     "of": 76
+    },
+    {
+     "name": "GU12",
+     "county": "Surrey",
+     "share": 9.7,
+     "n": 3,
+     "of": 31
+    },
+    {
+     "name": "ME5",
+     "county": "Kent",
+     "share": 9.3,
+     "n": 4,
+     "of": 43
+    },
+    {
+     "name": "BS10",
+     "county": "Bristol, City of",
+     "share": 9.3,
+     "n": 5,
+     "of": 54
+    },
+    {
+     "name": "CF45",
+     "county": "Rhondda Cynon Taf",
+     "share": 9.1,
+     "n": 4,
+     "of": 44
+    },
+    {
+     "name": "NP13",
+     "county": "Blaenau Gwent",
+     "share": 8.9,
+     "n": 4,
+     "of": 45
+    },
+    {
+     "name": "UB5",
+     "county": "Ealing",
+     "share": 8.3,
+     "n": 4,
+     "of": 48
+    },
+    {
+     "name": "BR4",
+     "county": "Bromley",
+     "share": 8.3,
+     "n": 5,
+     "of": 60
+    },
+    {
+     "name": "CT16",
+     "county": "Kent",
+     "share": 8.2,
+     "n": 7,
+     "of": 85
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Medway",
+     "share": 5.3,
+     "n": 29
+    },
+    {
+     "name": "Enfield",
+     "share": 5.0,
+     "n": 42
+    },
+    {
+     "name": "Bexley",
+     "share": 4.7,
+     "n": 27
+    },
+    {
+     "name": "Sutton",
+     "share": 4.5,
+     "n": 23
+    },
+    {
+     "name": "North Northamptonshire",
+     "share": 4.4,
+     "n": 30
+    }
+   ]
+  },
+  "chicken": {
+   "county_top": [
+    {
+     "name": "Lewisham",
+     "rate": 26.6,
+     "n": 80,
+     "pop": 301037
+    },
+    {
+     "name": "Camden",
+     "rate": 25.4,
+     "n": 55,
+     "pop": 216658
+    },
+    {
+     "name": "Brent",
+     "rate": 24.7,
+     "n": 87,
+     "pop": 352201
+    },
+    {
+     "name": "Lambeth",
+     "rate": 23.9,
+     "n": 75,
+     "pop": 314298
+    },
+    {
+     "name": "Croydon",
+     "rate": 22.7,
+     "n": 93,
+     "pop": 410085
+    },
+    {
+     "name": "Westminster",
+     "rate": 22.1,
+     "n": 47,
+     "pop": 212367
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 22.1,
+     "n": 42,
+     "pop": 190216
+    },
+    {
+     "name": "Ealing",
+     "rate": 20.4,
+     "n": 79,
+     "pop": 387072
+    },
+    {
+     "name": "Waltham Forest",
+     "rate": 19.7,
+     "n": 56,
+     "pop": 283713
+    },
+    {
+     "name": "Southwark",
+     "rate": 18.9,
+     "n": 59,
+     "pop": 312366
+    }
+   ],
+   "district_top": [
+    {
+     "name": "LE1",
+     "rate": 101.3,
+     "n": 19,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "L1",
+     "rate": 95.1,
+     "n": 11,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "NG1",
+     "rate": 90.6,
+     "n": 15,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "NE1",
+     "rate": 89.9,
+     "n": 12,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "M1",
+     "rate": 84.8,
+     "n": 10,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "B5",
+     "rate": 76.2,
+     "n": 10,
+     "pop": 13122,
+     "county": "Birmingham"
+    },
+    {
+     "name": "S1",
+     "rate": 74.3,
+     "n": 8,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "HD1",
+     "rate": 69.3,
+     "n": 17,
+     "pop": 24516,
+     "county": "Kirklees"
+    },
+    {
+     "name": "DE1",
+     "rate": 67.0,
+     "n": 11,
+     "pop": 16419,
+     "county": "Derby"
+    },
+    {
+     "name": "BS1",
+     "rate": 64.0,
+     "n": 12,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Scottish Borders",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 116800
+    },
+    {
+     "name": "Powys",
+     "rate": 0.7,
+     "n": 1,
+     "pop": 134843
+    },
+    {
+     "name": "East Lothian",
+     "rate": 0.9,
+     "n": 1,
+     "pop": 116460
+    },
+    {
+     "name": "East Dunbartonshire",
+     "rate": 0.9,
+     "n": 1,
+     "pop": 109550
+    },
+    {
+     "name": "Aberdeenshire",
+     "rate": 1.1,
+     "n": 3,
+     "pop": 264640
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 44.8,
+     "n": 7,
+     "pop": 15631
+    },
+    {
+     "name": "Lewisham",
+     "rate": 26.6,
+     "n": 80,
+     "pop": 301037
+    },
+    {
+     "name": "Camden",
+     "rate": 25.4,
+     "n": 55,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Lewisham",
+     "rate": 23.9,
+     "n": 72,
+     "pop": 301037
+    },
+    {
+     "name": "Lambeth",
+     "rate": 18.8,
+     "n": 59,
+     "pop": 314298
+    },
+    {
+     "name": "Croydon",
+     "rate": 18.3,
+     "n": 75,
+     "pop": 410085
+    },
+    {
+     "name": "Brent",
+     "rate": 18.2,
+     "n": 64,
+     "pop": 352201
+    },
+    {
+     "name": "Waltham Forest",
+     "rate": 16.2,
+     "n": 46,
+     "pop": 283713
+    },
+    {
+     "name": "Southwark",
+     "rate": 16.0,
+     "n": 50,
+     "pop": 312366
+    },
+    {
+     "name": "Newham",
+     "rate": 14.6,
+     "n": 55,
+     "pop": 376542
+    },
+    {
+     "name": "Sutton",
+     "rate": 13.1,
+     "n": 28,
+     "pop": 213972
+    },
+    {
+     "name": "Luton",
+     "rate": 12.7,
+     "n": 30,
+     "pop": 236380
+    },
+    {
+     "name": "Redbridge",
+     "rate": 12.1,
+     "n": 39,
+     "pop": 321829
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "CR4",
+     "county": "Merton",
+     "share": 18.4,
+     "n": 14,
+     "of": 76
+    },
+    {
+     "name": "LU4",
+     "county": "Luton",
+     "share": 12.7,
+     "n": 10,
+     "of": 79
+    },
+    {
+     "name": "UB5",
+     "county": "Ealing",
+     "share": 12.5,
+     "n": 6,
+     "of": 48
+    },
+    {
+     "name": "UB6",
+     "county": "Ealing",
+     "share": 12.1,
+     "n": 17,
+     "of": 140
+    },
+    {
+     "name": "HA8",
+     "county": "Barnet",
+     "share": 12.0,
+     "n": 19,
+     "of": 158
+    },
+    {
+     "name": "SE12",
+     "county": "Lewisham",
+     "share": 12.0,
+     "n": 6,
+     "of": 50
+    },
+    {
+     "name": "CR0",
+     "county": "Croydon",
+     "share": 11.5,
+     "n": 54,
+     "of": 468
+    },
+    {
+     "name": "RM6",
+     "county": "Barking and Dagenham",
+     "share": 10.9,
+     "n": 7,
+     "of": 64
+    },
+    {
+     "name": "SE23",
+     "county": "Lewisham",
+     "share": 10.6,
+     "n": 11,
+     "of": 104
+    },
+    {
+     "name": "SW16",
+     "county": "Lambeth",
+     "share": 10.5,
+     "n": 25,
+     "of": 237
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Croydon",
+     "share": 9.3,
+     "n": 93
+    },
+    {
+     "name": "Brent",
+     "share": 8.2,
+     "n": 87
+    },
+    {
+     "name": "Luton",
+     "share": 8.1,
+     "n": 40
+    },
+    {
+     "name": "Lewisham",
+     "share": 7.9,
+     "n": 80
+    },
+    {
+     "name": "Sutton",
+     "share": 7.1,
+     "n": 36
+    }
+   ]
+  },
+  "burger": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 33.0,
+     "n": 70,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 23.5,
+     "n": 51,
+     "pop": 216658
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 15.1,
+     "n": 22,
+     "pop": 145734
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 11.0,
+     "n": 21,
+     "pop": 190216
+    },
+    {
+     "name": "Manchester",
+     "rate": 10.7,
+     "n": 63,
+     "pop": 588256
+    },
+    {
+     "name": "Flintshire",
+     "rate": 10.3,
+     "n": 16,
+     "pop": 155954
+    },
+    {
+     "name": "Southwark",
+     "rate": 10.2,
+     "n": 32,
+     "pop": 312366
+    },
+    {
+     "name": "Brighton and Hove",
+     "rate": 10.2,
+     "n": 29,
+     "pop": 284170
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 9.0,
+     "n": 30,
+     "pop": 334240
+    },
+    {
+     "name": "Nottingham",
+     "rate": 8.9,
+     "n": 29,
+     "pop": 325765
+    }
+   ],
+   "district_top": [
+    {
+     "name": "L1",
+     "rate": 103.7,
+     "n": 12,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "NE1",
+     "rate": 82.4,
+     "n": 11,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "NG1",
+     "rate": 72.5,
+     "n": 12,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "CF10",
+     "rate": 63.1,
+     "n": 11,
+     "pop": 17423,
+     "county": "Cardiff"
+    },
+    {
+     "name": "M1",
+     "rate": 59.3,
+     "n": 7,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "S1",
+     "rate": 55.7,
+     "n": 6,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "BS1",
+     "rate": 53.3,
+     "n": 10,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    },
+    {
+     "name": "HP11",
+     "rate": 46.3,
+     "n": 8,
+     "pop": 17273,
+     "county": "Buckinghamshire"
+    },
+    {
+     "name": "NW1",
+     "rate": 41.3,
+     "n": 23,
+     "pop": 55725,
+     "county": "Camden"
+    },
+    {
+     "name": "DA9",
+     "rate": 39.4,
+     "n": 6,
+     "pop": 15244,
+     "county": "Kent"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Scottish Borders",
+     "rate": 0.9,
+     "n": 1,
+     "pop": 116800
+    },
+    {
+     "name": "East Lothian",
+     "rate": 0.9,
+     "n": 1,
+     "pop": 116460
+    },
+    {
+     "name": "Wokingham",
+     "rate": 1.1,
+     "n": 2,
+     "pop": 189024
+    },
+    {
+     "name": "Newry, Mourne and Down",
+     "rate": 1.6,
+     "n": 3,
+     "pop": 182884
+    },
+    {
+     "name": "Knowsley",
+     "rate": 1.8,
+     "n": 3,
+     "pop": 163723
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 115.2,
+     "n": 18,
+     "pop": 15631
+    },
+    {
+     "name": "Westminster",
+     "rate": 33.0,
+     "n": 70,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 23.5,
+     "n": 51,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 6.9,
+     "n": 15,
+     "pop": 216658
+    },
+    {
+     "name": "Blackpool",
+     "rate": 4.9,
+     "n": 7,
+     "pop": 143492
+    },
+    {
+     "name": "Flintshire",
+     "rate": 4.5,
+     "n": 7,
+     "pop": 155954
+    },
+    {
+     "name": "Rochdale",
+     "rate": 3.8,
+     "n": 9,
+     "pop": 237641
+    },
+    {
+     "name": "Salford",
+     "rate": 3.7,
+     "n": 11,
+     "pop": 297004
+    },
+    {
+     "name": "Nottingham",
+     "rate": 3.7,
+     "n": 12,
+     "pop": 325765
+    },
+    {
+     "name": "Wrexham",
+     "rate": 3.6,
+     "n": 5,
+     "pop": 137977
+    },
+    {
+     "name": "Bury",
+     "rate": 3.5,
+     "n": 7,
+     "pop": 199271
+    },
+    {
+     "name": "Kingston upon Hull, City of",
+     "rate": 3.3,
+     "n": 9,
+     "pop": 273257
+    },
+    {
+     "name": "Manchester",
+     "rate": 3.2,
+     "n": 19,
+     "pop": 588256
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "SN14",
+     "county": "Wiltshire",
+     "share": 10.5,
+     "n": 4,
+     "of": 38
+    },
+    {
+     "name": "SO21",
+     "county": "Hampshire",
+     "share": 9.8,
+     "n": 4,
+     "of": 41
+    },
+    {
+     "name": "L24",
+     "county": "Liverpool",
+     "share": 8.8,
+     "n": 5,
+     "of": 57
+    },
+    {
+     "name": "DA9",
+     "county": "Kent",
+     "share": 8.6,
+     "n": 6,
+     "of": 70
+    },
+    {
+     "name": "OL7",
+     "county": "Tameside",
+     "share": 8.5,
+     "n": 4,
+     "of": 47
+    },
+    {
+     "name": "HU7",
+     "county": "Kingston upon Hull, City of",
+     "share": 7.6,
+     "n": 5,
+     "of": 66
+    },
+    {
+     "name": "HP3",
+     "county": "Hertfordshire",
+     "share": 7.5,
+     "n": 4,
+     "of": 53
+    },
+    {
+     "name": "NR6",
+     "county": "Norfolk",
+     "share": 7.5,
+     "n": 3,
+     "of": 40
+    },
+    {
+     "name": "NN15",
+     "county": "North Northamptonshire",
+     "share": 7.4,
+     "n": 4,
+     "of": 54
+    },
+    {
+     "name": "NR13",
+     "county": "Norfolk",
+     "share": 7.3,
+     "n": 3,
+     "of": 41
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Flintshire",
+     "share": 4.2,
+     "n": 16
+    },
+    {
+     "name": "Thurrock",
+     "share": 4.0,
+     "n": 16
+    },
+    {
+     "name": "Halton",
+     "share": 3.5,
+     "n": 7
+    },
+    {
+     "name": "Newport",
+     "share": 3.4,
+     "n": 14
+    },
+    {
+     "name": "West Berkshire",
+     "share": 3.2,
+     "n": 11
+    }
+   ]
+  },
+  "thai": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 11.3,
+     "n": 24,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 10.2,
+     "n": 22,
+     "pop": 216658
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 9.6,
+     "n": 14,
+     "pop": 145734
+    },
+    {
+     "name": "Richmond upon Thames",
+     "rate": 8.6,
+     "n": 17,
+     "pop": 196713
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 7.9,
+     "n": 15,
+     "pop": 190216
+    },
+    {
+     "name": "Islington",
+     "rate": 6.7,
+     "n": 15,
+     "pop": 224551
+    },
+    {
+     "name": "Torbay",
+     "rate": 6.5,
+     "n": 9,
+     "pop": 139486
+    },
+    {
+     "name": "Swansea",
+     "rate": 6.0,
+     "n": 15,
+     "pop": 249429
+    },
+    {
+     "name": "Wandsworth",
+     "rate": 5.6,
+     "n": 19,
+     "pop": 339859
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 5.4,
+     "n": 18,
+     "pop": 334240
+    }
+   ],
+   "district_top": [
+    {
+     "name": "NE1",
+     "rate": 44.9,
+     "n": 6,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "M1",
+     "rate": 42.4,
+     "n": 5,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "LS2",
+     "rate": 33.6,
+     "n": 4,
+     "pop": 11904,
+     "county": "Leeds"
+    },
+    {
+     "name": "WR1",
+     "rate": 28.8,
+     "n": 3,
+     "pop": 10401,
+     "county": "Worcestershire"
+    },
+    {
+     "name": "S1",
+     "rate": 27.9,
+     "n": 3,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "BS1",
+     "rate": 26.7,
+     "n": 5,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    },
+    {
+     "name": "NR2",
+     "rate": 25.9,
+     "n": 7,
+     "pop": 27053,
+     "county": "Norfolk"
+    },
+    {
+     "name": "M3",
+     "rate": 24.5,
+     "n": 4,
+     "pop": 16345,
+     "county": "Salford"
+    },
+    {
+     "name": "W8",
+     "rate": 22.3,
+     "n": 4,
+     "pop": 17926,
+     "county": "Kensington and Chelsea"
+    },
+    {
+     "name": "OX1",
+     "rate": 22.1,
+     "n": 6,
+     "pop": 27136,
+     "county": "Oxfordshire"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Caerphilly",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 176078
+    },
+    {
+     "name": "North Lanarkshire",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 343930
+    },
+    {
+     "name": "Midlothian",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 100390
+    },
+    {
+     "name": "South Ayrshire",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 112280
+    },
+    {
+     "name": "South Lanarkshire",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 334330
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 32.0,
+     "n": 5,
+     "pop": 15631
+    },
+    {
+     "name": "Westminster",
+     "rate": 11.3,
+     "n": 24,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 10.2,
+     "n": 22,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 5.1,
+     "n": 11,
+     "pop": 216658
+    },
+    {
+     "name": "Southwark",
+     "rate": 2.9,
+     "n": 9,
+     "pop": 312366
+    },
+    {
+     "name": "Blackpool",
+     "rate": 2.8,
+     "n": 4,
+     "pop": 143492
+    },
+    {
+     "name": "Fermanagh and Omagh",
+     "rate": 2.5,
+     "n": 3,
+     "pop": 117663
+    },
+    {
+     "name": "Torbay",
+     "rate": 2.2,
+     "n": 3,
+     "pop": 139486
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 2.1,
+     "n": 3,
+     "pop": 142028
+    },
+    {
+     "name": "Swansea",
+     "rate": 2.0,
+     "n": 5,
+     "pop": 249429
+    },
+    {
+     "name": "Westminster",
+     "rate": 1.9,
+     "n": 4,
+     "pop": 212367
+    },
+    {
+     "name": "City of Edinburgh",
+     "rate": 1.7,
+     "n": 9,
+     "pop": 531370
+    },
+    {
+     "name": "Stockport",
+     "rate": 1.6,
+     "n": 5,
+     "pop": 304879
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "RG10",
+     "county": "Wokingham",
+     "share": 5.7,
+     "n": 2,
+     "of": 35
+    },
+    {
+     "name": "TW10",
+     "county": "Richmond upon Thames",
+     "share": 5.6,
+     "n": 3,
+     "of": 54
+    },
+    {
+     "name": "AL3",
+     "county": "Hertfordshire",
+     "share": 5.1,
+     "n": 4,
+     "of": 79
+    },
+    {
+     "name": "W7",
+     "county": "Ealing",
+     "share": 4.5,
+     "n": 3,
+     "of": 67
+    },
+    {
+     "name": "LS20",
+     "county": "Leeds",
+     "share": 4.4,
+     "n": 2,
+     "of": 45
+    },
+    {
+     "name": "NR21",
+     "county": "Norfolk",
+     "share": 4.3,
+     "n": 2,
+     "of": 46
+    },
+    {
+     "name": "DA5",
+     "county": "Bexley",
+     "share": 4.3,
+     "n": 2,
+     "of": 47
+    },
+    {
+     "name": "TW7",
+     "county": "Hounslow",
+     "share": 4.2,
+     "n": 4,
+     "of": 95
+    },
+    {
+     "name": "HP5",
+     "county": "Buckinghamshire",
+     "share": 4.2,
+     "n": 2,
+     "of": 48
+    },
+    {
+     "name": "HR4",
+     "county": "Herefordshire, County of",
+     "share": 4.1,
+     "n": 4,
+     "of": 98
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Richmond upon Thames",
+     "share": 2.1,
+     "n": 17
+    },
+    {
+     "name": "Torbay",
+     "share": 2.0,
+     "n": 9
+    },
+    {
+     "name": "Herefordshire, County of",
+     "share": 2.0,
+     "n": 9
+    },
+    {
+     "name": "Swansea",
+     "share": 1.8,
+     "n": 15
+    },
+    {
+     "name": "Bath and North East Somerset",
+     "share": 1.7,
+     "n": 9
+    }
+   ]
+  },
+  "japanese": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 36.3,
+     "n": 77,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 30.9,
+     "n": 67,
+     "pop": 216658
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 18.5,
+     "n": 27,
+     "pop": 145734
+    },
+    {
+     "name": "Islington",
+     "rate": 16.0,
+     "n": 36,
+     "pop": 224551
+    },
+    {
+     "name": "Wandsworth",
+     "rate": 12.1,
+     "n": 41,
+     "pop": 339859
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 10.2,
+     "n": 34,
+     "pop": 334240
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 8.9,
+     "n": 17,
+     "pop": 190216
+    },
+    {
+     "name": "Kingston upon Thames",
+     "rate": 8.7,
+     "n": 15,
+     "pop": 172761
+    },
+    {
+     "name": "Southwark",
+     "rate": 8.3,
+     "n": 26,
+     "pop": 312366
+    },
+    {
+     "name": "Manchester",
+     "rate": 7.8,
+     "n": 46,
+     "pop": 588256
+    }
+   ],
+   "district_top": [
+    {
+     "name": "M1",
+     "rate": 101.7,
+     "n": 12,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "L1",
+     "rate": 69.1,
+     "n": 8,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "B5",
+     "rate": 68.6,
+     "n": 9,
+     "pop": 13122,
+     "county": "Birmingham"
+    },
+    {
+     "name": "S1",
+     "rate": 65.0,
+     "n": 7,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "NG1",
+     "rate": 60.4,
+     "n": 10,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "NE1",
+     "rate": 59.9,
+     "n": 8,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "B1",
+     "rate": 49.9,
+     "n": 5,
+     "pop": 10028,
+     "county": "Birmingham"
+    },
+    {
+     "name": "SW7",
+     "rate": 46.3,
+     "n": 7,
+     "pop": 15132,
+     "county": "Kensington and Chelsea"
+    },
+    {
+     "name": "CF10",
+     "rate": 45.9,
+     "n": 8,
+     "pop": 17423,
+     "county": "Cardiff"
+    },
+    {
+     "name": "EC1V",
+     "rate": 45.8,
+     "n": 7,
+     "pop": 15298,
+     "county": "Islington"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Powys",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 134843
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 176078
+    },
+    {
+     "name": "South Ayrshire",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 112280
+    },
+    {
+     "name": "Angus",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 114610
+    },
+    {
+     "name": "Scottish Borders",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 116800
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 134.3,
+     "n": 21,
+     "pop": 15631
+    },
+    {
+     "name": "Westminster",
+     "rate": 36.3,
+     "n": 77,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 30.9,
+     "n": 67,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 14.3,
+     "n": 31,
+     "pop": 216658
+    },
+    {
+     "name": "Westminster",
+     "rate": 7.1,
+     "n": 15,
+     "pop": 212367
+    },
+    {
+     "name": "Islington",
+     "rate": 4.9,
+     "n": 11,
+     "pop": 224551
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 4.8,
+     "n": 7,
+     "pop": 145734
+    },
+    {
+     "name": "Kingston upon Thames",
+     "rate": 4.6,
+     "n": 8,
+     "pop": 172761
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 4.5,
+     "n": 15,
+     "pop": 334240
+    },
+    {
+     "name": "Bromley",
+     "rate": 4.5,
+     "n": 15,
+     "pop": 336048
+    },
+    {
+     "name": "Sutton",
+     "rate": 4.2,
+     "n": 9,
+     "pop": 213972
+    },
+    {
+     "name": "Southwark",
+     "rate": 3.8,
+     "n": 12,
+     "pop": 312366
+    },
+    {
+     "name": "Windsor and Maidenhead",
+     "rate": 3.8,
+     "n": 6,
+     "pop": 159776
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "RM2",
+     "county": "Havering",
+     "share": 10.0,
+     "n": 4,
+     "of": 40
+    },
+    {
+     "name": "NW11",
+     "county": "Barnet",
+     "share": 9.7,
+     "n": 7,
+     "of": 72
+    },
+    {
+     "name": "N12",
+     "county": "Barnet",
+     "share": 9.0,
+     "n": 8,
+     "of": 89
+    },
+    {
+     "name": "KT11",
+     "county": "Surrey",
+     "share": 8.5,
+     "n": 4,
+     "of": 47
+    },
+    {
+     "name": "MK10",
+     "county": "Milton Keynes",
+     "share": 6.8,
+     "n": 3,
+     "of": 44
+    },
+    {
+     "name": "N10",
+     "county": "Haringey",
+     "share": 6.8,
+     "n": 4,
+     "of": 59
+    },
+    {
+     "name": "BH12",
+     "county": "Bournemouth, Christchurch and Poole",
+     "share": 6.8,
+     "n": 5,
+     "of": 74
+    },
+    {
+     "name": "GU47",
+     "county": "Bracknell Forest",
+     "share": 6.5,
+     "n": 2,
+     "of": 31
+    },
+    {
+     "name": "BS31",
+     "county": "Bath and North East Somerset",
+     "share": 6.4,
+     "n": 3,
+     "of": 47
+    },
+    {
+     "name": "WR5",
+     "county": "Worcestershire",
+     "share": 6.2,
+     "n": 2,
+     "of": 32
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Barnet",
+     "share": 3.6,
+     "n": 31
+    },
+    {
+     "name": "Bracknell Forest",
+     "share": 3.2,
+     "n": 7
+    },
+    {
+     "name": "Islington",
+     "share": 2.8,
+     "n": 36
+    },
+    {
+     "name": "Wandsworth",
+     "share": 2.8,
+     "n": 41
+    },
+    {
+     "name": "Greenwich",
+     "share": 2.8,
+     "n": 22
+    }
+   ]
+  },
+  "asian_other": {
+   "county_top": [
+    {
+     "name": "Camden",
+     "rate": 23.1,
+     "n": 50,
+     "pop": 216658
+    },
+    {
+     "name": "Westminster",
+     "rate": 19.3,
+     "n": 41,
+     "pop": 212367
+    },
+    {
+     "name": "Islington",
+     "rate": 13.4,
+     "n": 30,
+     "pop": 224551
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 8.9,
+     "n": 17,
+     "pop": 190216
+    },
+    {
+     "name": "Kingston upon Thames",
+     "rate": 8.7,
+     "n": 15,
+     "pop": 172761
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 6.9,
+     "n": 23,
+     "pop": 334240
+    },
+    {
+     "name": "Southwark",
+     "rate": 6.7,
+     "n": 21,
+     "pop": 312366
+    },
+    {
+     "name": "Wandsworth",
+     "rate": 6.2,
+     "n": 21,
+     "pop": 339859
+    },
+    {
+     "name": "Brighton and Hove",
+     "rate": 6.0,
+     "n": 17,
+     "pop": 284170
+    },
+    {
+     "name": "Lewisham",
+     "rate": 5.6,
+     "n": 17,
+     "pop": 301037
+    }
+   ],
+   "district_top": [
+    {
+     "name": "B5",
+     "rate": 91.4,
+     "n": 12,
+     "pop": 13122,
+     "county": "Birmingham"
+    },
+    {
+     "name": "NE1",
+     "rate": 89.9,
+     "n": 12,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "S1",
+     "rate": 83.6,
+     "n": 9,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "L1",
+     "rate": 69.1,
+     "n": 8,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "M1",
+     "rate": 67.8,
+     "n": 8,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "NG1",
+     "rate": 42.3,
+     "n": 7,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "BH1",
+     "rate": 42.2,
+     "n": 10,
+     "pop": 23696,
+     "county": "Bournemouth, Christchurch and Poole"
+    },
+    {
+     "name": "BT7",
+     "rate": 39.1,
+     "n": 8,
+     "pop": 20456,
+     "county": "Belfast"
+    },
+    {
+     "name": "LE1",
+     "rate": 37.3,
+     "n": 7,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "LS2",
+     "rate": 33.6,
+     "n": 4,
+     "pop": 11904,
+     "county": "Leeds"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Powys",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 134843
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 176078
+    },
+    {
+     "name": "Rhondda Cynon Taf",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 241015
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 142028
+    },
+    {
+     "name": "Pembrokeshire",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 125849
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 134.3,
+     "n": 21,
+     "pop": 15631
+    },
+    {
+     "name": "Camden",
+     "rate": 23.1,
+     "n": 50,
+     "pop": 216658
+    },
+    {
+     "name": "Westminster",
+     "rate": 19.3,
+     "n": 41,
+     "pop": 212367
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 10.2,
+     "n": 22,
+     "pop": 216658
+    },
+    {
+     "name": "Brent",
+     "rate": 4.3,
+     "n": 15,
+     "pop": 352201
+    },
+    {
+     "name": "Westminster",
+     "rate": 3.3,
+     "n": 7,
+     "pop": 212367
+    },
+    {
+     "name": "Lewisham",
+     "rate": 3.0,
+     "n": 9,
+     "pop": 301037
+    },
+    {
+     "name": "Mid and East Antrim",
+     "rate": 2.9,
+     "n": 4,
+     "pop": 139964
+    },
+    {
+     "name": "Flintshire",
+     "rate": 2.6,
+     "n": 4,
+     "pop": 155954
+    },
+    {
+     "name": "Southwark",
+     "rate": 2.6,
+     "n": 8,
+     "pop": 312366
+    },
+    {
+     "name": "Ards and North Down",
+     "rate": 2.4,
+     "n": 4,
+     "pop": 165407
+    },
+    {
+     "name": "Kingston upon Thames",
+     "rate": 2.3,
+     "n": 4,
+     "pop": 172761
+    },
+    {
+     "name": "Newham",
+     "rate": 2.1,
+     "n": 8,
+     "pop": 376542
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "KT3",
+     "county": "Kingston upon Thames",
+     "share": 7.1,
+     "n": 9,
+     "of": 127
+    },
+    {
+     "name": "BT7",
+     "county": "Belfast",
+     "share": 6.4,
+     "n": 8,
+     "of": 125
+    },
+    {
+     "name": "BH1",
+     "county": "Bournemouth, Christchurch and Poole",
+     "share": 5.2,
+     "n": 10,
+     "of": 191
+    },
+    {
+     "name": "B5",
+     "county": "Birmingham",
+     "share": 4.7,
+     "n": 12,
+     "of": 256
+    },
+    {
+     "name": "RG17",
+     "county": "West Berkshire",
+     "share": 4.7,
+     "n": 2,
+     "of": 43
+    },
+    {
+     "name": "DA6",
+     "county": "Bexley",
+     "share": 4.1,
+     "n": 3,
+     "of": 74
+    },
+    {
+     "name": "RM1",
+     "county": "Havering",
+     "share": 3.8,
+     "n": 6,
+     "of": 156
+    },
+    {
+     "name": "SE8",
+     "county": "Lewisham",
+     "share": 3.8,
+     "n": 5,
+     "of": 131
+    },
+    {
+     "name": "AL3",
+     "county": "Hertfordshire",
+     "share": 3.8,
+     "n": 3,
+     "of": 79
+    },
+    {
+     "name": "SE26",
+     "county": "Lewisham",
+     "share": 3.7,
+     "n": 3,
+     "of": 82
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Kingston upon Thames",
+     "share": 2.5,
+     "n": 15
+    },
+    {
+     "name": "Islington",
+     "share": 2.4,
+     "n": 30
+    },
+    {
+     "name": "Camden",
+     "share": 2.0,
+     "n": 50
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "share": 1.8,
+     "n": 17
+    },
+    {
+     "name": "West Berkshire",
+     "share": 1.7,
+     "n": 6
+    }
+   ]
+  },
+  "italian": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 29.7,
+     "n": 63,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 15.7,
+     "n": 34,
+     "pop": 216658
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 11.7,
+     "n": 17,
+     "pop": 145734
+    },
+    {
+     "name": "Richmond upon Thames",
+     "rate": 10.7,
+     "n": 21,
+     "pop": 196713
+    },
+    {
+     "name": "Islington",
+     "rate": 9.4,
+     "n": 21,
+     "pop": 224551
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 7.2,
+     "n": 24,
+     "pop": 334240
+    },
+    {
+     "name": "Kingston upon Hull, City of",
+     "rate": 7.0,
+     "n": 19,
+     "pop": 273257
+    },
+    {
+     "name": "Renfrewshire",
+     "rate": 6.9,
+     "n": 13,
+     "pop": 189270
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 6.4,
+     "n": 42,
+     "pop": 654330
+    },
+    {
+     "name": "Kingston upon Thames",
+     "rate": 6.4,
+     "n": 11,
+     "pop": 172761
+    }
+   ],
+   "district_top": [
+    {
+     "name": "L1",
+     "rate": 60.5,
+     "n": 7,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "BS1",
+     "rate": 58.7,
+     "n": 11,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    },
+    {
+     "name": "M1",
+     "rate": 42.4,
+     "n": 5,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "WR1",
+     "rate": 38.5,
+     "n": 4,
+     "pop": 10401,
+     "county": "Worcestershire"
+    },
+    {
+     "name": "NE11",
+     "rate": 37.6,
+     "n": 6,
+     "pop": 15970,
+     "county": "Gateshead"
+    },
+    {
+     "name": "NE1",
+     "rate": 37.4,
+     "n": 5,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "NG1",
+     "rate": 36.2,
+     "n": 6,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "BH19",
+     "rate": 35.8,
+     "n": 4,
+     "pop": 11168,
+     "county": "Dorset"
+    },
+    {
+     "name": "M4",
+     "rate": 33.9,
+     "n": 6,
+     "pop": 17700,
+     "county": "Manchester"
+    },
+    {
+     "name": "W2",
+     "rate": 31.4,
+     "n": 14,
+     "pop": 44650,
+     "county": "Westminster"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Wrexham",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 137977
+    },
+    {
+     "name": "Angus",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 114610
+    },
+    {
+     "name": "Mid Ulster",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 152292
+    },
+    {
+     "name": "Antrim and Newtownabbey",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 148487
+    },
+    {
+     "name": "Lisburn and Castlereagh",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 152367
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 57.6,
+     "n": 9,
+     "pop": 15631
+    },
+    {
+     "name": "Westminster",
+     "rate": 29.7,
+     "n": 63,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 15.7,
+     "n": 34,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 4.2,
+     "n": 9,
+     "pop": 216658
+    },
+    {
+     "name": "Blackpool",
+     "rate": 3.5,
+     "n": 5,
+     "pop": 143492
+    },
+    {
+     "name": "Gwynedd",
+     "rate": 3.3,
+     "n": 4,
+     "pop": 120295
+    },
+    {
+     "name": "Renfrewshire",
+     "rate": 3.2,
+     "n": 6,
+     "pop": 189270
+    },
+    {
+     "name": "Hackney",
+     "rate": 3.0,
+     "n": 8,
+     "pop": 266241
+    },
+    {
+     "name": "Lambeth",
+     "rate": 2.9,
+     "n": 9,
+     "pop": 314298
+    },
+    {
+     "name": "Scottish Borders",
+     "rate": 2.6,
+     "n": 3,
+     "pop": 116800
+    },
+    {
+     "name": "Kingston upon Hull, City of",
+     "rate": 2.6,
+     "n": 7,
+     "pop": 273257
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 2.4,
+     "n": 8,
+     "pop": 334240
+    },
+    {
+     "name": "Newry, Mourne and Down",
+     "rate": 2.2,
+     "n": 4,
+     "pop": 182884
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "SM7",
+     "county": "Surrey",
+     "share": 12.8,
+     "n": 5,
+     "of": 39
+    },
+    {
+     "name": "HU13",
+     "county": "East Riding of Yorkshire",
+     "share": 9.4,
+     "n": 3,
+     "of": 32
+    },
+    {
+     "name": "CO13",
+     "county": "Essex",
+     "share": 7.9,
+     "n": 3,
+     "of": 38
+    },
+    {
+     "name": "EH39",
+     "county": "East Lothian",
+     "share": 7.9,
+     "n": 3,
+     "of": 38
+    },
+    {
+     "name": "WD23",
+     "county": "Hertfordshire",
+     "share": 7.5,
+     "n": 4,
+     "of": 53
+    },
+    {
+     "name": "DL10",
+     "county": "North Yorkshire",
+     "share": 6.7,
+     "n": 3,
+     "of": 45
+    },
+    {
+     "name": "BH19",
+     "county": "Dorset",
+     "share": 5.9,
+     "n": 4,
+     "of": 68
+    },
+    {
+     "name": "BH7",
+     "county": "Bournemouth, Christchurch and Poole",
+     "share": 5.7,
+     "n": 3,
+     "of": 53
+    },
+    {
+     "name": "SN8",
+     "county": "Wiltshire",
+     "share": 5.4,
+     "n": 2,
+     "of": 37
+    },
+    {
+     "name": "SW10",
+     "county": "Kensington and Chelsea",
+     "share": 5.4,
+     "n": 3,
+     "of": 56
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "East Lothian",
+     "share": 2.9,
+     "n": 7
+    },
+    {
+     "name": "Richmond upon Thames",
+     "share": 2.6,
+     "n": 21
+    },
+    {
+     "name": "Renfrewshire",
+     "share": 2.6,
+     "n": 13
+    },
+    {
+     "name": "Kingston upon Hull, City of",
+     "share": 2.4,
+     "n": 19
+    },
+    {
+     "name": "South Tyneside",
+     "share": 2.2,
+     "n": 8
+    }
+   ]
+  },
+  "caribbean": {
+   "county_top": [
+    {
+     "name": "Lewisham",
+     "rate": 10.0,
+     "n": 30,
+     "pop": 301037
+    },
+    {
+     "name": "Southwark",
+     "rate": 8.6,
+     "n": 27,
+     "pop": 312366
+    },
+    {
+     "name": "Camden",
+     "rate": 7.4,
+     "n": 16,
+     "pop": 216658
+    },
+    {
+     "name": "Brent",
+     "rate": 6.2,
+     "n": 22,
+     "pop": 352201
+    },
+    {
+     "name": "Islington",
+     "rate": 6.2,
+     "n": 14,
+     "pop": 224551
+    },
+    {
+     "name": "Hackney",
+     "rate": 5.6,
+     "n": 15,
+     "pop": 266241
+    },
+    {
+     "name": "Croydon",
+     "rate": 5.4,
+     "n": 22,
+     "pop": 410085
+    },
+    {
+     "name": "Greenwich",
+     "rate": 5.3,
+     "n": 16,
+     "pop": 301225
+    },
+    {
+     "name": "Manchester",
+     "rate": 4.8,
+     "n": 28,
+     "pop": 588256
+    },
+    {
+     "name": "Barking and Dagenham",
+     "rate": 4.6,
+     "n": 11,
+     "pop": 238295
+    }
+   ],
+   "district_top": [
+    {
+     "name": "B18",
+     "rate": 28.4,
+     "n": 5,
+     "pop": 17580,
+     "county": "Birmingham"
+    },
+    {
+     "name": "L1",
+     "rate": 25.9,
+     "n": 3,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "LS2",
+     "rate": 25.2,
+     "n": 3,
+     "pop": 11904,
+     "county": "Leeds"
+    },
+    {
+     "name": "SE17",
+     "rate": 22.4,
+     "n": 8,
+     "pop": 35753,
+     "county": "Southwark"
+    },
+    {
+     "name": "BS1",
+     "rate": 21.3,
+     "n": 4,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    },
+    {
+     "name": "RM18",
+     "rate": 20.2,
+     "n": 4,
+     "pop": 19772,
+     "county": "Thurrock"
+    },
+    {
+     "name": "B19",
+     "rate": 20.2,
+     "n": 5,
+     "pop": 24762,
+     "county": "Birmingham"
+    },
+    {
+     "name": "SE20",
+     "rate": 20.2,
+     "n": 5,
+     "pop": 24812,
+     "county": "Bromley"
+    },
+    {
+     "name": "NN1",
+     "rate": 20.0,
+     "n": 7,
+     "pop": 35013,
+     "county": "West Northamptonshire"
+    },
+    {
+     "name": "SE25",
+     "rate": 19.1,
+     "n": 7,
+     "pop": 36596,
+     "county": "Croydon"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Powys",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 134843
+    },
+    {
+     "name": "Newport",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 168584
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 176078
+    },
+    {
+     "name": "Rhondda Cynon Taf",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 241015
+    },
+    {
+     "name": "Vale of Glamorgan",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 135362
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "Lewisham",
+     "rate": 10.0,
+     "n": 30,
+     "pop": 301037
+    },
+    {
+     "name": "Southwark",
+     "rate": 8.6,
+     "n": 27,
+     "pop": 312366
+    },
+    {
+     "name": "Camden",
+     "rate": 7.4,
+     "n": 16,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Lewisham",
+     "rate": 6.3,
+     "n": 19,
+     "pop": 301037
+    },
+    {
+     "name": "Croydon",
+     "rate": 3.9,
+     "n": 16,
+     "pop": 410085
+    },
+    {
+     "name": "Southwark",
+     "rate": 3.8,
+     "n": 12,
+     "pop": 312366
+    },
+    {
+     "name": "Camden",
+     "rate": 3.7,
+     "n": 8,
+     "pop": 216658
+    },
+    {
+     "name": "Brent",
+     "rate": 3.4,
+     "n": 12,
+     "pop": 352201
+    },
+    {
+     "name": "Greenwich",
+     "rate": 3.0,
+     "n": 9,
+     "pop": 301225
+    },
+    {
+     "name": "Lambeth",
+     "rate": 2.9,
+     "n": 9,
+     "pop": 314298
+    },
+    {
+     "name": "Bromley",
+     "rate": 2.4,
+     "n": 8,
+     "pop": 336048
+    },
+    {
+     "name": "Hackney",
+     "rate": 2.3,
+     "n": 6,
+     "pop": 266241
+    },
+    {
+     "name": "Wolverhampton",
+     "rate": 1.8,
+     "n": 5,
+     "pop": 281434
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "RM18",
+     "county": "Thurrock",
+     "share": 12.5,
+     "n": 4,
+     "of": 32
+    },
+    {
+     "name": "SE25",
+     "county": "Croydon",
+     "share": 7.4,
+     "n": 7,
+     "of": 94
+    },
+    {
+     "name": "M40",
+     "county": "Manchester",
+     "share": 7.4,
+     "n": 8,
+     "of": 108
+    },
+    {
+     "name": "SE20",
+     "county": "Bromley",
+     "share": 7.1,
+     "n": 5,
+     "of": 70
+    },
+    {
+     "name": "SE17",
+     "county": "Southwark",
+     "share": 6.5,
+     "n": 8,
+     "of": 123
+    },
+    {
+     "name": "E5",
+     "county": "Hackney",
+     "share": 5.7,
+     "n": 6,
+     "of": 106
+    },
+    {
+     "name": "B18",
+     "county": "Birmingham",
+     "share": 5.2,
+     "n": 5,
+     "of": 97
+    },
+    {
+     "name": "B23",
+     "county": "Birmingham",
+     "share": 4.9,
+     "n": 5,
+     "of": 102
+    },
+    {
+     "name": "SE26",
+     "county": "Lewisham",
+     "share": 4.9,
+     "n": 4,
+     "of": 82
+    },
+    {
+     "name": "B25",
+     "county": "Birmingham",
+     "share": 4.8,
+     "n": 2,
+     "of": 42
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Lewisham",
+     "share": 3.0,
+     "n": 30
+    },
+    {
+     "name": "Barking and Dagenham",
+     "share": 2.4,
+     "n": 11
+    },
+    {
+     "name": "Croydon",
+     "share": 2.2,
+     "n": 22
+    },
+    {
+     "name": "Brent",
+     "share": 2.1,
+     "n": 22
+    },
+    {
+     "name": "Greenwich",
+     "share": 2.0,
+     "n": 16
+    }
+   ]
+  },
+  "mexican": {
+   "county_top": [
+    {
+     "name": "Camden",
+     "rate": 14.3,
+     "n": 31,
+     "pop": 216658
+    },
+    {
+     "name": "Westminster",
+     "rate": 14.1,
+     "n": 30,
+     "pop": 212367
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 5.3,
+     "n": 10,
+     "pop": 190216
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 4.8,
+     "n": 7,
+     "pop": 145734
+    },
+    {
+     "name": "Southend-on-Sea",
+     "rate": 4.3,
+     "n": 8,
+     "pop": 185214
+    },
+    {
+     "name": "Southwark",
+     "rate": 4.2,
+     "n": 13,
+     "pop": 312366
+    },
+    {
+     "name": "Tower Hamlets",
+     "rate": 3.6,
+     "n": 12,
+     "pop": 334240
+    },
+    {
+     "name": "Islington",
+     "rate": 3.6,
+     "n": 8,
+     "pop": 224551
+    },
+    {
+     "name": "Manchester",
+     "rate": 3.4,
+     "n": 20,
+     "pop": 588256
+    },
+    {
+     "name": "Hackney",
+     "rate": 3.4,
+     "n": 9,
+     "pop": 266241
+    }
+   ],
+   "district_top": [
+    {
+     "name": "NE1",
+     "rate": 52.4,
+     "n": 7,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "M4",
+     "rate": 45.2,
+     "n": 8,
+     "pop": 17700,
+     "county": "Manchester"
+    },
+    {
+     "name": "L1",
+     "rate": 34.6,
+     "n": 4,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "M1",
+     "rate": 33.9,
+     "n": 4,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "NW1",
+     "rate": 28.7,
+     "n": 16,
+     "pop": 55725,
+     "county": "Camden"
+    },
+    {
+     "name": "DD1",
+     "rate": 25.6,
+     "n": 3,
+     "pop": 11700,
+     "county": "Dundee City"
+    },
+    {
+     "name": "CF10",
+     "rate": 23.0,
+     "n": 4,
+     "pop": 17423,
+     "county": "Cardiff"
+    },
+    {
+     "name": "NG1",
+     "rate": 18.1,
+     "n": 3,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "SS1",
+     "rate": 17.7,
+     "n": 5,
+     "pop": 28231,
+     "county": "Southend-on-Sea"
+    },
+    {
+     "name": "BS1",
+     "rate": 16.0,
+     "n": 3,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Powys",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 134843
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 176078
+    },
+    {
+     "name": "Bridgend",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 146986
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 142028
+    },
+    {
+     "name": "Pembrokeshire",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 125849
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 76.8,
+     "n": 12,
+     "pop": 15631
+    },
+    {
+     "name": "Camden",
+     "rate": 14.3,
+     "n": 31,
+     "pop": 216658
+    },
+    {
+     "name": "Westminster",
+     "rate": 14.1,
+     "n": 30,
+     "pop": 212367
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 6.5,
+     "n": 14,
+     "pop": 216658
+    },
+    {
+     "name": "Westminster",
+     "rate": 3.3,
+     "n": 7,
+     "pop": 212367
+    },
+    {
+     "name": "Southwark",
+     "rate": 2.2,
+     "n": 7,
+     "pop": 312366
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 2.1,
+     "n": 4,
+     "pop": 190216
+    },
+    {
+     "name": "Southend-on-Sea",
+     "rate": 1.6,
+     "n": 3,
+     "pop": 185214
+    },
+    {
+     "name": "Lambeth",
+     "rate": 1.6,
+     "n": 5,
+     "pop": 314298
+    },
+    {
+     "name": "Ealing",
+     "rate": 1.6,
+     "n": 6,
+     "pop": 387072
+    },
+    {
+     "name": "Brent",
+     "rate": 1.4,
+     "n": 5,
+     "pop": 352201
+    },
+    {
+     "name": "Slough",
+     "rate": 1.2,
+     "n": 2,
+     "pop": 167450
+    },
+    {
+     "name": "Liverpool",
+     "rate": 1.2,
+     "n": 6,
+     "pop": 507915
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "L14",
+     "county": "Liverpool",
+     "share": 4.7,
+     "n": 2,
+     "of": 43
+    },
+    {
+     "name": "OL7",
+     "county": "Tameside",
+     "share": 4.3,
+     "n": 2,
+     "of": 47
+    },
+    {
+     "name": "CH65",
+     "county": "Cheshire West and Chester",
+     "share": 3.3,
+     "n": 4,
+     "of": 122
+    },
+    {
+     "name": "SL2",
+     "county": "Buckinghamshire",
+     "share": 3.0,
+     "n": 2,
+     "of": 66
+    },
+    {
+     "name": "MK13",
+     "county": "Milton Keynes",
+     "share": 3.0,
+     "n": 1,
+     "of": 33
+    },
+    {
+     "name": "NG23",
+     "county": "Nottinghamshire",
+     "share": 2.9,
+     "n": 1,
+     "of": 34
+    },
+    {
+     "name": "CM23",
+     "county": "Essex",
+     "share": 2.9,
+     "n": 4,
+     "of": 137
+    },
+    {
+     "name": "BT11",
+     "county": "Belfast",
+     "share": 2.9,
+     "n": 2,
+     "of": 70
+    },
+    {
+     "name": "M4",
+     "county": "Manchester",
+     "share": 2.7,
+     "n": 8,
+     "of": 291
+    },
+    {
+     "name": "HP12",
+     "county": "Buckinghamshire",
+     "share": 2.7,
+     "n": 1,
+     "of": 37
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Southend-on-Sea",
+     "share": 1.3,
+     "n": 8
+    },
+    {
+     "name": "Camden",
+     "share": 1.2,
+     "n": 31
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "share": 1.0,
+     "n": 10
+    },
+    {
+     "name": "Bracknell Forest",
+     "share": 0.9,
+     "n": 2
+    },
+    {
+     "name": "Torbay",
+     "share": 0.9,
+     "n": 4
+    }
+   ]
+  },
+  "greek_med": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 18.4,
+     "n": 39,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 18.0,
+     "n": 39,
+     "pop": 216658
+    },
+    {
+     "name": "Southwark",
+     "rate": 9.0,
+     "n": 28,
+     "pop": 312366
+    },
+    {
+     "name": "Islington",
+     "rate": 6.7,
+     "n": 15,
+     "pop": 224551
+    },
+    {
+     "name": "Kingston upon Thames",
+     "rate": 5.8,
+     "n": 10,
+     "pop": 172761
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 4.8,
+     "n": 7,
+     "pop": 145734
+    },
+    {
+     "name": "Reading",
+     "rate": 4.4,
+     "n": 8,
+     "pop": 183762
+    },
+    {
+     "name": "Ealing",
+     "rate": 4.1,
+     "n": 16,
+     "pop": 387072
+    },
+    {
+     "name": "Kingston upon Hull, City of",
+     "rate": 4.0,
+     "n": 11,
+     "pop": 273257
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 3.7,
+     "n": 7,
+     "pop": 190216
+    }
+   ],
+   "district_top": [
+    {
+     "name": "KT1",
+     "rate": 29.6,
+     "n": 7,
+     "pop": 23628,
+     "county": "Kingston upon Thames"
+    },
+    {
+     "name": "NW1",
+     "rate": 28.7,
+     "n": 16,
+     "pop": 55725,
+     "county": "Camden"
+    },
+    {
+     "name": "DA6",
+     "rate": 27.1,
+     "n": 3,
+     "pop": 11057,
+     "county": "Bexley"
+    },
+    {
+     "name": "LE1",
+     "rate": 26.7,
+     "n": 5,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "EC1V",
+     "rate": 26.1,
+     "n": 4,
+     "pop": 15298,
+     "county": "Islington"
+    },
+    {
+     "name": "L1",
+     "rate": 25.9,
+     "n": 3,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "NG1",
+     "rate": 24.2,
+     "n": 4,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "SE1",
+     "rate": 23.2,
+     "n": 17,
+     "pop": 73174,
+     "county": "Southwark"
+    },
+    {
+     "name": "SW1P",
+     "rate": 23.0,
+     "n": 3,
+     "pop": 13042,
+     "county": "Westminster"
+    },
+    {
+     "name": "NE1",
+     "rate": 22.5,
+     "n": 3,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Powys",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 134843
+    },
+    {
+     "name": "Caerphilly",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 176078
+    },
+    {
+     "name": "Bridgend",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 146986
+    },
+    {
+     "name": "Neath Port Talbot",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 142028
+    },
+    {
+     "name": "Wrexham",
+     "rate": 0.0,
+     "n": 0,
+     "pop": 137977
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 89.6,
+     "n": 14,
+     "pop": 15631
+    },
+    {
+     "name": "Westminster",
+     "rate": 18.4,
+     "n": 39,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 18.0,
+     "n": 39,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 11.1,
+     "n": 24,
+     "pop": 216658
+    },
+    {
+     "name": "Southwark",
+     "rate": 6.1,
+     "n": 19,
+     "pop": 312366
+    },
+    {
+     "name": "Westminster",
+     "rate": 4.7,
+     "n": 10,
+     "pop": 212367
+    },
+    {
+     "name": "Conwy",
+     "rate": 2.6,
+     "n": 3,
+     "pop": 114421
+    },
+    {
+     "name": "Islington",
+     "rate": 2.2,
+     "n": 5,
+     "pop": 224551
+    },
+    {
+     "name": "Blackpool",
+     "rate": 2.1,
+     "n": 3,
+     "pop": 143492
+    },
+    {
+     "name": "Lambeth",
+     "rate": 1.9,
+     "n": 6,
+     "pop": 314298
+    },
+    {
+     "name": "Brent",
+     "rate": 1.7,
+     "n": 6,
+     "pop": 352201
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 1.5,
+     "n": 10,
+     "pop": 654330
+    },
+    {
+     "name": "Vale of Glamorgan",
+     "rate": 1.5,
+     "n": 2,
+     "pop": 135362
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "N21",
+     "county": "Enfield",
+     "share": 7.7,
+     "n": 4,
+     "of": 52
+    },
+    {
+     "name": "CW1",
+     "county": "Cheshire East",
+     "share": 6.2,
+     "n": 4,
+     "of": 65
+    },
+    {
+     "name": "N2",
+     "county": "Barnet",
+     "share": 6.1,
+     "n": 3,
+     "of": 49
+    },
+    {
+     "name": "DA14",
+     "county": "Bexley",
+     "share": 4.6,
+     "n": 3,
+     "of": 65
+    },
+    {
+     "name": "MK12",
+     "county": "Milton Keynes",
+     "share": 4.1,
+     "n": 2,
+     "of": 49
+    },
+    {
+     "name": "DA6",
+     "county": "Bexley",
+     "share": 4.1,
+     "n": 3,
+     "of": 74
+    },
+    {
+     "name": "W9",
+     "county": "Westminster",
+     "share": 3.9,
+     "n": 4,
+     "of": 102
+    },
+    {
+     "name": "SW14",
+     "county": "Richmond upon Thames",
+     "share": 3.9,
+     "n": 3,
+     "of": 77
+    },
+    {
+     "name": "M14",
+     "county": "Manchester",
+     "share": 3.8,
+     "n": 9,
+     "of": 234
+    },
+    {
+     "name": "OX4",
+     "county": "Oxfordshire",
+     "share": 3.8,
+     "n": 7,
+     "of": 183
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Southwark",
+     "share": 1.8,
+     "n": 28
+    },
+    {
+     "name": "Kingston upon Thames",
+     "share": 1.7,
+     "n": 10
+    },
+    {
+     "name": "Barnet",
+     "share": 1.6,
+     "n": 14
+    },
+    {
+     "name": "Camden",
+     "share": 1.6,
+     "n": 39
+    },
+    {
+     "name": "Reading",
+     "share": 1.5,
+     "n": 8
+    }
+   ]
+  },
+  "sandwich": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 94.2,
+     "n": 200,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 66.9,
+     "n": 145,
+     "pop": 216658
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 37.4,
+     "n": 245,
+     "pop": 654330
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 33.6,
+     "n": 49,
+     "pop": 145734
+    },
+    {
+     "name": "Telford and Wrekin",
+     "rate": 30.6,
+     "n": 61,
+     "pop": 199378
+    },
+    {
+     "name": "Islington",
+     "rate": 28.5,
+     "n": 64,
+     "pop": 224551
+    },
+    {
+     "name": "Newcastle upon Tyne",
+     "rate": 27.4,
+     "n": 88,
+     "pop": 320838
+    },
+    {
+     "name": "Wigan",
+     "rate": 27.4,
+     "n": 95,
+     "pop": 347089
+    },
+    {
+     "name": "Southwark",
+     "rate": 25.9,
+     "n": 81,
+     "pop": 312366
+    },
+    {
+     "name": "Darlington",
+     "rate": 25.6,
+     "n": 29,
+     "pop": 113402
+    }
+   ],
+   "district_top": [
+    {
+     "name": "NE1",
+     "rate": 239.7,
+     "n": 32,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "CF10",
+     "rate": 143.5,
+     "n": 25,
+     "pop": 17423,
+     "county": "Cardiff"
+    },
+    {
+     "name": "S1",
+     "rate": 139.3,
+     "n": 15,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "M1",
+     "rate": 135.7,
+     "n": 16,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "BS1",
+     "rate": 122.7,
+     "n": 23,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    },
+    {
+     "name": "L1",
+     "rate": 121.0,
+     "n": 14,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "B5",
+     "rate": 106.7,
+     "n": 14,
+     "pop": 13122,
+     "county": "Birmingham"
+    },
+    {
+     "name": "LE1",
+     "rate": 106.6,
+     "n": 20,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "SE1",
+     "rate": 94.3,
+     "n": 69,
+     "pop": 73174,
+     "county": "Southwark"
+    },
+    {
+     "name": "DD1",
+     "rate": 94.0,
+     "n": 11,
+     "pop": 11700,
+     "county": "Dundee City"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Wokingham",
+     "rate": 1.1,
+     "n": 2,
+     "pop": 189024
+    },
+    {
+     "name": "Barking and Dagenham",
+     "rate": 3.8,
+     "n": 9,
+     "pop": 238295
+    },
+    {
+     "name": "Croydon",
+     "rate": 4.1,
+     "n": 17,
+     "pop": 410085
+    },
+    {
+     "name": "North Somerset",
+     "rate": 4.4,
+     "n": 10,
+     "pop": 227160
+    },
+    {
+     "name": "Rhondda Cynon Taf",
+     "rate": 5.0,
+     "n": 12,
+     "pop": 241015
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 652.5,
+     "n": 102,
+     "pop": 15631
+    },
+    {
+     "name": "Westminster",
+     "rate": 94.2,
+     "n": 200,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 66.9,
+     "n": 145,
+     "pop": 216658
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 36.9,
+     "n": 80,
+     "pop": 216658
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 20.6,
+     "n": 135,
+     "pop": 654330
+    },
+    {
+     "name": "Darlington",
+     "rate": 19.4,
+     "n": 22,
+     "pop": 113402
+    },
+    {
+     "name": "Blackpool",
+     "rate": 18.1,
+     "n": 26,
+     "pop": 143492
+    },
+    {
+     "name": "Dundee City",
+     "rate": 15.5,
+     "n": 23,
+     "pop": 148390
+    },
+    {
+     "name": "Gateshead",
+     "rate": 14.8,
+     "n": 30,
+     "pop": 202509
+    },
+    {
+     "name": "Wakefield",
+     "rate": 14.3,
+     "n": 53,
+     "pop": 369450
+    },
+    {
+     "name": "Islington",
+     "rate": 13.8,
+     "n": 31,
+     "pop": 224551
+    },
+    {
+     "name": "Bradford",
+     "rate": 13.8,
+     "n": 77,
+     "pop": 557758
+    },
+    {
+     "name": "Rochdale",
+     "rate": 13.0,
+     "n": 31,
+     "pop": 237641
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "BD4",
+     "county": "Bradford",
+     "share": 16.5,
+     "n": 14,
+     "of": 85
+    },
+    {
+     "name": "B37",
+     "county": "Solihull",
+     "share": 15.8,
+     "n": 6,
+     "of": 38
+    },
+    {
+     "name": "BD9",
+     "county": "Bradford",
+     "share": 15.0,
+     "n": 12,
+     "of": 80
+    },
+    {
+     "name": "NP25",
+     "county": "Monmouthshire",
+     "share": 13.2,
+     "n": 7,
+     "of": 53
+    },
+    {
+     "name": "SN14",
+     "county": "Wiltshire",
+     "share": 13.2,
+     "n": 5,
+     "of": 38
+    },
+    {
+     "name": "CA13",
+     "county": "Cumberland",
+     "share": 13.1,
+     "n": 8,
+     "of": 61
+    },
+    {
+     "name": "CM77",
+     "county": "Essex",
+     "share": 13.0,
+     "n": 6,
+     "of": 46
+    },
+    {
+     "name": "HP19",
+     "county": "Buckinghamshire",
+     "share": 12.9,
+     "n": 4,
+     "of": 31
+    },
+    {
+     "name": "G14",
+     "county": "Glasgow City",
+     "share": 12.9,
+     "n": 9,
+     "of": 70
+    },
+    {
+     "name": "L36",
+     "county": "Knowsley",
+     "share": 12.7,
+     "n": 8,
+     "of": 63
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Telford and Wrekin",
+     "share": 9.8,
+     "n": 61
+    },
+    {
+     "name": "Darlington",
+     "share": 9.3,
+     "n": 29
+    },
+    {
+     "name": "Bradford",
+     "share": 8.1,
+     "n": 134
+    },
+    {
+     "name": "Barnsley",
+     "share": 7.9,
+     "n": 43
+    },
+    {
+     "name": "Wakefield",
+     "share": 7.7,
+     "n": 79
+    }
+   ]
+  },
+  "cafe": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 214.7,
+     "n": 456,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 174.9,
+     "n": 379,
+     "pop": 216658
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 100.2,
+     "n": 146,
+     "pop": 145734
+    },
+    {
+     "name": "City of Edinburgh",
+     "rate": 92.0,
+     "n": 489,
+     "pop": 531370
+    },
+    {
+     "name": "Conwy",
+     "rate": 90.0,
+     "n": 103,
+     "pop": 114421
+    },
+    {
+     "name": "Highland",
+     "rate": 89.4,
+     "n": 212,
+     "pop": 237260
+    },
+    {
+     "name": "Islington",
+     "rate": 87.3,
+     "n": 196,
+     "pop": 224551
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 87.1,
+     "n": 570,
+     "pop": 654330
+    },
+    {
+     "name": "Brighton and Hove",
+     "rate": 82.3,
+     "n": 234,
+     "pop": 284170
+    },
+    {
+     "name": "Westmorland and Furness",
+     "rate": 81.7,
+     "n": 189,
+     "pop": 231307
+    }
+   ],
+   "district_top": [
+    {
+     "name": "NE1",
+     "rate": 599.2,
+     "n": 80,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "L1",
+     "rate": 561.8,
+     "n": 65,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "M1",
+     "rate": 508.7,
+     "n": 60,
+     "pop": 11795,
+     "county": "Manchester"
+    },
+    {
+     "name": "S1",
+     "rate": 417.9,
+     "n": 45,
+     "pop": 10768,
+     "county": "Sheffield"
+    },
+    {
+     "name": "NG1",
+     "rate": 368.3,
+     "n": 61,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "BS1",
+     "rate": 368.0,
+     "n": 69,
+     "pop": 18751,
+     "county": "Bristol, City of"
+    },
+    {
+     "name": "LE1",
+     "rate": 362.6,
+     "n": 68,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "PE25",
+     "rate": 337.0,
+     "n": 78,
+     "pop": 23145,
+     "county": "Lincolnshire"
+    },
+    {
+     "name": "WR1",
+     "rate": 336.5,
+     "n": 35,
+     "pop": 10401,
+     "county": "Worcestershire"
+    },
+    {
+     "name": "DD1",
+     "rate": 324.8,
+     "n": 38,
+     "pop": 11700,
+     "county": "Dundee City"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Cheshire East",
+     "rate": 18.6,
+     "n": 79,
+     "pop": 425459
+    },
+    {
+     "name": "Slough",
+     "rate": 22.1,
+     "n": 37,
+     "pop": 167450
+    },
+    {
+     "name": "Barking and Dagenham",
+     "rate": 26.9,
+     "n": 64,
+     "pop": 238295
+    },
+    {
+     "name": "Harrow",
+     "rate": 28.6,
+     "n": 78,
+     "pop": 272612
+    },
+    {
+     "name": "Halton",
+     "rate": 28.8,
+     "n": 38,
+     "pop": 131912
+    }
+   ],
+   "county_top_any": [
+    {
+     "name": "City of London",
+     "rate": 1132.4,
+     "n": 177,
+     "pop": 15631
+    },
+    {
+     "name": "Isles of Scilly",
+     "rate": 522.0,
+     "n": 12,
+     "pop": 2299
+    },
+    {
+     "name": "Westminster",
+     "rate": 214.7,
+     "n": 456,
+     "pop": 212367
+    }
+   ],
+   "T_county_top": [
+    {
+     "name": "Camden",
+     "rate": 36.5,
+     "n": 79,
+     "pop": 216658
+    },
+    {
+     "name": "Southwark",
+     "rate": 13.4,
+     "n": 42,
+     "pop": 312366
+    },
+    {
+     "name": "East Ayrshire",
+     "rate": 13.2,
+     "n": 16,
+     "pop": 121350
+    },
+    {
+     "name": "City of Edinburgh",
+     "rate": 12.4,
+     "n": 66,
+     "pop": 531370
+    },
+    {
+     "name": "Redbridge",
+     "rate": 11.8,
+     "n": 38,
+     "pop": 321829
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 11.8,
+     "n": 77,
+     "pop": 654330
+    },
+    {
+     "name": "Leicester",
+     "rate": 11.7,
+     "n": 45,
+     "pop": 383116
+    },
+    {
+     "name": "Westminster",
+     "rate": 10.8,
+     "n": 23,
+     "pop": 212367
+    },
+    {
+     "name": "Lambeth",
+     "rate": 10.5,
+     "n": 33,
+     "pop": 314298
+    },
+    {
+     "name": "Brent",
+     "rate": 9.9,
+     "n": 35,
+     "pop": 352201
+    }
+   ],
+   "district_share_top": [
+    {
+     "name": "IP13",
+     "county": "Suffolk",
+     "share": 43.6,
+     "n": 17,
+     "of": 39
+    },
+    {
+     "name": "YO19",
+     "county": "York",
+     "share": 39.5,
+     "n": 17,
+     "of": 43
+    },
+    {
+     "name": "BS30",
+     "county": "South Gloucestershire",
+     "share": 38.7,
+     "n": 12,
+     "of": 31
+    },
+    {
+     "name": "DL7",
+     "county": "North Yorkshire",
+     "share": 37.7,
+     "n": 23,
+     "of": 61
+    },
+    {
+     "name": "IP17",
+     "county": "Suffolk",
+     "share": 37.5,
+     "n": 12,
+     "of": 32
+    },
+    {
+     "name": "YO62",
+     "county": "North Yorkshire",
+     "share": 37.3,
+     "n": 22,
+     "of": 59
+    },
+    {
+     "name": "AB41",
+     "county": "Aberdeenshire",
+     "share": 37.1,
+     "n": 13,
+     "of": 35
+    },
+    {
+     "name": "HP22",
+     "county": "Buckinghamshire",
+     "share": 36.6,
+     "n": 15,
+     "of": 41
+    },
+    {
+     "name": "BN18",
+     "county": "West Sussex",
+     "share": 36.4,
+     "n": 16,
+     "of": 44
+    },
+    {
+     "name": "CA8",
+     "county": "Cumberland",
+     "share": 35.5,
+     "n": 11,
+     "of": 31
+    }
+   ],
+   "county_share_top": [
+    {
+     "name": "Wokingham",
+     "share": 25.1,
+     "n": 68
+    },
+    {
+     "name": "North Somerset",
+     "share": 23.9,
+     "n": 109
+    },
+    {
+     "name": "Bath and North East Somerset",
+     "share": 23.7,
+     "n": 125
+    },
+    {
+     "name": "Conwy",
+     "share": 22.7,
+     "n": 103
+    },
+    {
+     "name": "Devon",
+     "share": 22.5,
+     "n": 551
+    }
+   ]
+  },
+  "T_all": {
+   "county_top": [
+    {
+     "name": "Camden",
+     "rate": 358.2,
+     "n": 776,
+     "pop": 216658
+    },
+    {
+     "name": "Southwark",
+     "rate": 200.1,
+     "n": 625,
+     "pop": 312366
+    },
+    {
+     "name": "Blackpool",
+     "rate": 200.0,
+     "n": 287,
+     "pop": 143492
+    },
+    {
+     "name": "Glasgow City",
+     "rate": 171.5,
+     "n": 1122,
+     "pop": 654330
+    },
+    {
+     "name": "Leicester",
+     "rate": 157.7,
+     "n": 604,
+     "pop": 383116
+    },
+    {
+     "name": "Bury",
+     "rate": 152.1,
+     "n": 303,
+     "pop": 199271
+    },
+    {
+     "name": "Liverpool",
+     "rate": 144.3,
+     "n": 733,
+     "pop": 507915
+    },
+    {
+     "name": "Brent",
+     "rate": 142.8,
+     "n": 503,
+     "pop": 352201
+    },
+    {
+     "name": "Westminster",
+     "rate": 139.9,
+     "n": 297,
+     "pop": 212367
+    },
+    {
+     "name": "North East Lincolnshire",
+     "rate": 136.8,
+     "n": 219,
+     "pop": 160101
+    }
+   ],
+   "district_top": [
+    {
+     "name": "M12",
+     "rate": 885.0,
+     "n": 172,
+     "pop": 19434,
+     "county": "Manchester"
+    },
+    {
+     "name": "L1",
+     "rate": 769.2,
+     "n": 89,
+     "pop": 11570,
+     "county": "Liverpool"
+    },
+    {
+     "name": "PE25",
+     "rate": 553.0,
+     "n": 128,
+     "pop": 23145,
+     "county": "Lincolnshire"
+    },
+    {
+     "name": "HD1",
+     "rate": 550.7,
+     "n": 135,
+     "pop": 24516,
+     "county": "Kirklees"
+    },
+    {
+     "name": "DE1",
+     "rate": 529.9,
+     "n": 87,
+     "pop": 16419,
+     "county": "Derby"
+    },
+    {
+     "name": "LE1",
+     "rate": 506.5,
+     "n": 95,
+     "pop": 18755,
+     "county": "Leicester"
+    },
+    {
+     "name": "NE1",
+     "rate": 479.3,
+     "n": 64,
+     "pop": 13352,
+     "county": "Newcastle upon Tyne"
+    },
+    {
+     "name": "NW1",
+     "rate": 459.4,
+     "n": 256,
+     "pop": 55725,
+     "county": "Camden"
+    },
+    {
+     "name": "NG1",
+     "rate": 434.7,
+     "n": 72,
+     "pop": 16562,
+     "county": "Nottingham"
+    },
+    {
+     "name": "SK1",
+     "rate": 426.0,
+     "n": 54,
+     "pop": 12676,
+     "county": "Stockport"
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Wokingham",
+     "rate": 28.6,
+     "n": 54,
+     "pop": 189024
+    },
+    {
+     "name": "Richmond upon Thames",
+     "rate": 36.1,
+     "n": 71,
+     "pop": 196713
+    },
+    {
+     "name": "Bracknell Forest",
+     "rate": 43.9,
+     "n": 58,
+     "pop": 132145
+    },
+    {
+     "name": "Midlothian",
+     "rate": 44.8,
+     "n": 45,
+     "pop": 100390
+    },
+    {
+     "name": "South Gloucestershire",
+     "rate": 45.3,
+     "n": 140,
+     "pop": 308787
+    }
+   ]
+  },
+  "R_all": {
+   "county_top": [
+    {
+     "name": "Westminster",
+     "rate": 1665.0,
+     "n": 3536,
+     "pop": 212367
+    },
+    {
+     "name": "Camden",
+     "rate": 803.1,
+     "n": 1740,
+     "pop": 216658
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "rate": 671.8,
+     "n": 979,
+     "pop": 145734
+    },
+    {
+     "name": "Islington",
+     "rate": 454.2,
+     "n": 1020,
+     "pop": 224551
+    },
+    {
+     "name": "Gwynedd",
+     "rate": 432.3,
+     "n": 520,
+     "pop": 120295
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "rate": 419.5,
+     "n": 798,
+     "pop": 190216
+    },
+    {
+     "name": "City of Edinburgh",
+     "rate": 371.5,
+     "n": 1974,
+     "pop": 531370
+    },
+    {
+     "name": "Wandsworth",
+     "rate": 371.3,
+     "n": 1262,
+     "pop": 339859
+    },
+    {
+     "name": "Richmond upon Thames",
+     "rate": 368.6,
+     "n": 725,
+     "pop": 196713
+    },
+    {
+     "name": "Hackney",
+     "rate": 365.1,
+     "n": 972,
+     "pop": 266241
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Cheshire East",
+     "rate": 79.2,
+     "n": 337,
+     "pop": 425459
+    },
+    {
+     "name": "Halton",
+     "rate": 86.4,
+     "n": 114,
+     "pop": 131912
+    },
+    {
+     "name": "Knowsley",
+     "rate": 92.8,
+     "n": 152,
+     "pop": 163723
+    },
+    {
+     "name": "North Lanarkshire",
+     "rate": 93.9,
+     "n": 323,
+     "pop": 343930
+    },
+    {
+     "name": "Barking and Dagenham",
+     "rate": 98.6,
+     "n": 235,
+     "pop": 238295
+    }
+   ]
+  },
+  "P_all": {
+   "county_top": [
+    {
+     "name": "Powys",
+     "rate": 208.4,
+     "n": 281,
+     "pop": 134843
+    },
+    {
+     "name": "Westmorland and Furness",
+     "rate": 167.7,
+     "n": 388,
+     "pop": 231307
+    },
+    {
+     "name": "Gwynedd",
+     "rate": 139.7,
+     "n": 168,
+     "pop": 120295
+    },
+    {
+     "name": "Pembrokeshire",
+     "rate": 139.1,
+     "n": 175,
+     "pop": 125849
+    },
+    {
+     "name": "Conwy",
+     "rate": 133.7,
+     "n": 153,
+     "pop": 114421
+    },
+    {
+     "name": "Isle of Wight",
+     "rate": 133.5,
+     "n": 188,
+     "pop": 140777
+    },
+    {
+     "name": "Northumberland",
+     "rate": 130.8,
+     "n": 437,
+     "pop": 333975
+    },
+    {
+     "name": "Scottish Borders",
+     "rate": 127.6,
+     "n": 149,
+     "pop": 116800
+    },
+    {
+     "name": "Shropshire",
+     "rate": 125.2,
+     "n": 417,
+     "pop": 333162
+    },
+    {
+     "name": "Calderdale",
+     "rate": 121.0,
+     "n": 255,
+     "pop": 210734
+    }
+   ]
+  },
+  "ratio": {
+   "county_top": [
+    {
+     "name": "North Lanarkshire",
+     "ratio": 1.33,
+     "T": 430,
+     "R": 323
+    },
+    {
+     "name": "Rochdale",
+     "ratio": 1.31,
+     "T": 322,
+     "R": 246
+    },
+    {
+     "name": "Caerphilly",
+     "ratio": 1.06,
+     "T": 207,
+     "R": 196
+    },
+    {
+     "name": "Sunderland",
+     "ratio": 1.01,
+     "T": 374,
+     "R": 369
+    },
+    {
+     "name": "Bury",
+     "ratio": 1.0,
+     "T": 303,
+     "R": 303
+    },
+    {
+     "name": "Barnsley",
+     "ratio": 0.97,
+     "T": 268,
+     "R": 277
+    },
+    {
+     "name": "Barking and Dagenham",
+     "ratio": 0.97,
+     "T": 227,
+     "R": 235
+    },
+    {
+     "name": "Kirklees",
+     "ratio": 0.95,
+     "T": 577,
+     "R": 605
+    },
+    {
+     "name": "Tameside",
+     "ratio": 0.95,
+     "T": 296,
+     "R": 312
+    },
+    {
+     "name": "Stoke-on-Trent",
+     "ratio": 0.92,
+     "T": 329,
+     "R": 356
+    }
+   ],
+   "county_bottom": [
+    {
+     "name": "Westminster",
+     "ratio": 0.08,
+     "T": 297,
+     "R": 3536
+    },
+    {
+     "name": "Kensington and Chelsea",
+     "ratio": 0.09,
+     "T": 85,
+     "R": 979
+    },
+    {
+     "name": "Richmond upon Thames",
+     "ratio": 0.1,
+     "T": 71,
+     "R": 725
+    },
+    {
+     "name": "Wandsworth",
+     "ratio": 0.16,
+     "T": 197,
+     "R": 1262
+    },
+    {
+     "name": "Merton",
+     "ratio": 0.19,
+     "T": 111,
+     "R": 594
+    },
+    {
+     "name": "Hammersmith and Fulham",
+     "ratio": 0.2,
+     "T": 159,
+     "R": 798
+    },
+    {
+     "name": "Powys",
+     "ratio": 0.23,
+     "T": 111,
+     "R": 474
+    },
+    {
+     "name": "Isle of Wight",
+     "ratio": 0.24,
+     "T": 99,
+     "R": 418
+    },
+    {
+     "name": "Havering",
+     "ratio": 0.24,
+     "T": 177,
+     "R": 741
+    },
+    {
+     "name": "Islington",
+     "ratio": 0.24,
+     "T": 246,
+     "R": 1020
+    }
+   ],
+   "uk": 0.45,
+   "district_top": [
+    {
+     "name": "M12",
+     "county": "Manchester",
+     "ratio": 3.66,
+     "T": 172,
+     "R": 47
+    },
+    {
+     "name": "S72",
+     "county": "Barnsley",
+     "ratio": 2.36,
+     "T": 26,
+     "R": 11
+    },
+    {
+     "name": "DD3",
+     "county": "Angus",
+     "ratio": 2.36,
+     "T": 52,
+     "R": 22
+    },
+    {
+     "name": "HD4",
+     "county": "Kirklees",
+     "ratio": 2.31,
+     "T": 30,
+     "R": 13
+    },
+    {
+     "name": "L11",
+     "county": "Liverpool",
+     "ratio": 2.31,
+     "T": 30,
+     "R": 13
+    },
+    {
+     "name": "PL2",
+     "county": "Plymouth",
+     "ratio": 2.27,
+     "T": 25,
+     "R": 11
+    },
+    {
+     "name": "ST7",
+     "county": "Cheshire East",
+     "ratio": 2.21,
+     "T": 42,
+     "R": 19
+    },
+    {
+     "name": "BD2",
+     "county": "Bradford",
+     "ratio": 2.21,
+     "T": 42,
+     "R": 19
+    },
+    {
+     "name": "L4",
+     "county": "Liverpool",
+     "ratio": 2.16,
+     "T": 80,
+     "R": 37
+    },
+    {
+     "name": "HU9",
+     "county": "Kingston upon Hull, City of",
+     "ratio": 2.12,
+     "T": 70,
+     "R": 33
+    }
+   ],
+   "district_bottom": [
+    {
+     "name": "OX25",
+     "county": "Oxfordshire",
+     "ratio": 0.0,
+     "T": 0,
+     "R": 17
+    },
+    {
+     "name": "TN3",
+     "county": "East Sussex",
+     "ratio": 0.0,
+     "T": 0,
+     "R": 18
+    },
+    {
+     "name": "CM4",
+     "county": "Essex",
+     "ratio": 0.0,
+     "T": 0,
+     "R": 20
+    },
+    {
+     "name": "SW13",
+     "county": "Richmond upon Thames",
+     "ratio": 0.0,
+     "T": 0,
+     "R": 49
+    },
+    {
+     "name": "CB3",
+     "county": "Cambridgeshire",
+     "ratio": 0.02,
+     "T": 1,
+     "R": 44
+    },
+    {
+     "name": "SW3",
+     "county": "Kensington and Chelsea",
+     "ratio": 0.03,
+     "T": 5,
+     "R": 184
+    },
+    {
+     "name": "EX6",
+     "county": "Devon",
+     "ratio": 0.03,
+     "T": 1,
+     "R": 34
+    },
+    {
+     "name": "HG3",
+     "county": "North Yorkshire",
+     "ratio": 0.04,
+     "T": 2,
+     "R": 55
+    },
+    {
+     "name": "HG2",
+     "county": "North Yorkshire",
+     "ratio": 0.04,
+     "T": 3,
+     "R": 80
+    },
+    {
+     "name": "HS2",
+     "county": "Na h-Eileanan Siar",
+     "ratio": 0.04,
+     "T": 1,
+     "R": 26
+    }
+   ]
+  },
+  "lead_family_counts": {
+   "fish_chips": 83,
+   "pizza": 58,
+   "chinese": 53,
+   "chicken": 17,
+   "indian": 6,
+   "burger": 1
+  }
+ },
+ "headline": {
+  "people_per_T": 1104,
+  "fish_chips_TR": 8651,
+  "indian_TR": 8212,
+  "chinese_TR": 8854,
+  "pizza_TR": 9266,
+  "kebab_TR": 3831,
+  "chicken_TR": 5217,
+  "n_counties_T_gt_R": 4,
+  "n_counties_T_gt_R_any": 5
+ },
+ "evenness_cv": {
+  "fish_chips": 0.4,
+  "indian": 0.37,
+  "chinese": 0.36,
+  "pizza": 0.4,
+  "kebab": 0.5,
+  "chicken": 0.74,
+  "burger": 0.59
+ },
+ "district_lead": {
+  "n": 2124,
+  "ties": 573,
+  "counts": {
+   "fish_chips": 556,
+   "chinese": 390,
+   "indian": 61,
+   "pizza": 423,
+   "kebab": 39,
+   "chicken": 82
+  }
+ },
+ "named_districts": {
+  "PE25": {
+   "pop": 23145,
+   "county": "Lincolnshire",
+   "fish_chips": 129.6,
+   "indian": 30.2,
+   "chinese": 64.8,
+   "pizza": 47.5,
+   "kebab": 21.6,
+   "chicken": 17.3
+  },
+  "YO15": {
+   "pop": 13281,
+   "county": "East Riding of Yorkshire",
+   "fish_chips": 90.4,
+   "indian": 45.2,
+   "chinese": 37.6,
+   "pizza": 22.6,
+   "kebab": 7.5,
+   "chicken": 0.0
+  },
+  "YO14": {
+   "pop": 11472,
+   "county": "North Yorkshire",
+   "fish_chips": 69.7,
+   "indian": 17.4,
+   "chinese": 26.2,
+   "pizza": 26.2,
+   "kebab": 0.0,
+   "chicken": 8.7
+  },
+  "FY1": {
+   "pop": 34436,
+   "county": "Blackpool",
+   "fish_chips": 69.7,
+   "indian": 26.1,
+   "chinese": 29.0,
+   "pizza": 46.5,
+   "kebab": 14.5,
+   "chicken": 14.5
+  },
+  "PA34": {
+   "pop": 10143,
+   "county": "Argyll and Bute",
+   "fish_chips": 49.3,
+   "indian": 19.7,
+   "chinese": 9.9,
+   "pizza": 29.6,
+   "kebab": 19.7,
+   "chicken": 0.0
+  },
+  "NR29": {
+   "pop": 21066,
+   "county": "Norfolk",
+   "fish_chips": 52.2,
+   "indian": 9.5,
+   "chinese": 19.0,
+   "pizza": 0.0,
+   "kebab": 19.0,
+   "chicken": 0.0
+  },
+  "DN35": {
+   "pop": 32616,
+   "county": "North East Lincolnshire",
+   "fish_chips": 58.3,
+   "indian": 3.1,
+   "chinese": 30.7,
+   "pizza": 30.7,
+   "kebab": 9.2,
+   "chicken": 3.1
+  },
+  "TW3": {
+   "pop": 47894,
+   "county": "Hounslow",
+   "fish_chips": 4.2,
+   "indian": 91.9,
+   "chinese": 6.3,
+   "pizza": 12.5,
+   "kebab": 20.9,
+   "chicken": 20.9
+  },
+  "UB1": {
+   "pop": 43924,
+   "county": "Ealing",
+   "fish_chips": 4.6,
+   "indian": 72.9,
+   "chinese": 2.3,
+   "pizza": 20.5,
+   "kebab": 13.7,
+   "chicken": 20.5
+  },
+  "B5": {
+   "pop": 13122,
+   "county": "Birmingham",
+   "fish_chips": 15.2,
+   "indian": 38.1,
+   "chinese": 182.9,
+   "pizza": 22.9,
+   "kebab": 15.2,
+   "chicken": 76.2
+  },
+  "M1": {
+   "pop": 11795,
+   "county": "Manchester",
+   "fish_chips": 17.0,
+   "indian": 25.4,
+   "chinese": 144.1,
+   "pizza": 76.3,
+   "kebab": 33.9,
+   "chicken": 84.8
+  },
+  "L1": {
+   "pop": 11570,
+   "county": "Liverpool",
+   "fish_chips": 0.0,
+   "indian": 34.6,
+   "chinese": 112.4,
+   "pizza": 86.4,
+   "kebab": 60.5,
+   "chicken": 95.1
+  }
+ },
+ "chicken_top10_london": 10,
+ "kebab_top3_london": 3,
+ "lat_rho": {
+  "fish_chips": 0.15,
+  "indian": 0.01,
+  "chinese": 0.4,
+  "pizza": -0.05,
+  "kebab": -0.41,
+  "chicken": -0.38
+ },
+ "chains": {
+  "pizza": {
+   "n_family": 9266,
+   "Domino's": {
+    "n": 1318,
+    "share": 14.2
+   },
+   "Papa John's": {
+    "n": 423,
+    "share": 4.6
+   },
+   "Pizza Hut": {
+    "n": 397,
+    "share": 4.3
+   },
+   "big_share": 23.1
+  },
+  "chicken": {
+   "n_family": 5217,
+   "KFC": {
+    "n": 975,
+    "share": 18.7
+   },
+   "Nando's": {
+    "n": 486,
+    "share": 9.3
+   },
+   "Chicken Cottage": {
+    "n": 71,
+    "share": 1.4
+   },
+   "Dixy": {
+    "n": 143,
+    "share": 2.7
+   },
+   "Morley's": {
+    "n": 142,
+    "share": 2.7
+   },
+   "Popeyes": {
+    "n": 137,
+    "share": 2.6
+   },
+   "Wingstop": {
+    "n": 101,
+    "share": 1.9
+   },
+   "big_share": 39.4
+  },
+  "burger": {
+   "n_family": 3617,
+   "McDonald's": {
+    "n": 1463,
+    "share": 40.4
+   },
+   "Burger King": {
+    "n": 543,
+    "share": 15.0
+   },
+   "Five Guys": {
+    "n": 177,
+    "share": 4.9
+   },
+   "big_share": 60.4
+  },
+  "sandwich": {
+   "n_family": 9504,
+   "Greggs": {
+    "n": 1211,
+    "share": 12.7
+   },
+   "Subway": {
+    "n": 1930,
+    "share": 20.3
+   },
+   "big_share": 33.0
+  },
+  "cafe": {
+   "n_family": 35373,
+   "Costa": {
+    "n": 2576,
+    "share": 7.3
+   },
+   "Starbucks": {
+    "n": 1334,
+    "share": 3.8
+   },
+   "big_share": 11.1
+  },
+  "fish_chips": {
+   "n_family": 8651,
+   "chain_n": 48,
+   "chain_share": 0.6
+  }
+ },
+ "hygiene": {
+  "by_type_all_uk": {
+   "1": {
+    "n_rated": 119563,
+    "mean": 4.6,
+    "pct5": 75.6,
+    "pct_le2": 3.6,
+    "n_fhis": 10507,
+    "fhis_pass_pct": 90.6
+   },
+   "5": {
+    "n_rated": 36011,
+    "mean": 4.84,
+    "pct5": 88.2,
+    "pct_le2": 0.7,
+    "n_fhis": 3954,
+    "fhis_pass_pct": 97.7
+   },
+   "7": {
+    "n_rated": 2611,
+    "mean": 4.76,
+    "pct5": 85.0,
+    "pct_le2": 2.0,
+    "n_fhis": 297,
+    "fhis_pass_pct": 94.3
+   },
+   "14": {
+    "n_rated": 409,
+    "mean": 4.74,
+    "pct5": 84.6,
+    "pct_le2": 3.2,
+    "n_fhis": 19,
+    "fhis_pass_pct": 94.7
+   },
+   "4613": {
+    "n_rated": 88697,
+    "mean": 4.51,
+    "pct5": 71.5,
+    "pct_le2": 5.2,
+    "n_fhis": 7625,
+    "fhis_pass_pct": 89.7
+   },
+   "7838": {
+    "n_rated": 1244,
+    "mean": 4.89,
+    "pct5": 91.3,
+    "pct_le2": 0.2,
+    "n_fhis": 125,
+    "fhis_pass_pct": 97.6
+   },
+   "7839": {
+    "n_rated": 7775,
+    "mean": 4.77,
+    "pct5": 84.5,
+    "pct_le2": 1.9,
+    "n_fhis": 1457,
+    "fhis_pass_pct": 93.3
+   },
+   "7840": {
+    "n_rated": 14252,
+    "mean": 4.79,
+    "pct5": 87.4,
+    "pct_le2": 2.2,
+    "n_fhis": 1243,
+    "fhis_pass_pct": 97.3
+   },
+   "7841": {
+    "n_rated": 56798,
+    "mean": 4.85,
+    "pct5": 89.2,
+    "pct_le2": 1.0,
+    "n_fhis": 4956,
+    "fhis_pass_pct": 95.1
+   },
+   "7842": {
+    "n_rated": 10817,
+    "mean": 4.79,
+    "pct5": 85.2,
+    "pct_le2": 1.3,
+    "n_fhis": 2308,
+    "fhis_pass_pct": 93.0
+   },
+   "7843": {
+    "n_rated": 43940,
+    "mean": 4.67,
+    "pct5": 77.2,
+    "pct_le2": 2.3,
+    "n_fhis": 3605,
+    "fhis_pass_pct": 93.9
+   },
+   "7844": {
+    "n_rated": 52151,
+    "mean": 4.34,
+    "pct5": 61.4,
+    "pct_le2": 5.7,
+    "n_fhis": 5384,
+    "fhis_pass_pct": 86.9
+   },
+   "7845": {
+    "n_rated": 30871,
+    "mean": 4.9,
+    "pct5": 92.2,
+    "pct_le2": 0.4,
+    "n_fhis": 3000,
+    "fhis_pass_pct": 97.9
+   },
+   "7846": {
+    "n_rated": 24016,
+    "mean": 4.83,
+    "pct5": 88.4,
+    "pct_le2": 1.4,
+    "n_fhis": 1841,
+    "fhis_pass_pct": 97.2
+   }
+  },
+  "by_family_T": {
+   "fish_chips": {
+    "n_rated": 6650,
+    "mean": 4.44,
+    "pct5": 65.4,
+    "pct_le2": 4.1,
+    "pct0": 0.2,
+    "n_fhis": 432,
+    "fhis_pass_pct": 87.3
+   },
+   "indian": {
+    "n_rated": 2785,
+    "mean": 3.99,
+    "pct5": 44.7,
+    "pct_le2": 9.7,
+    "pct0": 0.6,
+    "n_fhis": 425,
+    "fhis_pass_pct": 84.2
+   },
+   "chinese": {
+    "n_rated": 5948,
+    "mean": 4.15,
+    "pct5": 50.0,
+    "pct_le2": 6.5,
+    "pct0": 0.4,
+    "n_fhis": 686,
+    "fhis_pass_pct": 84.7
+   },
+   "pizza": {
+    "n_rated": 6270,
+    "mean": 4.41,
+    "pct5": 65.4,
+    "pct_le2": 4.7,
+    "pct0": 0.3,
+    "n_fhis": 301,
+    "fhis_pass_pct": 90.0
+   },
+   "kebab": {
+    "n_rated": 2318,
+    "mean": 4.16,
+    "pct5": 52.1,
+    "pct_le2": 7.3,
+    "pct0": 0.5,
+    "n_fhis": 182,
+    "fhis_pass_pct": 74.2
+   },
+   "chicken": {
+    "n_rated": 2408,
+    "mean": 4.17,
+    "pct5": 54.6,
+    "pct_le2": 8.3,
+    "pct0": 0.6,
+    "n_fhis": 95,
+    "fhis_pass_pct": 88.4
+   },
+   "burger": {
+    "n_rated": 726,
+    "mean": 4.51,
+    "pct5": 71.3,
+    "pct_le2": 4.3,
+    "pct0": 0.6,
+    "n_fhis": 60,
+    "fhis_pass_pct": 86.7
+   },
+   "thai": {
+    "n_rated": 241,
+    "mean": 4.31,
+    "pct5": 60.6,
+    "pct_le2": 7.1,
+    "pct0": 0.0,
+    "n_fhis": 18,
+    "fhis_pass_pct": 83.3
+   },
+   "japanese": {
+    "n_rated": 811,
+    "mean": 4.78,
+    "pct5": 85.6,
+    "pct_le2": 1.4,
+    "pct0": 0.1,
+    "n_fhis": 51,
+    "fhis_pass_pct": 98.0
+   },
+   "asian_other": {
+    "n_rated": 418,
+    "mean": 4.57,
+    "pct5": 75.6,
+    "pct_le2": 4.3,
+    "pct0": 0.0,
+    "n_fhis": 48,
+    "fhis_pass_pct": 89.6
+   },
+   "italian": {
+    "n_rated": 251,
+    "mean": 4.54,
+    "pct5": 70.5,
+    "pct_le2": 4.0,
+    "pct0": 0.4,
+    "n_fhis": 40,
+    "fhis_pass_pct": 92.5
+   },
+   "caribbean": {
+    "n_rated": 274,
+    "mean": 4.17,
+    "pct5": 50.4,
+    "pct_le2": 6.6,
+    "pct0": 0.4,
+    "n_fhis": 5,
+    "fhis_pass_pct": 100.0
+   },
+   "mexican": {
+    "n_rated": 164,
+    "mean": 4.36,
+    "pct5": 62.8,
+    "pct_le2": 6.1,
+    "pct0": 0.6,
+    "n_fhis": 13,
+    "fhis_pass_pct": 92.3
+   },
+   "greek_med": {
+    "n_rated": 258,
+    "mean": 4.29,
+    "pct5": 58.9,
+    "pct_le2": 5.8,
+    "pct0": 0.8,
+    "n_fhis": 15,
+    "fhis_pass_pct": 100.0
+   },
+   "sandwich": {
+    "n_rated": 3242,
+    "mean": 4.7,
+    "pct5": 81.0,
+    "pct_le2": 2.5,
+    "pct0": 0.2,
+    "n_fhis": 487,
+    "fhis_pass_pct": 92.4
+   },
+   "cafe": {
+    "n_rated": 2291,
+    "mean": 4.56,
+    "pct5": 73.4,
+    "pct_le2": 4.1,
+    "pct0": 0.5,
+    "n_fhis": 283,
+    "fhis_pass_pct": 89.0
+   },
+   "other": {
+    "n_rated": 17096,
+    "mean": 4.31,
+    "pct5": 60.1,
+    "pct_le2": 6.1,
+    "pct0": 0.4,
+    "n_fhis": 2243,
+    "fhis_pass_pct": 86.6
+   }
+  },
+  "by_family_TR": {
+   "fish_chips": {
+    "n_rated": 7780,
+    "mean": 4.44,
+    "pct5": 66.1,
+    "pct_le2": 4.2,
+    "pct0": 0.2,
+    "n_fhis": 509,
+    "fhis_pass_pct": 87.4
+   },
+   "indian": {
+    "n_rated": 6788,
+    "mean": 4.1,
+    "pct5": 49.0,
+    "pct_le2": 8.5,
+    "pct0": 0.6,
+    "n_fhis": 688,
+    "fhis_pass_pct": 83.4
+   },
+   "chinese": {
+    "n_rated": 7619,
+    "mean": 4.15,
+    "pct5": 50.7,
+    "pct_le2": 7.0,
+    "pct0": 0.4,
+    "n_fhis": 860,
+    "fhis_pass_pct": 83.8
+   },
+   "pizza": {
+    "n_rated": 8224,
+    "mean": 4.45,
+    "pct5": 68.0,
+    "pct_le2": 4.5,
+    "pct0": 0.3,
+    "n_fhis": 410,
+    "fhis_pass_pct": 92.2
+   },
+   "kebab": {
+    "n_rated": 3306,
+    "mean": 4.19,
+    "pct5": 54.4,
+    "pct_le2": 7.4,
+    "pct0": 0.5,
+    "n_fhis": 231,
+    "fhis_pass_pct": 74.0
+   },
+   "chicken": {
+    "n_rated": 4628,
+    "mean": 4.39,
+    "pct5": 66.5,
+    "pct_le2": 6.1,
+    "pct0": 0.6,
+    "n_fhis": 241,
+    "fhis_pass_pct": 91.7
+   },
+   "burger": {
+    "n_rated": 3168,
+    "mean": 4.77,
+    "pct5": 85.5,
+    "pct_le2": 2.0,
+    "pct0": 0.2,
+    "n_fhis": 210,
+    "fhis_pass_pct": 94.8
+   },
+   "thai": {
+    "n_rated": 1165,
+    "mean": 4.33,
+    "pct5": 59.5,
+    "pct_le2": 5.9,
+    "pct0": 0.3,
+    "n_fhis": 55,
+    "fhis_pass_pct": 85.5
+   },
+   "japanese": {
+    "n_rated": 1754,
+    "mean": 4.68,
+    "pct5": 79.2,
+    "pct_le2": 2.4,
+    "pct0": 0.1,
+    "n_fhis": 105,
+    "fhis_pass_pct": 93.3
+   },
+   "asian_other": {
+    "n_rated": 1064,
+    "mean": 4.45,
+    "pct5": 69.1,
+    "pct_le2": 5.5,
+    "pct0": 0.4,
+    "n_fhis": 87,
+    "fhis_pass_pct": 92.0
+   },
+   "italian": {
+    "n_rated": 1603,
+    "mean": 4.63,
+    "pct5": 76.2,
+    "pct_le2": 3.1,
+    "pct0": 0.1,
+    "n_fhis": 150,
+    "fhis_pass_pct": 93.3
+   },
+   "caribbean": {
+    "n_rated": 674,
+    "mean": 4.2,
+    "pct5": 52.8,
+    "pct_le2": 6.4,
+    "pct0": 0.4,
+    "n_fhis": 14,
+    "fhis_pass_pct": 78.6
+   },
+   "mexican": {
+    "n_rated": 592,
+    "mean": 4.66,
+    "pct5": 78.4,
+    "pct_le2": 2.5,
+    "pct0": 0.2,
+    "n_fhis": 40,
+    "fhis_pass_pct": 90.0
+   },
+   "greek_med": {
+    "n_rated": 853,
+    "mean": 4.35,
+    "pct5": 61.8,
+    "pct_le2": 5.5,
+    "pct0": 0.2,
+    "n_fhis": 41,
+    "fhis_pass_pct": 85.4
+   },
+   "sandwich": {
+    "n_rated": 8000,
+    "mean": 4.7,
+    "pct5": 80.7,
+    "pct_le2": 2.4,
+    "pct0": 0.2,
+    "n_fhis": 827,
+    "fhis_pass_pct": 92.4
+   },
+   "cafe": {
+    "n_rated": 30306,
+    "mean": 4.64,
+    "pct5": 77.6,
+    "pct_le2": 3.0,
+    "pct0": 0.2,
+    "n_fhis": 2835,
+    "fhis_pass_pct": 91.1
+   },
+   "other": {
+    "n_rated": 84190,
+    "mean": 4.55,
+    "pct5": 73.2,
+    "pct_le2": 4.0,
+    "pct0": 0.3,
+    "n_fhis": 8588,
+    "fhis_pass_pct": 89.6
+   }
+  },
+  "by_group": {
+   "T": {
+    "n_rated": 52151,
+    "mean": 4.34,
+    "pct5": 61.4,
+    "pct_le2": 5.7,
+    "pct0": 0.4,
+    "n_fhis": 5384,
+    "fhis_pass_pct": 86.9
+   },
+   "R": {
+    "n_rated": 119563,
+    "mean": 4.6,
+    "pct5": 75.6,
+    "pct_le2": 3.6,
+    "pct0": 0.2,
+    "n_fhis": 10507,
+    "fhis_pass_pct": 90.6
+   },
+   "P": {
+    "n_rated": 43940,
+    "mean": 4.67,
+    "pct5": 77.2,
+    "pct_le2": 2.3,
+    "pct0": 0.1,
+    "n_fhis": 3605,
+    "fhis_pass_pct": 93.9
+   },
+   "M": {
+    "n_rated": 24016,
+    "mean": 4.83,
+    "pct5": 88.4,
+    "pct_le2": 1.4,
+    "pct0": 0.1,
+    "n_fhis": 1841,
+    "fhis_pass_pct": 97.2
+   }
+  },
+  "chain_vs_indep_T": {
+   "chain": {
+    "n_rated": 5986,
+    "mean": 4.75,
+    "pct5": 84.4,
+    "pct_le2": 1.9,
+    "pct0": 0.1,
+    "n_fhis": 553,
+    "fhis_pass_pct": 97.1
+   },
+   "independent": {
+    "n_rated": 46165,
+    "mean": 4.28,
+    "pct5": 58.4,
+    "pct_le2": 6.1,
+    "pct0": 0.4,
+    "n_fhis": 4831,
+    "fhis_pass_pct": 85.8
+   }
+  },
+  "by_nation_T": {
+   "England": {
+    "n_rated": 47536,
+    "mean": 4.34,
+    "pct5": 61.9,
+    "pct_le2": 5.8,
+    "pct0": 0.4,
+    "n_fhis": 0
+   },
+   "Wales": {
+    "n_rated": 2916,
+    "mean": 4.25,
+    "pct5": 54.3,
+    "pct_le2": 4.7,
+    "pct0": 0.2,
+    "n_fhis": 0
+   },
+   "Northern Ireland": {
+    "n_rated": 1699,
+    "mean": 4.37,
+    "pct5": 60.2,
+    "pct_le2": 4.0,
+    "pct0": 0.0,
+    "n_fhis": 0
+   },
+   "Scotland": {
+    "n_rated": 0,
+    "n_fhis": 5384,
+    "fhis_pass_pct": 86.9
+   }
+  },
+  "by_nation_R": {
+   "England": {
+    "n_rated": 109830,
+    "mean": 4.6,
+    "pct5": 75.7,
+    "pct_le2": 3.7,
+    "pct0": 0.2,
+    "n_fhis": 0
+   },
+   "Wales": {
+    "n_rated": 6394,
+    "mean": 4.58,
+    "pct5": 73.0,
+    "pct_le2": 2.5,
+    "pct0": 0.1,
+    "n_fhis": 0
+   },
+   "Northern Ireland": {
+    "n_rated": 3339,
+    "mean": 4.71,
+    "pct5": 79.3,
+    "pct_le2": 1.6,
+    "pct0": 0.0,
+    "n_fhis": 0
+   },
+   "Scotland": {
+    "n_rated": 0,
+    "n_fhis": 10507,
+    "fhis_pass_pct": 90.6
+   }
+  }
+ },
+ "osm": {
+  "n_osm": 82379,
+  "n_osm_named": 80631,
+  "n_osm_cuisine": 61190,
+  "pct_osm_cuisine": 74.3,
+  "n_matched": 40512,
+  "n_matched_family": 30643,
+  "n_both": 21351,
+  "agree_pct": 91.7,
+  "classifier_other_with_osm_family": 9292,
+  "recall_pct": 63.9,
+  "per_family": {
+   "fish_chips": {
+    "n_classified": 3032,
+    "precision_pct": 95.5,
+    "n_osm": 3795,
+    "recall_pct": 76.3
+   },
+   "indian": {
+    "n_classified": 2559,
+    "precision_pct": 95.1,
+    "n_osm": 4125,
+    "recall_pct": 59.0
+   },
+   "chinese": {
+    "n_classified": 3520,
+    "precision_pct": 93.6,
+    "n_osm": 5284,
+    "recall_pct": 62.4
+   },
+   "pizza": {
+    "n_classified": 3203,
+    "precision_pct": 92.0,
+    "n_osm": 3653,
+    "recall_pct": 80.7
+   },
+   "kebab": {
+    "n_classified": 1137,
+    "precision_pct": 84.1,
+    "n_osm": 1663,
+    "recall_pct": 57.5
+   },
+   "chicken": {
+    "n_classified": 1636,
+    "precision_pct": 93.4,
+    "n_osm": 1891,
+    "recall_pct": 80.8
+   },
+   "burger": {
+    "n_classified": 972,
+    "precision_pct": 98.8,
+    "n_osm": 1742,
+    "recall_pct": 55.1
+   },
+   "thai": {
+    "n_classified": 482,
+    "precision_pct": 95.6,
+    "n_osm": 675,
+    "recall_pct": 68.3
+   },
+   "japanese": {
+    "n_classified": 567,
+    "precision_pct": 75.0,
+    "n_osm": 753,
+    "recall_pct": 56.4
+   },
+   "asian_other": {
+    "n_classified": 241,
+    "precision_pct": 85.1,
+    "n_osm": 1056,
+    "recall_pct": 19.4
+   },
+   "italian": {
+    "n_classified": 565,
+    "precision_pct": 87.8,
+    "n_osm": 1557,
+    "recall_pct": 31.9
+   },
+   "caribbean": {
+    "n_classified": 118,
+    "precision_pct": 97.5,
+    "n_osm": 298,
+    "recall_pct": 38.6
+   },
+   "mexican": {
+    "n_classified": 221,
+    "precision_pct": 96.8,
+    "n_osm": 325,
+    "recall_pct": 65.8
+   },
+   "greek_med": {
+    "n_classified": 198,
+    "precision_pct": 83.8,
+    "n_osm": 793,
+    "recall_pct": 20.9
+   },
+   "sandwich": {
+    "n_classified": 2500,
+    "precision_pct": 93.7,
+    "n_osm": 2674,
+    "recall_pct": 87.6
+   },
+   "cafe": {
+    "n_classified": 400,
+    "precision_pct": 36.5,
+    "n_osm": 359,
+    "recall_pct": 40.7
+   }
+  },
+  "other_breakdown": {
+   "chinese": 1782,
+   "indian": 1619,
+   "italian": 953,
+   "fish_chips": 794,
+   "kebab": 565,
+   "greek_med": 546,
+   "pizza": 532,
+   "burger": 524
+  },
+  "rho_district": {
+   "fish_chips": 0.46,
+   "indian": 0.4,
+   "chinese": 0.42,
+   "pizza": 0.6,
+   "kebab": 0.53,
+   "chicken": 0.74
+  },
+  "rho_county": {
+   "fish_chips": 0.52,
+   "indian": 0.44,
+   "chinese": 0.45,
+   "pizza": 0.57,
+   "kebab": 0.65,
+   "chicken": 0.86
+  }
+ },
+ "accuracy": {
+  "A": {
+   "all": {
+    "n": 450,
+    "n_classified": 247,
+    "classified_pct": 54.9,
+    "precision_pct": 98.4,
+    "precision_ci": [
+     95.9,
+     99.4
+    ],
+    "n_known": 285,
+    "known_pct": 63.3,
+    "recall_pct": 85.3,
+    "recall_ci": [
+     80.7,
+     88.9
+    ],
+    "false_other": 41,
+    "wrong_family": 1,
+    "named_unknown_but_classified": 3
+   },
+   "T": {
+    "n": 300,
+    "n_classified": 189,
+    "classified_pct": 63.0,
+    "precision_pct": 97.9,
+    "precision_ci": [
+     94.7,
+     99.2
+    ],
+    "n_known": 215,
+    "known_pct": 71.7,
+    "recall_pct": 86.0,
+    "recall_ci": [
+     80.8,
+     90.0
+    ],
+    "false_other": 29,
+    "wrong_family": 1,
+    "named_unknown_but_classified": 3
+   },
+   "R": {
+    "n": 150,
+    "n_classified": 58,
+    "classified_pct": 38.7,
+    "precision_pct": 100.0,
+    "precision_ci": [
+     93.8,
+     100.0
+    ],
+    "n_known": 70,
+    "known_pct": 46.7,
+    "recall_pct": 82.9,
+    "recall_ci": [
+     72.4,
+     89.9
+    ],
+    "false_other": 12,
+    "wrong_family": 0,
+    "named_unknown_but_classified": 0
+   },
+   "errors": [
+    {
+     "name": "Thai style crapes",
+     "classifier": "Thai",
+     "checked": "cafe"
+    },
+    {
+     "name": "Golden Bird",
+     "classifier": "Chinese",
+     "checked": "unknown"
+    },
+    {
+     "name": "Spicy Twist",
+     "classifier": "Indian and curry",
+     "checked": "unknown"
+    },
+    {
+     "name": "Cork & Spice",
+     "classifier": "Indian and curry",
+     "checked": "unknown"
+    }
+   ],
+   "missed": [
+    {
+     "name": "Superfry",
+     "checked": "fish_chips"
+    },
+    {
+     "name": "Graveleys Elland Road",
+     "checked": "fish_chips"
+    },
+    {
+     "name": "Pak Lok",
+     "checked": "chinese"
+    },
+    {
+     "name": "Katie's Taties",
+     "checked": "sandwich"
+    },
+    {
+     "name": "Jam Rock",
+     "checked": "caribbean"
+    },
+    {
+     "name": "Wafflemeister",
+     "checked": "cafe"
+    },
+    {
+     "name": "Chopped Cheese Factory",
+     "checked": "sandwich"
+    },
+    {
+     "name": "Topkapi Grill",
+     "checked": "kebab"
+    },
+    {
+     "name": "Karadenizpide ltd",
+     "checked": "kebab"
+    },
+    {
+     "name": "Shimlas",
+     "checked": "indian"
+    },
+    {
+     "name": "Cuban Scran",
+     "checked": "caribbean"
+    },
+    {
+     "name": "The Dawson Pie Company",
+     "checked": "sandwich"
+    },
+    {
+     "name": "Attock Roti Junction",
+     "checked": "indian"
+    },
+    {
+     "name": "Viet Nam",
+     "checked": "asian_other"
+    },
+    {
+     "name": "Little Big Sicily",
+     "checked": "italian|pizza"
+    },
+    {
+     "name": "Kem's Soda Shack",
+     "checked": "cafe"
+    },
+    {
+     "name": "Peri Cottage",
+     "checked": "chicken"
+    },
+    {
+     "name": "Eight Fortunes",
+     "checked": "chinese"
+    },
+    {
+     "name": "Rainbow Palace",
+     "checked": "chinese"
+    },
+    {
+     "name": "Colombo Express",
+     "checked": "indian"
+    },
+    {
+     "name": "Hou Wei",
+     "checked": "chinese"
+    },
+    {
+     "name": "Asia Garden",
+     "checked": "asian_other|chinese"
+    },
+    {
+     "name": "Salumeria Mariuccia",
+     "checked": "italian"
+    },
+    {
+     "name": "Nihao Takeaway",
+     "checked": "chinese"
+    },
+    {
+     "name": "Tokies Deserts",
+     "checked": "cafe"
+    },
+    {
+     "name": "Cornerwich Takeaway",
+     "checked": "sandwich"
+    },
+    {
+     "name": "Buttilicious",
+     "checked": "sandwich"
+    },
+    {
+     "name": "The Bread Cartel",
+     "checked": "sandwich"
+    },
+    {
+     "name": "PUCCINO'S",
+     "checked": "cafe"
+    },
+    {
+     "name": "Panaderia",
+     "checked": "sandwich"
+    },
+    {
+     "name": "The Cheese & Pickle",
+     "checked": "sandwich"
+    },
+    {
+     "name": "New Manzil Restaurant",
+     "checked": "indian"
+    },
+    {
+     "name": "Mooboo Worthing",
+     "checked": "cafe|asian_other"
+    },
+    {
+     "name": "Charles Artisan Bread",
+     "checked": "sandwich"
+    },
+    {
+     "name": "Forni Kitchen Tower Hill",
+     "checked": "italian|pizza"
+    },
+    {
+     "name": "Ki Khana",
+     "checked": "indian"
+    },
+    {
+     "name": "Peggotty's Tea Shoppe",
+     "checked": "cafe"
+    },
+    {
+     "name": "Zambrero",
+     "checked": "mexican"
+    },
+    {
+     "name": "Ganges Brasserie",
+     "checked": "indian"
+    },
+    {
+     "name": "Morellis / Mauds Carnlough",
+     "checked": "cafe"
+    },
+    {
+     "name": "Brewed Awakening",
+     "checked": "cafe"
+    }
+   ]
+  },
+  "B": {
+   "all": {
+    "n": 300,
+    "n_classified": 183,
+    "classified_pct": 61.0,
+    "precision_pct": 96.7,
+    "precision_ci": [
+     93.0,
+     98.5
+    ],
+    "n_known": 196,
+    "known_pct": 65.3,
+    "recall_pct": 90.3,
+    "recall_ci": [
+     85.4,
+     93.7
+    ],
+    "false_other": 18,
+    "wrong_family": 1,
+    "named_unknown_but_classified": 5
+   },
+   "T": {
+    "n": 200,
+    "n_classified": 134,
+    "classified_pct": 67.0,
+    "precision_pct": 97.0,
+    "precision_ci": [
+     92.6,
+     98.8
+    ],
+    "n_known": 145,
+    "known_pct": 72.5,
+    "recall_pct": 89.7,
+    "recall_ci": [
+     83.6,
+     93.6
+    ],
+    "false_other": 15,
+    "wrong_family": 0,
+    "named_unknown_but_classified": 4
+   },
+   "R": {
+    "n": 100,
+    "n_classified": 49,
+    "classified_pct": 49.0,
+    "precision_pct": 95.9,
+    "precision_ci": [
+     86.3,
+     98.9
+    ],
+    "n_known": 51,
+    "known_pct": 51.0,
+    "recall_pct": 92.2,
+    "recall_ci": [
+     81.5,
+     96.9
+    ],
+    "false_other": 3,
+    "wrong_family": 1,
+    "named_unknown_but_classified": 1
+   },
+   "errors": [
+    {
+     "name": "Lotus Stop",
+     "classifier": "Chinese",
+     "checked": "unknown"
+    },
+    {
+     "name": "Golden Valley",
+     "classifier": "Chinese",
+     "checked": "unknown"
+    },
+    {
+     "name": "Mum's Spice, Lime Grill",
+     "classifier": "Indian and curry",
+     "checked": "unknown"
+    },
+    {
+     "name": "Lucky Red",
+     "classifier": "Chinese",
+     "checked": "unknown"
+    },
+    {
+     "name": "Caffe pronto",
+     "classifier": "Italian",
+     "checked": "cafe"
+    },
+    {
+     "name": "Luckys Diner",
+     "classifier": "Cafe, coffee and sweet things",
+     "checked": "unknown"
+    }
+   ],
+   "missed": [
+    {
+     "name": "Hakka Kitchen",
+     "checked": "chinese"
+    },
+    {
+     "name": "Burglicious",
+     "checked": "burger"
+    },
+    {
+     "name": "Lunch Box",
+     "checked": "sandwich"
+    },
+    {
+     "name": "MyMasalla",
+     "checked": "indian"
+    },
+    {
+     "name": "Baristo",
+     "checked": "cafe"
+    },
+    {
+     "name": "Creperie By The Sea",
+     "checked": "cafe"
+    },
+    {
+     "name": "Sambucha Kombucha",
+     "checked": "cafe"
+    },
+    {
+     "name": "Erawan",
+     "checked": "thai"
+    },
+    {
+     "name": "Hanoi House",
+     "checked": "asian_other"
+    },
+    {
+     "name": "Coco di mama",
+     "checked": "italian"
+    },
+    {
+     "name": "Fishnets Limited",
+     "checked": "fish_chips"
+    },
+    {
+     "name": "Riverside Refreshments",
+     "checked": "cafe"
+    },
+    {
+     "name": "Laduree UK Ltd",
+     "checked": "cafe"
+    },
+    {
+     "name": "Oishi",
+     "checked": "japanese"
+    },
+    {
+     "name": "The Tea Cabin",
+     "checked": "cafe"
+    },
+    {
+     "name": "Siop Goffi Ji-Binc",
+     "checked": "cafe"
+    },
+    {
+     "name": "Chettinad",
+     "checked": "indian"
+    },
+    {
+     "name": "Afro Kitchenn",
+     "checked": "caribbean"
+    }
+   ]
+  }
+ }
+}
