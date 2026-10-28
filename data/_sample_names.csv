@@ -1,0 +1,451 @@
+k,group,fhrsid,name
+0,T,834720,Superfry
+1,T,1962134,KKs Pizza & Grill
+2,T,93125,Jubilee Fish Bar
+3,T,1846380,Salmon And Mi
+4,T,461385,Oriental Chef
+5,T,1960301,SALT & CANE LTD
+6,T,28979,Burger King
+7,T,1424144,New Happy House
+8,T,1765880,Hog Roast Deli
+9,T,1935051,KAMS CHICKEN & PIZZA
+10,T,1767926,Bosphorus istanbul
+11,T,622282,Best Bite Pizza
+12,T,322720,Graveleys Elland Road
+13,T,1429664,Forecourt
+14,T,1766325,Happy Garden
+15,T,96503,Millon Takeaway
+16,T,1415733,Alixs Fish Bar
+17,T,14613,USA Fried Chicken
+18,T,489293,Leominster Subway
+19,T,1799888,Popeye Pizza
+20,T,1975715,Knightswood Chinese Kitchen
+21,T,757701,KFC
+22,T,1074252,Pablos Fish And Chips
+23,T,1723835,Cantonese Take Away
+24,T,1913066,Castle Hill Pizza
+25,T,1894889,Tasty Bite
+26,T,1408750,BAB MANSOUR
+27,T,1894664,M18kitchen
+28,T,1920488,Bite Me
+29,T,1091869,Pak Lok
+30,T,904652,Sir Walters Cafe in the Gardens
+31,T,1469051,63 Degrees
+32,T,1838155,Katie's Taties
+33,T,1916825,USA chicken
+34,T,940847,Suzy's Chippy and Diner
+35,T,315065,Rubys Fish And Chip Shop
+36,T,1870762,HONG KONG BOY NOODLES
+37,T,994915,CHICKENLAND AND PIZZA
+38,T,1204172,Jam Rock
+39,T,211783,Kebabish Original
+40,T,1845171,Wafflemeister
+41,T,119713,Cronton Fish Bar 2
+42,T,1497877,Simla Tandoori
+43,T,251723,Taste of Glebe
+44,T,1986834,Chopped Cheese Factory
+45,T,1634344,Newfarm Eatery
+46,T,1762385,Nicky's
+47,T,1934046,Junction 45 Truckstop
+48,T,1862949,Jamaica To Go
+49,T,1841984,Boston Subway
+50,T,1426507,Happy Chinese Takeaway
+51,T,355075,Costa Ltd
+52,T,193308,I Wok
+53,T,1210717,Zenith Chicken
+54,T,1213359,Central Grill
+55,T,1017252,British Raj
+56,T,715455,Onyx Fish Bar and Grill
+57,T,55273,Golden Dragon
+58,T,1274402,River Spice
+59,T,1800442,Golden Dragon
+60,T,368670,Golden Crown
+61,T,1930085,Chester Charcoal Hut
+62,T,1669668,Food Zone
+63,T,1945574,Camel Trail Oasis
+64,T,479540,the chai club
+65,T,342238,Subway
+66,T,359304,Original Roti Junction
+67,T,1845252,Grove Lane Pizza & Fish Bar
+68,T,1004224,Crown Chip Shop
+69,T,1910754,Make And Bake By JC
+70,T,1068972,Angels Bakery
+71,T,1211054,Greggs @ Asda Express Ltd
+72,T,933994,Little Wonder Cafe
+73,T,1653699,Ohannes Burger
+74,T,251619,Station Food
+75,T,941916,Topkapi Grill
+76,T,118026,That Pizza Place Ltd
+77,T,38739,Park Gate Fish Bar
+78,T,1551339,Karadenizpide ltd
+79,T,1557534,Shimlas
+80,T,1692421,Toto House
+81,T,330941,Graig Wen Touring Park
+82,T,2002828,Lees Cottage
+83,T,1266761,Pontefract Community Kitchen
+84,T,1697806,Domino's Pizza
+85,T,1054003,Pret A Manger
+86,T,1407975,Yummy Chinese Takeaway
+87,T,1755571,Zaffs P Ltd
+88,T,616388,Tates Fisheries
+89,T,1672884,Yum Yard
+90,T,1922270,Domino’s Pizza
+91,T,580488,China Spice
+92,T,1980811,Dolce express
+93,T,684502,Antonios Pizza
+94,T,401936,Flippers
+95,T,1563110,Bite & Go
+96,T,1360695,The Waffles Emporium
+97,T,1588716,Chicken Grill (Chick-King)
+98,T,640762,Papa's Chicken
+99,T,1660087,West Turkish Kebab House
+100,T,658835,Feast Brothers Ltd
+101,T,1963174,Consett Kebab and Pizza
+102,T,1556119,Cargo Coffee
+103,T,1616910,The Ice Cream Hut
+104,T,245223,New Pak Ho Chop Suey House
+105,T,1600944,Ben & Harry  Limited
+106,T,662331,China Express
+107,T,1623974,Pandacup
+108,T,753366,HERRONS COUNTRY FRIED CHICKEN
+109,T,647367,Dragon House
+110,T,1639471,Royal Night
+111,T,1437760,Firats Place
+112,T,1397292,Songbird
+113,T,1926403,Panda Chinese Takeaway
+114,T,1750295,Aroma Chinese
+115,T,1376352,Subway
+116,T,489191,Domino's Pizza
+117,T,213301,Messingham Road Fisheries
+118,T,1805885,Sushi Daily
+119,T,241152,Sandy Fish Bar and Kebab House
+120,T,549896,Moscardinis
+121,T,1972469,The Blue Berry
+122,T,1797542,Pizza Bite
+123,T,1032577,Pizza Time
+124,T,1881318,Wee Barras Cafe
+125,T,1195853,Sunny House
+126,T,1044270,Lotus House
+127,T,1969819,Cuban Scran
+128,T,1094985,The Dawson Pie Company
+129,T,1155350,Tasty Garden
+130,T,1824815,Dixy Chicken
+131,T,295699,Spring Chinese Takeaway
+132,T,1714195,Hikari Plant-Based Sushi
+133,T,1340036,Nam nam
+134,T,1079564,Marios Takeaway
+135,T,1384717,Swillington Fisheries
+136,T,1429399,Thai style crapes
+137,T,769597,Akka Street Food
+138,T,1907627,Kikuni Sushi
+139,T,520583,Royal Chicken
+140,T,1847793,The Coffee Cabin
+141,T,1921632,The Fifteen
+142,T,1985018,STACK500
+143,T,904129,Golcar Fisheries
+144,T,1369439,Apache Pizza (Waterside)
+145,T,1298435,Rustic Kitchen Worcestershire
+146,T,1570083,Attock Roti Junction
+147,T,128849,Golden Bird
+148,T,1990579,Pizza Haven Indian Curry Ltd
+149,T,341961,Subway - Melthouse
+150,T,696313,The Bakers Deli
+151,T,1228001,Yayas Grillhouse
+152,T,1430370,Torino Pizza
+153,T,1454024,Dumdaar / Chicken @Dumdaar / Burger @ Dumdaar
+154,T,1887609,Papa Johns Pizza
+155,T,490846,Pizza 2go A4
+156,T,1133515,Boston Express
+157,T,1897540,Viet Nam
+158,T,40745,Charcoal Grill LTD
+159,T,906468,Eat N Go
+160,T,859823,Domino's Pizza
+161,T,1659349,Fry Station
+162,T,1562680,Chicken Shack
+163,T,1941554,Hito coffee
+164,T,107580,QQBBQ
+165,T,1910320,Kabul Bakery & Sweets House
+166,T,997078,Fullers Fish and Chips
+167,T,1776204,"SPN Flava, Juice And Cake"
+168,T,1547979,Jing Jing Chinese
+169,T,1786135,The Original Cake Fridge Shop
+170,T,1936227,New Golden Palace
+171,T,494574,S&D Leisure (Bournemouth) Kiosk 2
+172,T,115955,The New Sudden Chippy
+173,T,1668318,Elizabethan Chip Shop
+174,T,1905163,Naples Pizza
+175,T,214977,New Golden Bowl
+176,T,149126,Central Pizza
+177,T,1761858,Black Rooster Peri Peri
+178,T,898329,Sunny Chop Suey Centre
+179,T,739522,New City
+180,T,192755,Tobzkitchen
+181,T,1886961,One Of Each
+182,T,1572511,Michaels Fish and Chips and Kebab
+183,T,257709,Fatso's
+184,T,1156099,Golden City
+185,T,1300126,Kanoha Fried Chicken and Desserts
+186,T,443557,Subway
+187,T,1838683,Little Big Sicily
+188,T,490863,Kentucky Fried Chicken
+189,T,1746369,Bravo
+190,T,739904,Domino's Pizza
+191,T,1920889,Spicy Twist
+192,T,1047062,KFC Stevenage
+193,T,1932099,Pink Garlic
+194,T,1420890,Dukes 2 Go
+195,T,2005757,Kem's Soda Shack
+196,T,247055,Chinese Chef
+197,T,663483,Tony's
+198,T,1923437,Happiness Chinese Takeaway
+199,T,314865,After Five
+200,T,1282809,Apache Pizza Lurgan
+201,T,300963,Subway
+202,T,1811544,Diana Kebab
+203,T,1917733,Pal Pizza
+204,T,1957316,Haus of Uji
+205,T,1871513,GHUGHRAWALA BOYS
+206,T,627218,Jumbo
+207,T,1550767,Cork & Spice
+208,T,1986313,Morrisons Daily Coalville -GREGGS
+209,T,1281636,Tops Pizza / Wingos
+210,T,143465,Peri Cottage
+211,T,83762,Jade Garden Chinese Takeaway
+212,T,1999447,Filling Station
+213,T,1965684,Auntie Annes
+214,T,662625,China Cuisine
+215,T,1867290,The Village End Rainford
+216,T,1810710,Fish \& Chicken
+217,T,1943353,Kebab house
+218,T,1981639,Crust & Curry
+219,T,1851491,Adams Pizza
+220,T,892217,Dimascio Ice Cream
+221,T,47765,Eight Fortunes
+222,T,1467622,Milano Pizza
+223,T,1620213,Dallas Chicken And Pizza
+224,T,1604530,Biryani World
+225,T,1778927,Maxime Chinese Takeaway
+226,T,129465,Balmedie Fish & Chip Shop
+227,T,1438908,Greggs
+228,T,1551090,Exmoor Bake House
+229,T,514865,Orient Chicken & Pizza
+230,T,1640950,Yo! To Go!
+231,T,529110,Girdle Toll Cafe
+232,T,431747,Thorndon Countryside Centre (North)
+233,T,1436458,Kings
+234,T,436915,Oasis Takeaway
+235,T,428803,Pan Pizza & Shiraz Balti
+236,T,1874512,Greek Street
+237,T,1032402,Triple S Caterers
+238,T,559593,The Best Marmaris Kebab
+239,T,1754534,Hip Hop Burger Shack
+240,T,2007976,Stalker's Low & Slow
+241,T,1263342,Grill Ventures Limited
+242,T,891430,Lakeside Fish Bar
+243,T,1675118,Condiment pantry
+244,T,944799,Hasty Tasty Pizza
+245,T,321566,Ideal Sandwiches
+246,T,1900985,BiteZ By Zy
+247,T,192388,Rainbow Palace
+248,T,1795566,Colombo Express
+249,T,1917550,TandoorI Fresh Naan
+250,T,1841060,Pisces Fish Bar
+251,T,1283453,Hou Wei
+252,T,554991,DAMA PIZZA KEBAB
+253,T,1110464,The Wick Fryer
+254,T,1916096,Vrisaki Kebab House
+255,T,1001580,Izzy's Grill (West Stand Pod And East Stand Pod)
+256,T,37931,Al'S Bar
+257,T,1610986,Wok 'n' Roll
+258,T,1008439,Golden Fish & Chips
+259,T,330638,Asia Garden
+260,T,1665346,Salumeria Mariuccia
+261,T,1978273,Zoraiz
+262,T,1736754,Nihao Takeaway
+263,T,1657737,NST Fuchka & Biryani House
+264,T,1896560,Tokies Deserts
+265,T,1654164,Habb / Red Jalapeno / Route 77 / Shakester
+266,T,1436135,The Golden Cod
+267,T,1093111,The Wood Shed Pizza
+268,T,861172,Happy House Chinese Takeaway
+269,T,1576304,Victoria Bakes
+270,T,1956457,Cornerwich Takeaway
+271,T,918929,Gurnos Kebab house
+272,T,2006980,CRAVE CULTURE
+273,T,132756,Peri Peri Original Bletchley
+274,T,135695,Starbucks Coffee Company
+275,T,119772,Buttilicious
+276,T,624356,Wok Inn
+277,T,943054,Burger and Beyond
+278,T,1780729,Bamber Bridge Foods Ltd
+279,T,394058,Hungrys
+280,T,1158486,Fish Ahoy
+281,T,1606143,Bubbles
+282,T,1569759,Burnham Bakery
+283,T,1788060,Planet chicken Skelmersdale
+284,T,1929593,Mamytriplets
+285,T,1942709,The Bread Cartel
+286,T,1023137,Subway
+287,T,1540354,FOOD CAB LTD
+288,T,66274,Romero's Clitheroe
+289,T,1981218,FARMHOUSE KITCHEN
+290,T,1620248,MFG Condorrat (shop)
+291,T,42265,The Great Wall
+292,T,490363,Bedfont Kebab
+293,T,976047,Balals
+294,T,359203,Tastys Chinese and Peri Peri
+295,T,1950531,Samboni coffee venture/Hidalgo Growers
+296,T,1903800,Tuck In At Suzie’s
+297,T,1828374,Motorpoint Cafe
+298,T,1215704,Chicken.Com
+299,T,1695091,PUCCINO'S
+300,R,1438183,Sycamore Chapel
+301,R,1718671,Panaderia
+302,R,1496767,Clifftown Theatre
+303,R,1950580,Bacco Wine
+304,R,1104175,Forge & Filter Ltd
+305,R,542331,The Little Cafe
+306,R,732147,Creams Cafe
+307,R,1796553,Mr Odie's
+308,R,1703606,Durham University - Chemistry Cafe
+309,R,438169,Half Moon
+310,R,324511,Cookhouse Cafe
+311,R,1924345,Reina Meze & Grill
+312,R,1973898,Second Sitting
+313,R,1172426,Red Dog Saloon/ Louie's Hot Chicken
+314,R,1728829,The Cheese & Pickle
+315,R,1795616,The Avenue Cafe
+316,R,1798380,Dodi's Art of Cake
+317,R,491238,Feltham Tenpin
+318,R,1782246,Bury Chicken House
+319,R,1729641,Desi Village
+320,R,1984947,Pius Burns Abayie Danso
+321,R,1062536,Joys Donuts
+322,R,1584416,MU
+323,R,1634245,The Dark Horse Espresso Bar
+324,R,1176023,Uncle Jimmy's
+325,R,1204837,Wallacespace
+326,R,1954403,Enzo
+327,R,1978072,Dumnbleton Village Hall
+328,R,1829893,Chicken Cottage Cambridge
+329,R,1791058,Cruive
+330,R,328455,New Manzil Restaurant
+331,R,1978979,Tandoori Nights
+332,R,119596,Kings Arms
+333,R,1930768,Kerala Spot
+334,R,1600946,Cha Louis
+335,R,1992666,Level 1 Bars (Canalside) - Level 01 Co-op Live
+336,R,150992,Aniseed Restaurant
+337,R,1704027,Union Streat Kitchen
+338,R,1816601,Destiny Desserts
+339,R,1830629,Wacky Waves
+340,R,1067483,Xtreme Jump Ltd
+341,R,1401489,Mooboo Worthing
+342,R,496201,Quality Foods Deli
+343,R,1679019,The Railway
+344,R,492592,Hatfields
+345,R,1647751,Caldbeck Cricket Club
+346,R,121804,Leaf Tandoori
+347,R,1471968,Hinba
+348,R,1849129,WINGSTOP UK
+349,R,1724501,Burgess Hill Cricket Club - Bites & Brews
+350,R,1333251,Coffee House
+351,R,1835963,The Grill
+352,R,1655395,St Mellons Church In Wales Primary School
+353,R,1439286,Sushi Me Rollin’
+354,R,243677,Prezzo
+355,R,1862566,Kardoma
+356,R,1538064,BAGEL SOCIETY
+357,R,754957,AVONDALE FOODS CANTEEN
+358,R,1555615,Bella Italia Dudley
+359,R,1867056,Kiddos kingdom
+360,R,57900,Mikalas Kitchen
+361,R,238413,The Crown Hotel
+362,R,528909,The Little Fish Market
+363,R,1381433,The Oak Grill
+364,R,1824267,1 REBEL
+365,R,912052,The Scandinavian Coffee Pod
+366,R,287540,Top Nosh
+367,R,280815,Roosters Piri Piri
+368,R,1366648,Askew Cafe
+369,R,1700246,Chaat House
+370,R,287421,Fountain Cottage Cafe Ltd
+371,R,1746521,Cafe 25
+372,R,1608868,Parkers Pantry
+373,R,1797718,Charles Artisan Bread
+374,R,1885951,Machair Bakery
+375,R,1792697,Serious Grillin
+376,R,329321,The Boathouse
+377,R,8285,The Dig Inn
+378,R,705797,The Bakers Dozen
+379,R,1196734,Partou Playtime Day Nursery & Pre- School
+380,R,1839060,Forni Kitchen Tower Hill
+381,R,160248,Dundee Sheriff Court
+382,R,1230292,No 9
+383,R,83788,Jalori Indian Cuisine
+384,R,902112,Andrews Catering
+385,R,1753733,Tang Dynasty
+386,R,1288864,The Harbour View
+387,R,1082738,Green Street Cafe
+388,R,1728737,Ranouch's Kitchen
+389,R,100915,Tea Rooms
+390,R,1408954,Barbosa
+391,R,1847869,The Last Track Ltd
+392,R,1852816,Potteries Gaming
+393,R,798306,The Bank Restaurant
+394,R,426041,The Chin Chin Club Ltd
+395,R,1868882,Farm Adventure
+396,R,618930,Uni Restaurant
+397,R,572091,Port Of Call
+398,R,1703914,Liege Waffles
+399,R,115764,Downie Lounge And Hunter Hall
+400,R,1814120,Great Yarmouth Racecourse Lord Nelson Grandstand
+401,R,650758,Cafe 22
+402,R,1269495,Tatashe
+403,R,988224,MarcoPaulos
+404,R,1838217,Cosy Corner Coffee
+405,R,468724,British Plastics Federation
+406,R,1844268,Ki Khana
+407,R,534937,Laryn
+408,R,914647,The Ivy Bath Brasserie
+409,R,1591241,Lavender Nursery
+410,R,1246907,DEVANA COFFEE SHOP
+411,R,2000980,Chester coffee
+412,R,1545500,Heavenly Desserts
+413,R,719322,Susan MacDonald - Americano Catering
+414,R,1890646,Gurbani Sweets
+415,R,1774045,Peggotty's Tea Shoppe
+416,R,1424966,Tegridy Foods
+417,R,1296622,Yum Yum Bites
+418,R,1941784,The Cupboard
+419,R,1904993,Restaurant Associates at Virgin
+420,R,1935258,Linda's Cafe
+421,R,1721716,Mo Ghra Bistro
+422,R,321239,Harehills Lane Baptist Church And Courtyard Cafe
+423,R,1911578,Play Place Innov8 CIC
+424,R,1674078,Cafe Rouge
+425,R,1947601,Addie's Thai Restaurant
+426,R,1660796,Kaylee's Cakes & Bakes
+427,R,1869623,Clementine Cafe And Bistro
+428,R,1136498,The Melting Pot Cafe
+429,R,1783906,Mauds Chill
+430,R,1082302,Rishi's Indian Aroma
+431,R,1843767,Sabores Da Casa
+432,R,1876465,Dosa Bar
+433,R,442961,Woodford Baptist Church
+434,R,1995703,Dixee Chicken
+435,R,1534886,Zambrero
+436,R,1744064,Sôlt Kitchen Coffee Bar
+437,R,436037,McDonalds Restaurants Ltd
+438,R,206491,Ganges Brasserie
+439,R,1160101,Baysville Coffee & Grill
+440,R,66336,Cherry Tree
+441,R,486286,Hickling Methodist Church Lunch Club
+442,R,1809798,LAS RESTAURANT
+443,R,1276379,Morellis / Mauds Carnlough
+444,R,2002480,3FLAVOURATBELVILLAHOTEL
+445,R,480255,Watch Me
+446,R,1762336,Brewed Awakening
+447,R,607954,Birdies Bistro
+448,R,594250,JRC Global Buffet
+449,R,342741,Obscura Cafe

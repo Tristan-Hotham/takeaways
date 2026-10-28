@@ -1,0 +1,751 @@
+sample,k,group,fhrsid,name,classifier,rule,manual,ok
+B (held out),0,T,1746188,Curry Kitchen,indian,strong:indian,indian,True
+B (held out),1,T,679124,New China House,chinese,strong:chinese,chinese,True
+B (held out),2,T,1912727,PIZZA-LICIOUSS,pizza,strong:pizza,pizza,True
+B (held out),3,T,439773,Prego Takeaway,other,none,unknown,False
+B (held out),4,T,26784,S.K. Cuisine,other,none,unknown,False
+B (held out),5,T,1125746,Hakka Kitchen,other,none,chinese,False
+B (held out),6,T,1802605,Betta's Chicken,chicken,strong:chicken,chicken,True
+B (held out),7,T,1344333,The Pepper Pot,other,none,unknown,False
+B (held out),8,T,1978048,Herbies Pizza,pizza,strong:pizza,pizza,True
+B (held out),9,T,1733485,Lucky Chicken,chicken,strong:chicken,chicken,True
+B (held out),10,T,1860385,Lotus Stop,chinese,weak:chinese,unknown,False
+B (held out),11,T,1664804,Trawlers Fish And Chips,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),12,T,890178,Marmaris,kebab,strong:kebab,kebab,True
+B (held out),13,T,100727,Pontnewydd Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),14,T,387225,Taj Mahal,indian,weak:indian,indian,True
+B (held out),15,T,333369,Deli-ish,sandwich,strong:sandwich,sandwich,True
+B (held out),16,T,1878054,Greggs,sandwich,chain:greggs,sandwich,True
+B (held out),17,T,1731534,Mai Sushi,japanese,strong:japanese,japanese,True
+B (held out),18,T,245816,Spice Village,indian,weak:indian,indian,True
+B (held out),19,T,130956,Golden Place,other,none,unknown,False
+B (held out),20,T,1862506,Lister Road Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),21,T,917338,Fat Dragon,chinese,weak:chinese,chinese,True
+B (held out),22,T,1078653,Zaroub,other,none,unknown,False
+B (held out),23,T,602720,Pizza Hut Delivery,pizza,chain:pizza hut,pizza,True
+B (held out),24,T,1542241,Tempura Sushi Takeaway Shop,japanese,strong:japanese,japanese,True
+B (held out),25,T,1848541,RD Jerk Chicken,caribbean,chain:jerk,caribbean|chicken,True
+B (held out),26,T,605927,The Dragon Chinese Take Away,chinese,strong:chinese,chinese,True
+B (held out),27,T,2007057,DIPTENPATEL,other,none,unknown,False
+B (held out),28,T,1369821,Naafiah Grill & Pizza,pizza,strong:pizza,pizza,True
+B (held out),29,T,1744061,Sharan's Deli,sandwich,strong:sandwich,sandwich,True
+B (held out),30,T,75793,Burglicious,other,none,burger,False
+B (held out),31,T,435497,Lunch Box,other,none,sandwich,False
+B (held out),32,T,1994698,Iver Curry,indian,strong:indian,indian,True
+B (held out),33,T,1940471,The Plaice for Cod,fish_chips,hint:fish,fish_chips,True
+B (held out),34,T,1843437,Subway,sandwich,chain:subway,sandwich,True
+B (held out),35,T,1580158,Chip Inn,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),36,T,1835761,Thai Time Takeaway,thai,strong:thai,thai,True
+B (held out),37,T,1438787,Dixy Fried Chicken,chicken,chain:dixy,chicken,True
+B (held out),38,T,1913418,The Filling Station Online Ltd,sandwich,strong:sandwich,sandwich,True
+B (held out),39,T,552188,Silver Dragon,chinese,weak:chinese,chinese,True
+B (held out),40,T,143959,Cafe Piccante,cafe,strong:cafe,cafe,True
+B (held out),41,T,171810,Golden Valley,chinese,weak:chinese,unknown,False
+B (held out),42,T,84139,MyMasalla,other,none,indian,False
+B (held out),43,T,434078,West Park Chippy,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),44,T,1393774,The Fodder Spot,other,none,unknown,False
+B (held out),45,T,231345,HennighansTop Shop,other,none,unknown,False
+B (held out),46,T,1278179,AMIGOS BURGERS AND SHAKES (FRANCHISE),burger,strong:burger+cafe,burger,True
+B (held out),47,T,706635,Wok Express,chinese,strong:chinese,chinese,True
+B (held out),48,T,1204923,"Mum's Spice, Lime Grill",indian,weak:indian,unknown,False
+B (held out),49,T,600627,Bon Bon,other,none,unknown,False
+B (held out),50,T,662916,Baristo,other,none,cafe,False
+B (held out),51,T,547510,NEW WONGS GARDEN LTD,chinese,weak:chinese,chinese,True
+B (held out),52,T,32476,Bene's Fish And Chips,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),53,T,1702433,Abeba's Kitchen,other,none,unknown,False
+B (held out),54,T,1754028,Queens Food,other,none,unknown,False
+B (held out),55,T,1572438,King Rooster Chicken,chicken,chain:rooster,chicken,True
+B (held out),56,T,1800963,BODRUM KEBAB HOUSE,kebab,strong:kebab,kebab,True
+B (held out),57,T,1999965,Shabaz Indian Takeaway,indian,strong:indian,indian,True
+B (held out),58,T,1625946,Creperie By The Sea,other,none,cafe,False
+B (held out),59,T,1971204,California Pizza,pizza,strong:pizza,pizza,True
+B (held out),60,T,1729541,Bobby's Burger and Grill,burger,strong:burger,burger,True
+B (held out),61,T,1724995,Green Bamboo,chinese,weak:chinese,chinese,True
+B (held out),62,T,1973050,Grill Brotherz Ltd,other,none,unknown,False
+B (held out),63,T,351432,New Tupton Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),64,T,1541775,Queens House,other,none,unknown,False
+B (held out),65,T,1813243,Opa souvlaki,greek_med,strong:greek_med,greek_med,True
+B (held out),66,T,1676959,Slab City Pizza,pizza,strong:pizza,pizza,True
+B (held out),67,T,1697486,Sizzlers,other,none,unknown,False
+B (held out),68,T,754084,Golden Sands Hot Food Takeaway,other,none,unknown,False
+B (held out),69,T,131300,Subway,sandwich,chain:subway,sandwich,True
+B (held out),70,T,1466990,Domino's Pizza,pizza,chain:domino's,pizza,True
+B (held out),71,T,416000,Hot Wok,chinese,strong:chinese,chinese,True
+B (held out),72,T,1891730,Best Grill,other,none,unknown,False
+B (held out),73,T,696731,Olympia,other,none,unknown,False
+B (held out),74,T,193712,Challis's Fish & Chips,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),75,T,1800456,Wok Inn Chinese Takeaway,chinese,strong:chinese,chinese,True
+B (held out),76,T,128952,Chinese Express,chinese,strong:chinese,chinese,True
+B (held out),77,T,1648672,Asafo Takeaway,other,none,unknown,False
+B (held out),78,T,58801,Centra,other,none,unknown,False
+B (held out),79,T,85870,Punjab,indian,strong:indian,indian,True
+B (held out),80,T,1841512,Umars Tandoori,indian,strong:indian,indian,True
+B (held out),81,T,1998925,Sambucha Kombucha,other,none,cafe,False
+B (held out),82,T,2007271,Bua Thai Kitchen Ltd,thai,strong:thai,thai,True
+B (held out),83,T,926771,Barnhills Of Broxton,other,none,unknown,False
+B (held out),84,T,1718753,Lotus Garden,chinese,weak:chinese,chinese,True
+B (held out),85,T,1873176,Buddy's Kitchen,other,none,unknown,False
+B (held out),86,T,126427,Peking Palace,chinese,strong:chinese,chinese,True
+B (held out),87,T,1556359,Sing Wah,chinese,weak:chinese,chinese,True
+B (held out),88,T,252094,Power Dragon,chinese,weak:chinese,chinese,True
+B (held out),89,T,1002554,New Tings,other,none,unknown,False
+B (held out),90,T,1982249,Dixy Chicken Yardley,chicken,chain:dixy,chicken,True
+B (held out),91,T,1006066,Royal Kebab,kebab,strong:kebab,kebab,True
+B (held out),92,T,1211287,Oakenshaw Fisheries,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),93,T,98370,Green Lane Chippy,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),94,T,917903,Lucky Red,chinese,weak:chinese,unknown,False
+B (held out),95,T,1521800,Dessert Hub,cafe,strong:cafe,cafe,True
+B (held out),96,T,262926,China Town,chinese,strong:chinese,chinese,True
+B (held out),97,T,1964057,Jaluice,other,none,unknown,False
+B (held out),98,T,1854611,Flori's Pizza Limited,pizza,strong:pizza,pizza,True
+B (held out),99,T,1724714,Oasis Takeaway,other,none,unknown,False
+B (held out),100,T,136735,Good View Chinese Takeaway,chinese,strong:chinese,chinese,True
+B (held out),101,T,1716666,AMORINO,cafe,chain:amorino,cafe,True
+B (held out),102,T,1914412,Uk Fried Chicken,chicken,strong:chicken,chicken,True
+B (held out),103,T,1952151,Erawan,other,none,thai,False
+B (held out),104,T,460677,China Star,chinese,strong:chinese,chinese,True
+B (held out),105,T,1158057,Elite Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),106,T,1714825,The Prayerhouse Church International,other,none,unknown,False
+B (held out),107,T,1454223,Hanoi House,other,none,asian_other,False
+B (held out),108,T,130301,Mikes Chip Shop,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),109,T,326035,Bunz,other,none,unknown,False
+B (held out),110,T,1824247,Seven Heaven,other,none,unknown,False
+B (held out),111,T,1204949,Coco di mama,other,none,italian,False
+B (held out),112,T,1792144,Miss Drippy,other,none,unknown,False
+B (held out),113,T,1804121,Armonia Cafe,cafe,strong:cafe,cafe,True
+B (held out),114,T,842382,Dalston Fryer,fish_chips,hint:fish,fish_chips,True
+B (held out),115,T,1526350,Vape Social,other,none,unknown,False
+B (held out),116,T,1777753,Spuds@spurs,sandwich,strong:sandwich,sandwich,True
+B (held out),117,T,1994142,Ossies Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),118,T,860768,Scott Tinline - Roots,other,none,unknown,False
+B (held out),119,T,460294,Domino's Pizza,pizza,chain:domino's,pizza,True
+B (held out),120,T,1787334,DK's Coffee Time,cafe,strong:cafe,cafe,True
+B (held out),121,T,1657791,Lili & Mila Ltd,other,none,unknown,False
+B (held out),122,T,659056,Open Kitchen,other,none,unknown,False
+B (held out),123,T,181961,Happy House,chinese,weak:chinese,chinese,True
+B (held out),124,T,911030,Hawkhurst Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),125,T,1933568,Dolci Mono,other,none,unknown,False
+B (held out),126,T,743200,Pacman Pizza Ltd,pizza,strong:pizza,pizza,True
+B (held out),127,T,1601577,Flips,other,none,unknown,False
+B (held out),128,T,832576,Mr Tang,chinese,weak:chinese,chinese,True
+B (held out),129,T,1593048,Canton Chef,chinese,strong:chinese,chinese,True
+B (held out),130,T,1676737,Black Sheep Coffee,cafe,chain:black sheep coffee,cafe,True
+B (held out),131,T,1634180,Happy View,other,none,unknown,False
+B (held out),132,T,1149624,Sushi Gourmet,japanese,strong:japanese,japanese,True
+B (held out),133,T,1862149,Morleys Fried Chicken,chicken,chain:morleys,chicken,True
+B (held out),134,T,83154,Pisces Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),135,T,1432412,Naar Lebanese,greek_med,strong:greek_med,greek_med,True
+B (held out),136,T,144401,Sykes Fish & Chips,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),137,T,1639781,Whistle Stop Takeaway,other,none,unknown,False
+B (held out),138,T,339728,Fishnets Limited,other,none,fish_chips,False
+B (held out),139,T,970643,Traditional Fish & Chips On The Hayes,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),140,T,186948,McDonalds Restaurants,burger,chain:mcdonalds,burger,True
+B (held out),141,T,604943,Fuel Juice Bars,cafe,strong:cafe,cafe,True
+B (held out),142,T,330507,Pizza 4 U,pizza,strong:pizza,pizza,True
+B (held out),143,T,404454,Ratatuj,other,none,unknown,False
+B (held out),144,T,953982,Woodhouse Chinese Takeaway,chinese,strong:chinese,chinese,True
+B (held out),145,T,1195431,Gnosall Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),146,T,1846744,Jo Jo's Food Adventure,other,none,unknown,False
+B (held out),147,T,1538490,"Basebox, Courtyard",other,none,unknown,False
+B (held out),148,T,51451,Vue Cinema,other,none,unknown,False
+B (held out),149,T,776030,La Barantine,other,none,unknown,False
+B (held out),150,T,803888,Pizza Gogo,pizza,strong:pizza,pizza,True
+B (held out),151,T,1820681,Chesters,chicken,chain:chesters,chicken,True
+B (held out),152,T,132306,Chinese Chef,chinese,strong:chinese,chinese,True
+B (held out),153,T,1259490,TANGS DYNASTY,chinese,weak:chinese,chinese,True
+B (held out),154,T,1873886,House of Baiklyn,other,none,unknown,False
+B (held out),155,T,1273605,"Choni’s Inc, You Want Beef?",other,none,unknown,False
+B (held out),156,T,460499,Fish King,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),157,T,1730736,Rs Chicken,chicken,strong:chicken,chicken,True
+B (held out),158,T,2008223,Shah’s Halal Food,other,none,unknown,False
+B (held out),159,T,1214515,Nemo’s Den,other,none,unknown,False
+B (held out),160,T,1875631,Nanwich Tikka House,indian,strong:indian,indian,True
+B (held out),161,T,124713,Yungs,other,none,unknown,False
+B (held out),162,T,1856911,Joe's Burger House,burger,strong:burger,burger,True
+B (held out),163,T,1932839,Haji Yusuf Sweets,cafe,strong:cafe,cafe|indian,True
+B (held out),164,T,584352,Crown Pizza,pizza,strong:pizza,pizza,True
+B (held out),165,T,543603,Domino's Pizza,pizza,chain:domino's,pizza,True
+B (held out),166,T,1755434,Riverside Refreshments,other,none,cafe,False
+B (held out),167,T,1900387,Laduree UK Ltd,other,none,cafe,False
+B (held out),168,T,272314,Bell Street Baguettes,sandwich,strong:sandwich,sandwich,True
+B (held out),169,T,1910673,Brownie’s Snack Bar,sandwich,strong:sandwich,sandwich,True
+B (held out),170,T,1995212,Farmhouse Pizza,pizza,strong:pizza,pizza,True
+B (held out),171,T,1270016,Chicago Pizza,pizza,strong:pizza,pizza,True
+B (held out),172,T,1822862,Good Earth,other,none,unknown,False
+B (held out),173,T,1899627,Smash Shack,burger,strong:burger,burger,True
+B (held out),174,T,131967,Loke Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),175,T,1991307,Pappanos Eats Limited,other,none,unknown,False
+B (held out),176,T,1976388,Papa Johns,pizza,chain:papa johns,pizza,True
+B (held out),177,T,1686917,Oishi,other,none,japanese,False
+B (held out),178,T,1212343,The Crispy Cod,fish_chips,hint:fish,fish_chips,True
+B (held out),179,T,189961,Subway,sandwich,chain:subway,sandwich,True
+B (held out),180,T,1372692,Wok's Up,chinese,strong:chinese,chinese,True
+B (held out),181,T,1889086,Punjab Brasserie TA charcoal grill / Raja Tandoori/ Raja curry house,indian,strong:indian+kebab,indian,True
+B (held out),182,T,1792409,Greggs,sandwich,chain:greggs,sandwich,True
+B (held out),183,T,1814923,Fishponds Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),184,T,556717,Redhouse,other,none,unknown,False
+B (held out),185,T,1584077,Dragon Palace,chinese,weak:chinese,chinese,True
+B (held out),186,T,519500,Hot House Pizza,pizza,strong:pizza,pizza,True
+B (held out),187,T,1812936,Smoque Burger,burger,strong:burger,burger,True
+B (held out),188,T,1908978,Krispy King,other,none,unknown,False
+B (held out),189,T,85241,Pizza Box and Grill,pizza,strong:pizza,pizza,True
+B (held out),190,T,397538,Pizza Kebab Bar,pizza,strong:pizza+kebab,pizza|kebab,True
+B (held out),191,T,512422,Leigh Spice,indian,weak:indian,indian,True
+B (held out),192,T,560352,"Mara Fish & Bar Deli Ltd.,",fish_chips,strong:fish_chips+sandwich,fish_chips,True
+B (held out),193,T,1013123,Lostock Hall Kebab House,kebab,strong:kebab,kebab,True
+B (held out),194,T,992547,The Tea Cabin,other,none,cafe,False
+B (held out),195,T,1865373,Choruibhati - Unit R6,other,none,unknown,False
+B (held out),196,T,1747813,Dubai Shawarma,kebab,strong:kebab,kebab,True
+B (held out),197,T,360720,Middleton-in-Teesdale Fish & Chip Shop,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),198,T,1899055,Bronson's Burgers,burger,strong:burger,burger,True
+B (held out),199,T,1890298,1st Quay Fish & Chips,fish_chips,strong:fish_chips,fish_chips,True
+B (held out),200,R,2000263,Duchess,other,none,unknown,False
+B (held out),201,R,1574692,Delhi Wala,indian,strong:indian,indian,True
+B (held out),202,R,1981926,Penang Tiffin,indian,strong:indian,asian_other|indian,True
+B (held out),203,R,341975,Caffe Nero,cafe,chain:caffe nero,cafe,True
+B (held out),204,R,1655687,Wantage Parish Around Table,other,none,unknown,False
+B (held out),205,R,19795,Guidis Ltd,other,none,unknown,False
+B (held out),206,R,1814794,African Kitchen & Lounge,caribbean,chain:african,caribbean,True
+B (held out),207,R,1892068,Mamxiety Play Cafe LTD,cafe,strong:cafe,cafe,True
+B (held out),208,R,1057055,Artisan Cafe At Magazine Heaven,cafe,strong:cafe,cafe,True
+B (held out),209,R,632847,Grill N Chill,other,none,unknown,False
+B (held out),210,R,1837750,Calima Kitchen,other,none,unknown,False
+B (held out),211,R,1773146,Miss Mollett's High Class Tea Room,cafe,strong:cafe,cafe,True
+B (held out),212,R,937760,New Theatre Royal (Watkins And Faux),other,none,unknown,False
+B (held out),213,R,920492,Paletto Lounge,other,none,unknown,False
+B (held out),214,R,831937,Wongs Taste of China,chinese,strong:chinese,chinese,True
+B (held out),215,R,1820822,De Rock African Kitchen and Bar,caribbean,chain:african,caribbean,True
+B (held out),216,R,1075317,Lime Wharf Cafe,cafe,strong:cafe,cafe,True
+B (held out),217,R,1885574,Tre Cafe,cafe,strong:cafe,cafe,True
+B (held out),218,R,586801,Bakchich,other,none,unknown,False
+B (held out),219,R,1929157,Sefton Park Suites,other,none,unknown,False
+B (held out),220,R,69697,Costa Ltd,cafe,chain:costa,cafe,True
+B (held out),221,R,1889112,Smokey Pizza,pizza,strong:pizza,pizza,True
+B (held out),222,R,1615493,Bubbleology Cambridge,cafe,chain:bubbleology,cafe,True
+B (held out),223,R,1887561,Enfield Rangers Catering/ Aunty Chelsea's Catering,other,none,unknown,False
+B (held out),224,R,1641201,KAUAI CHISWICK RIVERSIDE,other,none,unknown,False
+B (held out),225,R,2004756,All Of It,other,none,unknown,False
+B (held out),226,R,427849,Pret A Manger,sandwich,chain:pret,sandwich,True
+B (held out),227,R,1812129,The Oaty Goat Cafe,cafe,strong:cafe,cafe,True
+B (held out),228,R,1664061,Subway,sandwich,chain:subway,sandwich,True
+B (held out),229,R,921166,Siop Goffi Ji-Binc,other,none,cafe,False
+B (held out),230,R,1092393,The Old Blacksmiths,other,none,unknown,False
+B (held out),231,R,187493,Texas Burger,burger,strong:burger,burger,True
+B (held out),232,R,556515,Sherwood Forest Y H A,other,none,unknown,False
+B (held out),233,R,10341,Sheerin Palace,other,none,unknown,False
+B (held out),234,R,1960954,Haven Play Cafe Limited,cafe,strong:cafe,cafe,True
+B (held out),235,R,244911,Lapin - Flowers & Coffee,cafe,strong:cafe,cafe,True
+B (held out),236,R,449580,Nakorn Thai Restaurant,thai,strong:thai,thai,True
+B (held out),237,R,690663,TOOT SWEETS ICE CREAM PARLOUR,cafe,strong:cafe,cafe,True
+B (held out),238,R,1524811,Chettinad,other,none,indian,False
+B (held out),239,R,1130753,Caffe pronto,italian,strong:italian+cafe,cafe,False
+B (held out),240,R,604036,Maison Mayci,other,none,unknown,False
+B (held out),241,R,1392470,Japanese Cafe An-An,japanese,strong:japanese+cafe,japanese,True
+B (held out),242,R,1801358,The flat earth,other,none,unknown,False
+B (held out),243,R,96539,Otter Nurseries,other,none,unknown,False
+B (held out),244,R,1391717,The Enquire Learning Trust at Easterside Primary Academy,other,none,unknown,False
+B (held out),245,R,1758825,Montys,other,none,unknown,False
+B (held out),246,R,189886,Teapot Cafe,cafe,strong:cafe,cafe,True
+B (held out),247,R,87880,Charnwood Nursery,other,none,unknown,False
+B (held out),248,R,489879,Feltham Biryani Point,indian,strong:indian,indian,True
+B (held out),249,R,156161,Seaview Cafe,cafe,strong:cafe,cafe,True
+B (held out),250,R,938973,Benugo @ London Transport Museum,other,none,unknown,False
+B (held out),251,R,1025498,Servewell cafe,cafe,strong:cafe,cafe,True
+B (held out),252,R,1790117,Emily Rose Tearoom,cafe,strong:cafe,cafe,True
+B (held out),253,R,549828,S & A Catering,other,none,unknown,False
+B (held out),254,R,1818321,Burger Bee,burger,strong:burger,burger,True
+B (held out),255,R,1500257,Bambini Love Ltd,other,none,unknown,False
+B (held out),256,R,531868,Hayatt Restaurant,other,none,unknown,False
+B (held out),257,R,940230,"Bartlett Mitchell Ltd, Worldpay",other,none,unknown,False
+B (held out),258,R,1985895,Bean & Bento,japanese,strong:japanese,cafe|japanese,True
+B (held out),259,R,1963498,BLK Cab (Coffee & People),cafe,strong:cafe,cafe,True
+B (held out),260,R,1253385,Kaspa's,cafe,chain:kaspa's,cafe,True
+B (held out),261,R,1746869,Mushroom Theatre Company,other,none,unknown,False
+B (held out),262,R,719289,Forgans,other,none,unknown,False
+B (held out),263,R,2430,Costa Coffee,cafe,chain:costa,cafe,True
+B (held out),264,R,538247,The Quarry Cafe,cafe,strong:cafe,cafe,True
+B (held out),265,R,668110,York Minster,other,none,unknown,False
+B (held out),266,R,1840135,Afro Kitchenn,other,none,caribbean,False
+B (held out),267,R,69591,Piperdam Leisure Resort,other,none,unknown,False
+B (held out),268,R,849659,The Place Cafe,cafe,strong:cafe,cafe,True
+B (held out),269,R,1423043,Heaven,other,none,unknown,False
+B (held out),270,R,24179,Jade Garden,chinese,weak:chinese,chinese,True
+B (held out),271,R,752621,CAFE KREM,cafe,strong:cafe,cafe,True
+B (held out),272,R,1931591,Susegad Kitchen,other,none,unknown,False
+B (held out),273,R,1921074,Square Deal Cafe,cafe,strong:cafe,cafe,True
+B (held out),274,R,490542,My Place Chiswick,other,none,unknown,False
+B (held out),275,R,986125,Bar Torino,other,none,unknown,False
+B (held out),276,R,1965196,Ladies of virtue outreach,other,none,unknown,False
+B (held out),277,R,1197498,Prairie Fire,other,none,unknown,False
+B (held out),278,R,1786682,BaxterStorey/Sky Newcastle,other,none,unknown,False
+B (held out),279,R,599548,South & City College,other,none,unknown,False
+B (held out),280,R,1885487,Central Canteen,other,none,unknown,False
+B (held out),281,R,752804,FRIAR TUCKS,other,none,unknown,False
+B (held out),282,R,1625662,Cafe Taj,cafe,strong:cafe,cafe|indian,True
+B (held out),283,R,457788,Sushi Tetsu,japanese,strong:japanese,japanese,True
+B (held out),284,R,1678039,Seaview Cafe,cafe,strong:cafe,cafe,True
+B (held out),285,R,1372577,Wee Sugar Treats,cafe,strong:cafe,cafe,True
+B (held out),286,R,1759704,Belfoi,other,none,unknown,False
+B (held out),287,R,724108,BB's Coffee & Muffins,cafe,strong:cafe,cafe,True
+B (held out),288,R,620781,The Mill,other,none,unknown,False
+B (held out),289,R,1297135,War Room,other,none,unknown,False
+B (held out),290,R,608014,LOUNGES,other,none,unknown,False
+B (held out),291,R,1964781,Cookie Atelier,cafe,strong:cafe,cafe,True
+B (held out),292,R,643521,Age Concern Day Centre Woodside,other,none,unknown,False
+B (held out),293,R,130392,Cheese Cottage Tea Rooms & Giftshop,cafe,strong:cafe,cafe,True
+B (held out),294,R,1657519,Orient Lounge,chinese,weak:chinese,chinese|asian_other,True
+B (held out),295,R,1984381,Oricha Bristol,other,none,unknown,False
+B (held out),296,R,1759299,Luckys Diner,cafe,strong:cafe,unknown,False
+B (held out),297,R,349501,Timebridge Community Centre,other,none,unknown,False
+B (held out),298,R,1691834,Rover Coffee House,cafe,strong:cafe,cafe,True
+B (held out),299,R,1581067,Volcano Falls Adventure Golf,other,none,unknown,False
+A (development),0,T,834720,Superfry,other,none,fish_chips,False
+A (development),1,T,1962134,KKs Pizza & Grill,pizza,strong:pizza,pizza,True
+A (development),2,T,93125,Jubilee Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+A (development),3,T,1846380,Salmon And Mi,other,none,unknown,False
+A (development),4,T,461385,Oriental Chef,chinese,weak:chinese,chinese,True
+A (development),5,T,1960301,SALT & CANE LTD,other,none,unknown,False
+A (development),6,T,28979,Burger King,burger,chain:burger king,burger,True
+A (development),7,T,1424144,New Happy House,chinese,weak:chinese,chinese,True
+A (development),8,T,1765880,Hog Roast Deli,sandwich,strong:sandwich,sandwich,True
+A (development),9,T,1935051,KAMS CHICKEN & PIZZA,pizza,strong:pizza+chicken,chicken|pizza,True
+A (development),10,T,1767926,Bosphorus istanbul,kebab,strong:kebab,kebab,True
+A (development),11,T,622282,Best Bite Pizza,pizza,strong:pizza,pizza,True
+A (development),12,T,322720,Graveleys Elland Road,other,none,fish_chips,False
+A (development),13,T,1429664,Forecourt,other,none,unknown,False
+A (development),14,T,1766325,Happy Garden,chinese,weak:chinese,chinese,True
+A (development),15,T,96503,Millon Takeaway,other,none,unknown,False
+A (development),16,T,1415733,Alixs Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+A (development),17,T,14613,USA Fried Chicken,chicken,strong:chicken,chicken,True
+A (development),18,T,489293,Leominster Subway,sandwich,chain:subway,sandwich,True
+A (development),19,T,1799888,Popeye Pizza,pizza,strong:pizza,pizza,True
+A (development),20,T,1975715,Knightswood Chinese Kitchen,chinese,strong:chinese,chinese,True
+A (development),21,T,757701,KFC,chicken,chain:kfc,chicken,True
+A (development),22,T,1074252,Pablos Fish And Chips,fish_chips,strong:fish_chips,fish_chips,True
+A (development),23,T,1723835,Cantonese Take Away,chinese,strong:chinese,chinese,True
+A (development),24,T,1913066,Castle Hill Pizza,pizza,strong:pizza,pizza,True
+A (development),25,T,1894889,Tasty Bite,other,none,unknown,False
+A (development),26,T,1408750,BAB MANSOUR,other,none,unknown,False
+A (development),27,T,1894664,M18kitchen,other,none,unknown,False
+A (development),28,T,1920488,Bite Me,other,none,unknown,False
+A (development),29,T,1091869,Pak Lok,other,none,chinese,False
+A (development),30,T,904652,Sir Walters Cafe in the Gardens,cafe,strong:cafe,cafe,True
+A (development),31,T,1469051,63 Degrees,other,none,unknown,False
+A (development),32,T,1838155,Katie's Taties,other,none,sandwich,False
+A (development),33,T,1916825,USA chicken,chicken,strong:chicken,chicken,True
+A (development),34,T,940847,Suzy's Chippy and Diner,fish_chips,strong:fish_chips+cafe,fish_chips,True
+A (development),35,T,315065,Rubys Fish And Chip Shop,fish_chips,strong:fish_chips,fish_chips,True
+A (development),36,T,1870762,HONG KONG BOY NOODLES,chinese,strong:chinese,chinese,True
+A (development),37,T,994915,CHICKENLAND AND PIZZA,pizza,strong:pizza,chicken|pizza,True
+A (development),38,T,1204172,Jam Rock,other,none,caribbean,False
+A (development),39,T,211783,Kebabish Original,kebab,chain:kebabish,kebab,True
+A (development),40,T,1845171,Wafflemeister,other,none,cafe,False
+A (development),41,T,119713,Cronton Fish Bar 2,fish_chips,strong:fish_chips,fish_chips,True
+A (development),42,T,1497877,Simla Tandoori,indian,strong:indian,indian,True
+A (development),43,T,251723,Taste of Glebe,other,none,unknown,False
+A (development),44,T,1986834,Chopped Cheese Factory,other,none,sandwich,False
+A (development),45,T,1634344,Newfarm Eatery,other,none,unknown,False
+A (development),46,T,1762385,Nicky's,other,none,unknown,False
+A (development),47,T,1934046,Junction 45 Truckstop,other,none,unknown,False
+A (development),48,T,1862949,Jamaica To Go,caribbean,chain:jamaica,caribbean,True
+A (development),49,T,1841984,Boston Subway,sandwich,chain:subway,sandwich,True
+A (development),50,T,1426507,Happy Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),51,T,355075,Costa Ltd,cafe,chain:costa,cafe,True
+A (development),52,T,193308,I Wok,chinese,strong:chinese,chinese,True
+A (development),53,T,1210717,Zenith Chicken,chicken,strong:chicken,chicken,True
+A (development),54,T,1213359,Central Grill,other,none,unknown,False
+A (development),55,T,1017252,British Raj,indian,weak:indian,indian,True
+A (development),56,T,715455,Onyx Fish Bar and Grill,fish_chips,strong:fish_chips,fish_chips,True
+A (development),57,T,55273,Golden Dragon,chinese,weak:chinese,chinese,True
+A (development),58,T,1274402,River Spice,indian,weak:indian,indian,True
+A (development),59,T,1800442,Golden Dragon,chinese,weak:chinese,chinese,True
+A (development),60,T,368670,Golden Crown,chinese,weak:chinese,chinese,True
+A (development),61,T,1930085,Chester Charcoal Hut,kebab,strong:kebab,kebab,True
+A (development),62,T,1669668,Food Zone,other,none,unknown,False
+A (development),63,T,1945574,Camel Trail Oasis,other,none,unknown,False
+A (development),64,T,479540,the chai club,cafe,strong:cafe,cafe,True
+A (development),65,T,342238,Subway,sandwich,chain:subway,sandwich,True
+A (development),66,T,359304,Original Roti Junction,other,none,unknown,False
+A (development),67,T,1845252,Grove Lane Pizza & Fish Bar,fish_chips,strong:fish_chips+pizza,pizza|fish_chips,True
+A (development),68,T,1004224,Crown Chip Shop,fish_chips,strong:fish_chips,fish_chips,True
+A (development),69,T,1910754,Make And Bake By JC,sandwich,strong:sandwich,sandwich,True
+A (development),70,T,1068972,Angels Bakery,sandwich,strong:sandwich,sandwich,True
+A (development),71,T,1211054,Greggs @ Asda Express Ltd,sandwich,chain:greggs,sandwich,True
+A (development),72,T,933994,Little Wonder Cafe,cafe,strong:cafe,cafe,True
+A (development),73,T,1653699,Ohannes Burger,burger,strong:burger,burger,True
+A (development),74,T,251619,Station Food,other,none,unknown,False
+A (development),75,T,941916,Topkapi Grill,other,none,kebab,False
+A (development),76,T,118026,That Pizza Place Ltd,pizza,strong:pizza,pizza,True
+A (development),77,T,38739,Park Gate Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+A (development),78,T,1551339,Karadenizpide ltd,other,none,kebab,False
+A (development),79,T,1557534,Shimlas,other,none,indian,False
+A (development),80,T,1692421,Toto House,other,none,unknown,False
+A (development),81,T,330941,Graig Wen Touring Park,other,none,unknown,False
+A (development),82,T,2002828,Lees Cottage,chinese,weak:chinese,chinese,True
+A (development),83,T,1266761,Pontefract Community Kitchen,other,none,unknown,False
+A (development),84,T,1697806,Domino's Pizza,pizza,chain:domino's,pizza,True
+A (development),85,T,1054003,Pret A Manger,sandwich,chain:pret,sandwich,True
+A (development),86,T,1407975,Yummy Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),87,T,1755571,Zaffs P Ltd,other,none,unknown,False
+A (development),88,T,616388,Tates Fisheries,fish_chips,strong:fish_chips,fish_chips,True
+A (development),89,T,1672884,Yum Yard,other,none,unknown,False
+A (development),90,T,1922270,Domino’s Pizza,pizza,chain:domino's,pizza,True
+A (development),91,T,580488,China Spice,chinese,strong:chinese,chinese,True
+A (development),92,T,1980811,Dolce express,other,none,unknown,False
+A (development),93,T,684502,Antonios Pizza,pizza,strong:pizza,pizza,True
+A (development),94,T,401936,Flippers,other,none,unknown,False
+A (development),95,T,1563110,Bite & Go,other,none,unknown,False
+A (development),96,T,1360695,The Waffles Emporium,cafe,strong:cafe,cafe,True
+A (development),97,T,1588716,Chicken Grill (Chick-King),chicken,chain:chick king,chicken,True
+A (development),98,T,640762,Papa's Chicken,chicken,strong:chicken,chicken,True
+A (development),99,T,1660087,West Turkish Kebab House,kebab,strong:kebab,kebab,True
+A (development),100,T,658835,Feast Brothers Ltd,other,none,unknown,False
+A (development),101,T,1963174,Consett Kebab and Pizza,kebab,strong:pizza+kebab,kebab|pizza,True
+A (development),102,T,1556119,Cargo Coffee,cafe,strong:cafe,cafe,True
+A (development),103,T,1616910,The Ice Cream Hut,cafe,strong:cafe,cafe,True
+A (development),104,T,245223,New Pak Ho Chop Suey House,chinese,strong:chinese,chinese,True
+A (development),105,T,1600944,Ben & Harry  Limited,other,none,unknown,False
+A (development),106,T,662331,China Express,chinese,strong:chinese,chinese,True
+A (development),107,T,1623974,Pandacup,other,none,unknown,False
+A (development),108,T,753366,HERRONS COUNTRY FRIED CHICKEN,chicken,strong:chicken,chicken,True
+A (development),109,T,647367,Dragon House,chinese,weak:chinese,chinese,True
+A (development),110,T,1639471,Royal Night,other,none,unknown,False
+A (development),111,T,1437760,Firats Place,other,none,unknown,False
+A (development),112,T,1397292,Songbird,other,none,unknown,False
+A (development),113,T,1926403,Panda Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),114,T,1750295,Aroma Chinese,chinese,strong:chinese,chinese,True
+A (development),115,T,1376352,Subway,sandwich,chain:subway,sandwich,True
+A (development),116,T,489191,Domino's Pizza,pizza,chain:domino's,pizza,True
+A (development),117,T,213301,Messingham Road Fisheries,fish_chips,strong:fish_chips,fish_chips,True
+A (development),118,T,1805885,Sushi Daily,japanese,strong:japanese,japanese,True
+A (development),119,T,241152,Sandy Fish Bar and Kebab House,fish_chips,strong:fish_chips+kebab,fish_chips|kebab,True
+A (development),120,T,549896,Moscardinis,other,none,unknown,False
+A (development),121,T,1972469,The Blue Berry,other,none,unknown,False
+A (development),122,T,1797542,Pizza Bite,pizza,strong:pizza,pizza,True
+A (development),123,T,1032577,Pizza Time,pizza,strong:pizza,pizza,True
+A (development),124,T,1881318,Wee Barras Cafe,cafe,strong:cafe,cafe,True
+A (development),125,T,1195853,Sunny House,other,none,unknown,False
+A (development),126,T,1044270,Lotus House,chinese,weak:chinese,chinese,True
+A (development),127,T,1969819,Cuban Scran,other,none,caribbean,False
+A (development),128,T,1094985,The Dawson Pie Company,other,none,sandwich,False
+A (development),129,T,1155350,Tasty Garden,chinese,weak:chinese,chinese,True
+A (development),130,T,1824815,Dixy Chicken,chicken,chain:dixy,chicken,True
+A (development),131,T,295699,Spring Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),132,T,1714195,Hikari Plant-Based Sushi,japanese,strong:japanese,japanese,True
+A (development),133,T,1340036,Nam nam,other,none,unknown,False
+A (development),134,T,1079564,Marios Takeaway,other,none,unknown,False
+A (development),135,T,1384717,Swillington Fisheries,fish_chips,strong:fish_chips,fish_chips,True
+A (development),136,T,1429399,Thai style crapes,thai,strong:thai,cafe,False
+A (development),137,T,769597,Akka Street Food,other,none,unknown,False
+A (development),138,T,1907627,Kikuni Sushi,japanese,strong:japanese,japanese,True
+A (development),139,T,520583,Royal Chicken,chicken,strong:chicken,chicken,True
+A (development),140,T,1847793,The Coffee Cabin,cafe,strong:cafe,cafe,True
+A (development),141,T,1921632,The Fifteen,other,none,unknown,False
+A (development),142,T,1985018,STACK500,other,none,unknown,False
+A (development),143,T,904129,Golcar Fisheries,fish_chips,strong:fish_chips,fish_chips,True
+A (development),144,T,1369439,Apache Pizza (Waterside),pizza,strong:pizza,pizza,True
+A (development),145,T,1298435,Rustic Kitchen Worcestershire,other,none,unknown,False
+A (development),146,T,1570083,Attock Roti Junction,other,none,indian,False
+A (development),147,T,128849,Golden Bird,chinese,weak:chinese,unknown,False
+A (development),148,T,1990579,Pizza Haven Indian Curry Ltd,indian,strong:indian+pizza,pizza|indian,True
+A (development),149,T,341961,Subway - Melthouse,sandwich,chain:subway,sandwich,True
+A (development),150,T,696313,The Bakers Deli,sandwich,strong:sandwich,sandwich,True
+A (development),151,T,1228001,Yayas Grillhouse,other,none,unknown,False
+A (development),152,T,1430370,Torino Pizza,pizza,strong:pizza,pizza,True
+A (development),153,T,1454024,Dumdaar / Chicken @Dumdaar / Burger @ Dumdaar,chicken,strong:chicken+burger,chicken|burger,True
+A (development),154,T,1887609,Papa Johns Pizza,pizza,chain:papa johns,pizza,True
+A (development),155,T,490846,Pizza 2go A4,pizza,strong:pizza,pizza,True
+A (development),156,T,1133515,Boston Express,other,none,unknown,False
+A (development),157,T,1897540,Viet Nam,other,none,asian_other,False
+A (development),158,T,40745,Charcoal Grill LTD,kebab,strong:kebab,kebab,True
+A (development),159,T,906468,Eat N Go,other,none,unknown,False
+A (development),160,T,859823,Domino's Pizza,pizza,chain:domino's,pizza,True
+A (development),161,T,1659349,Fry Station,fish_chips,hint:fish,fish_chips,True
+A (development),162,T,1562680,Chicken Shack,chicken,strong:chicken,chicken,True
+A (development),163,T,1941554,Hito coffee,cafe,strong:cafe,cafe,True
+A (development),164,T,107580,QQBBQ,other,none,unknown,False
+A (development),165,T,1910320,Kabul Bakery & Sweets House,sandwich,strong:sandwich+cafe,sandwich|cafe,True
+A (development),166,T,997078,Fullers Fish and Chips,fish_chips,strong:fish_chips,fish_chips,True
+A (development),167,T,1776204,"SPN Flava, Juice And Cake",cafe,strong:cafe,cafe,True
+A (development),168,T,1547979,Jing Jing Chinese,chinese,strong:chinese,chinese,True
+A (development),169,T,1786135,The Original Cake Fridge Shop,cafe,strong:cafe,cafe,True
+A (development),170,T,1936227,New Golden Palace,chinese,weak:chinese,chinese,True
+A (development),171,T,494574,S&D Leisure (Bournemouth) Kiosk 2,other,none,unknown,False
+A (development),172,T,115955,The New Sudden Chippy,fish_chips,strong:fish_chips,fish_chips,True
+A (development),173,T,1668318,Elizabethan Chip Shop,fish_chips,strong:fish_chips,fish_chips,True
+A (development),174,T,1905163,Naples Pizza,pizza,strong:pizza,pizza,True
+A (development),175,T,214977,New Golden Bowl,chinese,weak:chinese,chinese,True
+A (development),176,T,149126,Central Pizza,pizza,strong:pizza,pizza,True
+A (development),177,T,1761858,Black Rooster Peri Peri,chicken,chain:rooster,chicken,True
+A (development),178,T,898329,Sunny Chop Suey Centre,chinese,strong:chinese,chinese,True
+A (development),179,T,739522,New City,other,none,unknown,False
+A (development),180,T,192755,Tobzkitchen,other,none,unknown,False
+A (development),181,T,1886961,One Of Each,other,none,unknown,False
+A (development),182,T,1572511,Michaels Fish and Chips and Kebab,fish_chips,strong:fish_chips+kebab,fish_chips|kebab,True
+A (development),183,T,257709,Fatso's,other,none,unknown,False
+A (development),184,T,1156099,Golden City,chinese,weak:chinese,chinese,True
+A (development),185,T,1300126,Kanoha Fried Chicken and Desserts,chicken,strong:chicken+cafe,chicken|cafe,True
+A (development),186,T,443557,Subway,sandwich,chain:subway,sandwich,True
+A (development),187,T,1838683,Little Big Sicily,other,none,italian|pizza,False
+A (development),188,T,490863,Kentucky Fried Chicken,chicken,chain:kentucky fried,chicken,True
+A (development),189,T,1746369,Bravo,other,none,unknown,False
+A (development),190,T,739904,Domino's Pizza,pizza,chain:domino's,pizza,True
+A (development),191,T,1920889,Spicy Twist,indian,weak:indian,unknown,False
+A (development),192,T,1047062,KFC Stevenage,chicken,chain:kfc,chicken,True
+A (development),193,T,1932099,Pink Garlic,other,none,unknown,False
+A (development),194,T,1420890,Dukes 2 Go,other,none,unknown,False
+A (development),195,T,2005757,Kem's Soda Shack,other,none,cafe,False
+A (development),196,T,247055,Chinese Chef,chinese,strong:chinese,chinese,True
+A (development),197,T,663483,Tony's,other,none,unknown,False
+A (development),198,T,1923437,Happiness Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),199,T,314865,After Five,other,none,unknown,False
+A (development),200,T,1282809,Apache Pizza Lurgan,pizza,strong:pizza,pizza,True
+A (development),201,T,300963,Subway,sandwich,chain:subway,sandwich,True
+A (development),202,T,1811544,Diana Kebab,kebab,strong:kebab,kebab,True
+A (development),203,T,1917733,Pal Pizza,pizza,strong:pizza,pizza,True
+A (development),204,T,1957316,Haus of Uji,other,none,unknown,False
+A (development),205,T,1871513,GHUGHRAWALA BOYS,other,none,unknown,False
+A (development),206,T,627218,Jumbo,other,none,unknown,False
+A (development),207,T,1550767,Cork & Spice,indian,weak:indian,unknown,False
+A (development),208,T,1986313,Morrisons Daily Coalville -GREGGS,sandwich,chain:greggs,sandwich,True
+A (development),209,T,1281636,Tops Pizza / Wingos,pizza,strong:pizza,pizza|chicken,True
+A (development),210,T,143465,Peri Cottage,other,none,chicken,False
+A (development),211,T,83762,Jade Garden Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),212,T,1999447,Filling Station,sandwich,strong:sandwich,sandwich,True
+A (development),213,T,1965684,Auntie Annes,cafe,chain:auntie anne,cafe,True
+A (development),214,T,662625,China Cuisine,chinese,strong:chinese,chinese,True
+A (development),215,T,1867290,The Village End Rainford,other,none,unknown,False
+A (development),216,T,1810710,Fish \& Chicken,fish_chips,strong:fish_chips+chicken,fish_chips|chicken,True
+A (development),217,T,1943353,Kebab house,kebab,strong:kebab,kebab,True
+A (development),218,T,1981639,Crust & Curry,indian,strong:indian+sandwich,indian,True
+A (development),219,T,1851491,Adams Pizza,pizza,strong:pizza,pizza,True
+A (development),220,T,892217,Dimascio Ice Cream,cafe,strong:cafe,cafe,True
+A (development),221,T,47765,Eight Fortunes,other,none,chinese,False
+A (development),222,T,1467622,Milano Pizza,pizza,strong:pizza+italian,pizza,True
+A (development),223,T,1620213,Dallas Chicken And Pizza,pizza,strong:pizza+chicken,chicken|pizza,True
+A (development),224,T,1604530,Biryani World,indian,strong:indian,indian,True
+A (development),225,T,1778927,Maxime Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),226,T,129465,Balmedie Fish & Chip Shop,fish_chips,strong:fish_chips,fish_chips,True
+A (development),227,T,1438908,Greggs,sandwich,chain:greggs,sandwich,True
+A (development),228,T,1551090,Exmoor Bake House,sandwich,strong:sandwich,sandwich,True
+A (development),229,T,514865,Orient Chicken & Pizza,pizza,strong:pizza+chicken,chicken|pizza,True
+A (development),230,T,1640950,Yo! To Go!,japanese,chain:yo to go,japanese,True
+A (development),231,T,529110,Girdle Toll Cafe,cafe,strong:cafe,cafe,True
+A (development),232,T,431747,Thorndon Countryside Centre (North),other,none,unknown,False
+A (development),233,T,1436458,Kings,other,none,unknown,False
+A (development),234,T,436915,Oasis Takeaway,other,none,unknown,False
+A (development),235,T,428803,Pan Pizza & Shiraz Balti,indian,strong:indian+pizza,pizza|indian,True
+A (development),236,T,1874512,Greek Street,greek_med,strong:greek_med,greek_med,True
+A (development),237,T,1032402,Triple S Caterers,other,none,unknown,False
+A (development),238,T,559593,The Best Marmaris Kebab,kebab,strong:kebab,kebab,True
+A (development),239,T,1754534,Hip Hop Burger Shack,burger,strong:burger,burger,True
+A (development),240,T,2007976,Stalker's Low & Slow,other,none,unknown,False
+A (development),241,T,1263342,Grill Ventures Limited,other,none,unknown,False
+A (development),242,T,891430,Lakeside Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+A (development),243,T,1675118,Condiment pantry,other,none,unknown,False
+A (development),244,T,944799,Hasty Tasty Pizza,pizza,strong:pizza,pizza,True
+A (development),245,T,321566,Ideal Sandwiches,sandwich,strong:sandwich,sandwich,True
+A (development),246,T,1900985,BiteZ By Zy,other,none,unknown,False
+A (development),247,T,192388,Rainbow Palace,other,none,chinese,False
+A (development),248,T,1795566,Colombo Express,other,none,indian,False
+A (development),249,T,1917550,TandoorI Fresh Naan,indian,strong:indian,indian,True
+A (development),250,T,1841060,Pisces Fish Bar,fish_chips,strong:fish_chips,fish_chips,True
+A (development),251,T,1283453,Hou Wei,other,none,chinese,False
+A (development),252,T,554991,DAMA PIZZA KEBAB,pizza,strong:pizza+kebab,pizza|kebab,True
+A (development),253,T,1110464,The Wick Fryer,fish_chips,hint:fish,fish_chips,True
+A (development),254,T,1916096,Vrisaki Kebab House,kebab,strong:kebab,kebab,True
+A (development),255,T,1001580,Izzy's Grill (West Stand Pod And East Stand Pod),other,none,unknown,False
+A (development),256,T,37931,Al'S Bar,other,none,unknown,False
+A (development),257,T,1610986,Wok 'n' Roll,chinese,strong:chinese+sandwich,chinese,True
+A (development),258,T,1008439,Golden Fish & Chips,fish_chips,strong:fish_chips,fish_chips,True
+A (development),259,T,330638,Asia Garden,other,none,asian_other|chinese,False
+A (development),260,T,1665346,Salumeria Mariuccia,other,none,italian,False
+A (development),261,T,1978273,Zoraiz,other,none,unknown,False
+A (development),262,T,1736754,Nihao Takeaway,other,none,chinese,False
+A (development),263,T,1657737,NST Fuchka & Biryani House,indian,strong:indian,indian,True
+A (development),264,T,1896560,Tokies Deserts,other,none,cafe,False
+A (development),265,T,1654164,Habb / Red Jalapeno / Route 77 / Shakester,other,none,unknown,False
+A (development),266,T,1436135,The Golden Cod,fish_chips,hint:fish,fish_chips,True
+A (development),267,T,1093111,The Wood Shed Pizza,pizza,strong:pizza,pizza,True
+A (development),268,T,861172,Happy House Chinese Takeaway,chinese,strong:chinese,chinese,True
+A (development),269,T,1576304,Victoria Bakes,sandwich,strong:sandwich,sandwich,True
+A (development),270,T,1956457,Cornerwich Takeaway,other,none,sandwich,False
+A (development),271,T,918929,Gurnos Kebab house,kebab,strong:kebab,kebab,True
+A (development),272,T,2006980,CRAVE CULTURE,other,none,unknown,False
+A (development),273,T,132756,Peri Peri Original Bletchley,chicken,strong:chicken,chicken,True
+A (development),274,T,135695,Starbucks Coffee Company,cafe,chain:starbucks,cafe,True
+A (development),275,T,119772,Buttilicious,other,none,sandwich,False
+A (development),276,T,624356,Wok Inn,chinese,strong:chinese,chinese,True
+A (development),277,T,943054,Burger and Beyond,burger,strong:burger,burger,True
+A (development),278,T,1780729,Bamber Bridge Foods Ltd,other,none,unknown,False
+A (development),279,T,394058,Hungrys,other,none,unknown,False
+A (development),280,T,1158486,Fish Ahoy,fish_chips,strong:fish_chips,fish_chips,True
+A (development),281,T,1606143,Bubbles,other,none,unknown,False
+A (development),282,T,1569759,Burnham Bakery,sandwich,strong:sandwich,sandwich,True
+A (development),283,T,1788060,Planet chicken Skelmersdale,chicken,strong:chicken,chicken,True
+A (development),284,T,1929593,Mamytriplets,other,none,unknown,False
+A (development),285,T,1942709,The Bread Cartel,other,none,sandwich,False
+A (development),286,T,1023137,Subway,sandwich,chain:subway,sandwich,True
+A (development),287,T,1540354,FOOD CAB LTD,other,none,unknown,False
+A (development),288,T,66274,Romero's Clitheroe,other,none,unknown,False
+A (development),289,T,1981218,FARMHOUSE KITCHEN,other,none,unknown,False
+A (development),290,T,1620248,MFG Condorrat (shop),other,none,unknown,False
+A (development),291,T,42265,The Great Wall,chinese,weak:chinese,chinese,True
+A (development),292,T,490363,Bedfont Kebab,kebab,strong:kebab,kebab,True
+A (development),293,T,976047,Balals,other,none,unknown,False
+A (development),294,T,359203,Tastys Chinese and Peri Peri,chinese,strong:chinese+chicken,chinese|chicken,True
+A (development),295,T,1950531,Samboni coffee venture/Hidalgo Growers,cafe,strong:cafe,cafe,True
+A (development),296,T,1903800,Tuck In At Suzie’s,other,none,unknown,False
+A (development),297,T,1828374,Motorpoint Cafe,cafe,strong:cafe,cafe,True
+A (development),298,T,1215704,Chicken.Com,chicken,strong:chicken,chicken,True
+A (development),299,T,1695091,PUCCINO'S,other,none,cafe,False
+A (development),300,R,1438183,Sycamore Chapel,other,none,unknown,False
+A (development),301,R,1718671,Panaderia,other,none,sandwich,False
+A (development),302,R,1496767,Clifftown Theatre,other,none,unknown,False
+A (development),303,R,1950580,Bacco Wine,other,none,unknown,False
+A (development),304,R,1104175,Forge & Filter Ltd,other,none,unknown,False
+A (development),305,R,542331,The Little Cafe,cafe,strong:cafe,cafe,True
+A (development),306,R,732147,Creams Cafe,cafe,chain:creams,cafe,True
+A (development),307,R,1796553,Mr Odie's,other,none,unknown,False
+A (development),308,R,1703606,Durham University - Chemistry Cafe,cafe,strong:cafe,cafe,True
+A (development),309,R,438169,Half Moon,other,none,unknown,False
+A (development),310,R,324511,Cookhouse Cafe,cafe,strong:cafe,cafe,True
+A (development),311,R,1924345,Reina Meze & Grill,greek_med,strong:greek_med,greek_med|kebab,True
+A (development),312,R,1973898,Second Sitting,other,none,unknown,False
+A (development),313,R,1172426,Red Dog Saloon/ Louie's Hot Chicken,chicken,strong:chicken,burger|chicken,True
+A (development),314,R,1728829,The Cheese & Pickle,other,none,sandwich,False
+A (development),315,R,1795616,The Avenue Cafe,cafe,strong:cafe,cafe,True
+A (development),316,R,1798380,Dodi's Art of Cake,cafe,strong:cafe,cafe,True
+A (development),317,R,491238,Feltham Tenpin,other,none,unknown,False
+A (development),318,R,1782246,Bury Chicken House,chicken,strong:chicken,chicken,True
+A (development),319,R,1729641,Desi Village,indian,strong:indian,indian,True
+A (development),320,R,1984947,Pius Burns Abayie Danso,other,none,unknown,False
+A (development),321,R,1062536,Joys Donuts,cafe,strong:cafe,cafe,True
+A (development),322,R,1584416,MU,other,none,unknown,False
+A (development),323,R,1634245,The Dark Horse Espresso Bar,cafe,strong:cafe,cafe,True
+A (development),324,R,1176023,Uncle Jimmy's,other,none,unknown,False
+A (development),325,R,1204837,Wallacespace,other,none,unknown,False
+A (development),326,R,1954403,Enzo,other,none,unknown,False
+A (development),327,R,1978072,Dumnbleton Village Hall,other,none,unknown,False
+A (development),328,R,1829893,Chicken Cottage Cambridge,chicken,chain:chicken cottage,chicken,True
+A (development),329,R,1791058,Cruive,other,none,unknown,False
+A (development),330,R,328455,New Manzil Restaurant,other,none,indian,False
+A (development),331,R,1978979,Tandoori Nights,indian,strong:indian,indian,True
+A (development),332,R,119596,Kings Arms,other,none,unknown,False
+A (development),333,R,1930768,Kerala Spot,indian,strong:indian,indian,True
+A (development),334,R,1600946,Cha Louis,other,none,unknown,False
+A (development),335,R,1992666,Level 1 Bars (Canalside) - Level 01 Co-op Live,other,none,unknown,False
+A (development),336,R,150992,Aniseed Restaurant,other,none,unknown,False
+A (development),337,R,1704027,Union Streat Kitchen,other,none,unknown,False
+A (development),338,R,1816601,Destiny Desserts,cafe,strong:cafe,cafe,True
+A (development),339,R,1830629,Wacky Waves,other,none,unknown,False
+A (development),340,R,1067483,Xtreme Jump Ltd,other,none,unknown,False
+A (development),341,R,1401489,Mooboo Worthing,other,none,cafe|asian_other,False
+A (development),342,R,496201,Quality Foods Deli,sandwich,strong:sandwich,sandwich,True
+A (development),343,R,1679019,The Railway,other,none,unknown,False
+A (development),344,R,492592,Hatfields,other,none,unknown,False
+A (development),345,R,1647751,Caldbeck Cricket Club,other,none,unknown,False
+A (development),346,R,121804,Leaf Tandoori,indian,strong:indian,indian,True
+A (development),347,R,1471968,Hinba,other,none,unknown,False
+A (development),348,R,1849129,WINGSTOP UK,chicken,chain:wingstop,chicken,True
+A (development),349,R,1724501,Burgess Hill Cricket Club - Bites & Brews,other,none,unknown,False
+A (development),350,R,1333251,Coffee House,cafe,strong:cafe,cafe,True
+A (development),351,R,1835963,The Grill,other,none,unknown,False
+A (development),352,R,1655395,St Mellons Church In Wales Primary School,other,none,unknown,False
+A (development),353,R,1439286,Sushi Me Rollin’,japanese,strong:japanese,japanese,True
+A (development),354,R,243677,Prezzo,italian,chain:prezzo,italian,True
+A (development),355,R,1862566,Kardoma,other,none,unknown,False
+A (development),356,R,1538064,BAGEL SOCIETY,sandwich,strong:sandwich,sandwich,True
+A (development),357,R,754957,AVONDALE FOODS CANTEEN,other,none,unknown,False
+A (development),358,R,1555615,Bella Italia Dudley,italian,chain:bella italia,italian,True
+A (development),359,R,1867056,Kiddos kingdom,other,none,unknown,False
+A (development),360,R,57900,Mikalas Kitchen,other,none,unknown,False
+A (development),361,R,238413,The Crown Hotel,other,none,unknown,False
+A (development),362,R,528909,The Little Fish Market,fish_chips,strong:fish_chips,fish_chips,True
+A (development),363,R,1381433,The Oak Grill,other,none,unknown,False
+A (development),364,R,1824267,1 REBEL,other,none,unknown,False
+A (development),365,R,912052,The Scandinavian Coffee Pod,cafe,strong:cafe,cafe,True
+A (development),366,R,287540,Top Nosh,other,none,unknown,False
+A (development),367,R,280815,Roosters Piri Piri,chicken,chain:roosters,chicken,True
+A (development),368,R,1366648,Askew Cafe,cafe,strong:cafe,cafe,True
+A (development),369,R,1700246,Chaat House,indian,strong:indian,indian,True
+A (development),370,R,287421,Fountain Cottage Cafe Ltd,cafe,strong:cafe,cafe,True
+A (development),371,R,1746521,Cafe 25,cafe,strong:cafe,cafe,True
+A (development),372,R,1608868,Parkers Pantry,other,none,unknown,False
+A (development),373,R,1797718,Charles Artisan Bread,other,none,sandwich,False
+A (development),374,R,1885951,Machair Bakery,sandwich,strong:sandwich,sandwich,True
+A (development),375,R,1792697,Serious Grillin,other,none,unknown,False
+A (development),376,R,329321,The Boathouse,other,none,unknown,False
+A (development),377,R,8285,The Dig Inn,other,none,unknown,False
+A (development),378,R,705797,The Bakers Dozen,sandwich,strong:sandwich,sandwich,True
+A (development),379,R,1196734,Partou Playtime Day Nursery & Pre- School,other,none,unknown,False
+A (development),380,R,1839060,Forni Kitchen Tower Hill,other,none,italian|pizza,False
+A (development),381,R,160248,Dundee Sheriff Court,other,none,unknown,False
+A (development),382,R,1230292,No 9,other,none,unknown,False
+A (development),383,R,83788,Jalori Indian Cuisine,indian,strong:indian,indian,True
+A (development),384,R,902112,Andrews Catering,other,none,unknown,False
+A (development),385,R,1753733,Tang Dynasty,chinese,weak:chinese,chinese,True
+A (development),386,R,1288864,The Harbour View,other,none,unknown,False
+A (development),387,R,1082738,Green Street Cafe,cafe,strong:cafe,cafe,True
+A (development),388,R,1728737,Ranouch's Kitchen,other,none,unknown,False
+A (development),389,R,100915,Tea Rooms,cafe,strong:cafe,cafe,True
+A (development),390,R,1408954,Barbosa,other,none,unknown,False
+A (development),391,R,1847869,The Last Track Ltd,other,none,unknown,False
+A (development),392,R,1852816,Potteries Gaming,other,none,unknown,False
+A (development),393,R,798306,The Bank Restaurant,other,none,unknown,False
+A (development),394,R,426041,The Chin Chin Club Ltd,other,none,unknown,False
+A (development),395,R,1868882,Farm Adventure,other,none,unknown,False
+A (development),396,R,618930,Uni Restaurant,other,none,unknown,False
+A (development),397,R,572091,Port Of Call,other,none,unknown,False
+A (development),398,R,1703914,Liege Waffles,cafe,strong:cafe,cafe,True
+A (development),399,R,115764,Downie Lounge And Hunter Hall,other,none,unknown,False
+A (development),400,R,1814120,Great Yarmouth Racecourse Lord Nelson Grandstand,other,none,unknown,False
+A (development),401,R,650758,Cafe 22,cafe,strong:cafe,cafe,True
+A (development),402,R,1269495,Tatashe,other,none,unknown,False
+A (development),403,R,988224,MarcoPaulos,other,none,unknown,False
+A (development),404,R,1838217,Cosy Corner Coffee,cafe,strong:cafe,cafe,True
+A (development),405,R,468724,British Plastics Federation,other,none,unknown,False
+A (development),406,R,1844268,Ki Khana,other,none,indian,False
+A (development),407,R,534937,Laryn,other,none,unknown,False
+A (development),408,R,914647,The Ivy Bath Brasserie,other,none,unknown,False
+A (development),409,R,1591241,Lavender Nursery,other,none,unknown,False
+A (development),410,R,1246907,DEVANA COFFEE SHOP,cafe,strong:cafe,cafe,True
+A (development),411,R,2000980,Chester coffee,cafe,strong:cafe,cafe,True
+A (development),412,R,1545500,Heavenly Desserts,cafe,chain:heavenly desserts,cafe,True
+A (development),413,R,719322,Susan MacDonald - Americano Catering,other,none,unknown,False
+A (development),414,R,1890646,Gurbani Sweets,cafe,strong:cafe,indian|cafe,True
+A (development),415,R,1774045,Peggotty's Tea Shoppe,other,none,cafe,False
+A (development),416,R,1424966,Tegridy Foods,other,none,unknown,False
+A (development),417,R,1296622,Yum Yum Bites,other,none,unknown,False
+A (development),418,R,1941784,The Cupboard,other,none,unknown,False
+A (development),419,R,1904993,Restaurant Associates at Virgin,other,none,unknown,False
+A (development),420,R,1935258,Linda's Cafe,cafe,strong:cafe,cafe,True
+A (development),421,R,1721716,Mo Ghra Bistro,other,none,unknown,False
+A (development),422,R,321239,Harehills Lane Baptist Church And Courtyard Cafe,cafe,strong:cafe,cafe,True
+A (development),423,R,1911578,Play Place Innov8 CIC,other,none,unknown,False
+A (development),424,R,1674078,Cafe Rouge,cafe,strong:cafe,cafe,True
+A (development),425,R,1947601,Addie's Thai Restaurant,thai,strong:thai,thai,True
+A (development),426,R,1660796,Kaylee's Cakes & Bakes,sandwich,strong:sandwich+cafe,sandwich|cafe,True
+A (development),427,R,1869623,Clementine Cafe And Bistro,cafe,strong:cafe,cafe,True
+A (development),428,R,1136498,The Melting Pot Cafe,cafe,strong:cafe,cafe,True
+A (development),429,R,1783906,Mauds Chill,other,none,unknown,False
+A (development),430,R,1082302,Rishi's Indian Aroma,indian,strong:indian,indian,True
+A (development),431,R,1843767,Sabores Da Casa,other,none,unknown,False
+A (development),432,R,1876465,Dosa Bar,indian,strong:indian,indian,True
+A (development),433,R,442961,Woodford Baptist Church,other,none,unknown,False
+A (development),434,R,1995703,Dixee Chicken,chicken,strong:chicken,chicken,True
+A (development),435,R,1534886,Zambrero,other,none,mexican,False
+A (development),436,R,1744064,Sôlt Kitchen Coffee Bar,cafe,strong:cafe,cafe,True
+A (development),437,R,436037,McDonalds Restaurants Ltd,burger,chain:mcdonalds,burger,True
+A (development),438,R,206491,Ganges Brasserie,other,none,indian,False
+A (development),439,R,1160101,Baysville Coffee & Grill,cafe,strong:cafe,cafe,True
+A (development),440,R,66336,Cherry Tree,other,none,unknown,False
+A (development),441,R,486286,Hickling Methodist Church Lunch Club,other,none,unknown,False
+A (development),442,R,1809798,LAS RESTAURANT,other,none,unknown,False
+A (development),443,R,1276379,Morellis / Mauds Carnlough,other,none,cafe,False
+A (development),444,R,2002480,3FLAVOURATBELVILLAHOTEL,other,none,unknown,False
+A (development),445,R,480255,Watch Me,other,none,unknown,False
+A (development),446,R,1762336,Brewed Awakening,other,none,cafe,False
+A (development),447,R,607954,Birdies Bistro,other,none,unknown,False
+A (development),448,R,594250,JRC Global Buffet,other,none,unknown,False
+A (development),449,R,342741,Obscura Cafe,cafe,strong:cafe,cafe,True

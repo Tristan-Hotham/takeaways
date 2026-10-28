@@ -1,0 +1,219 @@
+code,name,nation,pop,pop_year
+E06000001,Hartlepool,England,99656,2025
+E06000002,Middlesbrough,England,152795,2025
+E06000003,Redcar and Cleveland,England,139541,2025
+E06000004,Stockton-on-Tees,England,207158,2025
+E06000005,Darlington,England,113402,2025
+E06000006,Halton,England,131912,2025
+E06000007,Warrington,England,215425,2025
+E06000008,Blackburn with Darwen,England,163801,2025
+E06000009,Blackpool,England,143492,2025
+E06000010,"Kingston upon Hull, City of",England,273257,2025
+E06000011,East Riding of Yorkshire,England,360334,2025
+E06000012,North East Lincolnshire,England,160101,2025
+E06000013,North Lincolnshire,England,171421,2025
+E06000014,York,England,209118,2025
+E06000015,Derby,England,275344,2025
+E06000016,Leicester,England,383116,2025
+E06000017,Rutland,England,41629,2025
+E06000018,Nottingham,England,325765,2025
+E06000019,"Herefordshire, County of",England,192539,2025
+E06000020,Telford and Wrekin,England,199378,2025
+E06000021,Stoke-on-Trent,England,272282,2025
+E06000022,Bath and North East Somerset,England,200898,2025
+E06000023,"Bristol, City of",England,495260,2025
+E06000024,North Somerset,England,227160,2025
+E06000025,South Gloucestershire,England,308787,2025
+E06000026,Plymouth,England,271361,2025
+E06000027,Torbay,England,139486,2025
+E06000030,Swindon,England,245286,2025
+E06000031,Peterborough,England,224757,2025
+E06000032,Luton,England,236380,2025
+E06000033,Southend-on-Sea,England,185214,2025
+E06000034,Thurrock,England,181664,2025
+E06000035,Medway,England,292697,2025
+E06000036,Bracknell Forest,England,132145,2025
+E06000037,West Berkshire,England,165523,2025
+E06000038,Reading,England,183762,2025
+E06000039,Slough,England,167450,2025
+E06000040,Windsor and Maidenhead,England,159776,2025
+E06000041,Wokingham,England,189024,2025
+E06000042,Milton Keynes,England,308866,2025
+E06000043,Brighton and Hove,England,284170,2025
+E06000044,Portsmouth,England,211475,2025
+E06000045,Southampton,England,259230,2025
+E06000046,Isle of Wight,England,140777,2025
+E06000047,County Durham,England,539146,2025
+E06000049,Cheshire East,England,425459,2025
+E06000050,Cheshire West and Chester,England,373951,2025
+E06000051,Shropshire,England,333162,2025
+E06000052,Cornwall,England,584782,2025
+E06000053,Isles of Scilly,England,2299,2025
+E06000054,Wiltshire,England,526392,2025
+E06000055,Bedford,England,196398,2025
+E06000056,Central Bedfordshire,England,321605,2025
+E06000057,Northumberland,England,333975,2025
+E06000058,"Bournemouth, Christchurch and Poole",England,405829,2025
+E06000059,Dorset,England,391036,2025
+E06000060,Buckinghamshire,England,584296,2025
+E06000061,North Northamptonshire,England,379569,2025
+E06000062,West Northamptonshire,England,444218,2025
+E06000063,Cumberland,England,282343,2025
+E06000064,Westmorland and Furness,England,231307,2025
+E06000065,North Yorkshire,England,639133,2025
+E06000066,Somerset,England,590972,2025
+E08000001,Bolton,England,309732,2025
+E08000002,Bury,England,199271,2025
+E08000003,Manchester,England,588256,2025
+E08000004,Oldham,England,251915,2025
+E08000005,Rochdale,England,237641,2025
+E08000006,Salford,England,297004,2025
+E08000007,Stockport,England,304879,2025
+E08000008,Tameside,England,240822,2025
+E08000009,Trafford,England,240981,2025
+E08000010,Wigan,England,347089,2025
+E08000011,Knowsley,England,163723,2025
+E08000012,Liverpool,England,507915,2025
+E08000013,St. Helens,England,189890,2025
+E08000014,Sefton,England,287583,2025
+E08000015,Wirral,England,329896,2025
+E08000016,Barnsley,England,252784,2025
+E08000017,Doncaster,England,323016,2025
+E08000018,Rotherham,England,279161,2025
+E08000019,Sheffield,England,579517,2025
+E08000021,Newcastle upon Tyne,England,320838,2025
+E08000022,North Tyneside,England,215401,2025
+E08000023,South Tyneside,England,151255,2025
+E08000024,Sunderland,England,287070,2025
+E08000025,Birmingham,England,1176960,2025
+E08000026,Coventry,England,364766,2025
+E08000027,Dudley,England,333941,2025
+E08000028,Sandwell,England,352918,2025
+E08000029,Solihull,England,221449,2025
+E08000030,Walsall,England,295722,2025
+E08000031,Wolverhampton,England,281434,2025
+E08000032,Bradford,England,557758,2025
+E08000033,Calderdale,England,210734,2025
+E08000034,Kirklees,England,445832,2025
+E08000035,Leeds,England,840550,2025
+E08000036,Wakefield,England,369450,2025
+E08000037,Gateshead,England,202509,2025
+E09000001,City of London,England,15631,2025
+E09000002,Barking and Dagenham,England,238295,2025
+E09000003,Barnet,England,408087,2025
+E09000004,Bexley,England,257103,2025
+E09000005,Brent,England,352201,2025
+E09000006,Bromley,England,336048,2025
+E09000007,Camden,England,216658,2025
+E09000008,Croydon,England,410085,2025
+E09000009,Ealing,England,387072,2025
+E09000010,Enfield,England,329400,2025
+E09000011,Greenwich,England,301225,2025
+E09000012,Hackney,England,266241,2025
+E09000013,Hammersmith and Fulham,England,190216,2025
+E09000014,Haringey,England,266218,2025
+E09000015,Harrow,England,272612,2025
+E09000016,Havering,England,280787,2025
+E09000017,Hillingdon,England,326671,2025
+E09000018,Hounslow,England,299486,2025
+E09000019,Islington,England,224551,2025
+E09000020,Kensington and Chelsea,England,145734,2025
+E09000021,Kingston upon Thames,England,172761,2025
+E09000022,Lambeth,England,314298,2025
+E09000023,Lewisham,England,301037,2025
+E09000024,Merton,England,218891,2025
+E09000025,Newham,England,376542,2025
+E09000026,Redbridge,England,321829,2025
+E09000027,Richmond upon Thames,England,196713,2025
+E09000028,Southwark,England,312366,2025
+E09000029,Sutton,England,213972,2025
+E09000030,Tower Hamlets,England,334240,2025
+E09000031,Waltham Forest,England,283713,2025
+E09000032,Wandsworth,England,339859,2025
+E09000033,Westminster,England,212367,2025
+E10000003,Cambridgeshire,England,716983,2025
+E10000007,Derbyshire,England,827217,2025
+E10000008,Devon,England,845541,2025
+E10000011,East Sussex,England,561855,2025
+E10000012,Essex,England,1576125,2025
+E10000013,Gloucestershire,England,671908,2025
+E10000014,Hampshire,England,1451703,2025
+E10000015,Hertfordshire,England,1239398,2025
+E10000016,Kent,England,1652769,2025
+E10000017,Lancashire,England,1308567,2025
+E10000018,Leicestershire,England,752448,2025
+E10000019,Lincolnshire,England,794009,2025
+E10000020,Norfolk,England,945427,2025
+E10000024,Nottinghamshire,England,862326,2025
+E10000025,Oxfordshire,England,769831,2025
+E10000028,Staffordshire,England,913073,2025
+E10000029,Suffolk,England,789850,2025
+E10000030,Surrey,England,1255255,2025
+E10000031,Warwickshire,England,644021,2025
+E10000032,West Sussex,England,921240,2025
+E10000034,Worcestershire,England,624209,2025
+N09000001,Antrim and Newtownabbey,Northern Ireland,148487,2025
+N09000002,"Armagh City, Banbridge and Craigavon",Northern Ireland,223044,2025
+N09000003,Belfast,Northern Ireland,351927,2025
+N09000004,Causeway Coast and Glens,Northern Ireland,141752,2025
+N09000005,Derry City and Strabane,Northern Ireland,152659,2025
+N09000006,Fermanagh and Omagh,Northern Ireland,117663,2025
+N09000007,Lisburn and Castlereagh,Northern Ireland,152367,2025
+N09000008,Mid and East Antrim,Northern Ireland,139964,2025
+N09000009,Mid Ulster,Northern Ireland,152292,2025
+N09000010,"Newry, Mourne and Down",Northern Ireland,182884,2025
+N09000011,Ards and North Down,Northern Ireland,165407,2025
+S12000005,Clackmannanshire,Scotland,51610,2025
+S12000006,Dumfries and Galloway,Scotland,145490,2025
+S12000008,East Ayrshire,Scotland,121350,2025
+S12000010,East Lothian,Scotland,116460,2025
+S12000011,East Renfrewshire,Scotland,99840,2025
+S12000013,Na h-Eileanan Siar,Scotland,25770,2025
+S12000014,Falkirk,Scotland,160230,2025
+S12000017,Highland,Scotland,237260,2025
+S12000018,Inverclyde,Scotland,78550,2025
+S12000019,Midlothian,Scotland,100390,2025
+S12000020,Moray,Scotland,94730,2025
+S12000021,North Ayrshire,Scotland,133660,2025
+S12000023,Orkney Islands,Scotland,21920,2025
+S12000026,Scottish Borders,Scotland,116800,2025
+S12000027,Shetland Islands,Scotland,22710,2025
+S12000028,South Ayrshire,Scotland,112280,2025
+S12000029,South Lanarkshire,Scotland,334330,2025
+S12000030,Stirling,Scotland,94040,2025
+S12000033,Aberdeen City,Scotland,230180,2025
+S12000034,Aberdeenshire,Scotland,264640,2025
+S12000035,Argyll and Bute,Scotland,87310,2025
+S12000036,City of Edinburgh,Scotland,531370,2025
+S12000038,Renfrewshire,Scotland,189270,2025
+S12000039,West Dunbartonshire,Scotland,88340,2025
+S12000040,West Lothian,Scotland,187240,2025
+S12000041,Angus,Scotland,114610,2025
+S12000042,Dundee City,Scotland,148390,2025
+S12000045,East Dunbartonshire,Scotland,109550,2025
+S12000047,Fife,Scotland,373990,2025
+S12000048,Perth and Kinross,Scotland,154930,2025
+S12000049,Glasgow City,Scotland,654330,2025
+S12000050,North Lanarkshire,Scotland,343930,2025
+W06000001,Isle of Anglesey,Wales,68607,2025
+W06000002,Gwynedd,Wales,120295,2025
+W06000003,Conwy,Wales,114421,2025
+W06000004,Denbighshire,Wales,98247,2025
+W06000005,Flintshire,Wales,155954,2025
+W06000006,Wrexham,Wales,137977,2025
+W06000008,Ceredigion,Wales,72696,2025
+W06000009,Pembrokeshire,Wales,125849,2025
+W06000010,Carmarthenshire,Wales,190037,2025
+W06000011,Swansea,Wales,249429,2025
+W06000012,Neath Port Talbot,Wales,142028,2025
+W06000013,Bridgend,Wales,146986,2025
+W06000014,Vale of Glamorgan,Wales,135362,2025
+W06000015,Cardiff,Wales,381516,2025
+W06000016,Rhondda Cynon Taf,Wales,241015,2025
+W06000018,Caerphilly,Wales,176078,2025
+W06000019,Blaenau Gwent,Wales,67593,2025
+W06000020,Torfaen,Wales,93973,2025
+W06000021,Monmouthshire,Wales,95329,2025
+W06000022,Newport,Wales,168584,2025
+W06000023,Powys,Wales,134843,2025
+W06000024,Merthyr Tydfil,Wales,58362,2025
