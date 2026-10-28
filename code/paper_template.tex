@@ -1,0 +1,203 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\newfontfamily\headfont{Inter}[UprightFont=*-ExtraBold,BoldFont=*-ExtraBold,Extension=.otf,Path=/usr/share/fonts/opentype/inter/]
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{graphicx,booktabs,float,caption,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{setspace}
+\setstretch{1.05}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\headfont\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\headfont\large}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont=bf}
+\urlstyle{same}
+\hypersetup{pdftitle={Chips, Curry or Kebab? The United Kingdom's Takeaways and Restaurants by Name, per Head and by Place},pdfauthor={Tristan Hotham}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Chips, Curry or Kebab?\\[2pt] The United Kingdom's Takeaways and Restaurants\\[2pt] by Name, per Head and by Place\par}
+\vspace{1.2em}
+{\large Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: \href{https://doi.org/10.5281/zenodo.23748252}{https://doi.org/10.5281/zenodo.23748252}\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+The Food Standards Agency publishes every inspected food business in the United Kingdom as open data, with its name, business type, postcode and hygiene rating, but not what food it sells. I retrieved all {{n_all_types|int}} establishments on {{retrieved}}, including {{n_T|int}} takeaways and sandwich shops and {{n_R|int}} restaurants, cafes and canteens, and sorted their trading names into sixteen kinds of food with transparent keyword rules. The rules gave a kind of food to {{classified.T.classified_pct|f1}}\% of takeaways. In a held-out random sample of {{accuracy.B.all.n|int}} names, each labelled individually by reading the name, {{accuracy.B.all.precision_pct|f1}}\% of the rules' answers were right (95\% interval {{accuracy.B.all.precision_ci.0|f1}} to {{accuracy.B.all.precision_ci.1|f1}}\%), and where {{osm.n_both|int}} matched OpenStreetMap places carried a cuisine tag the two agreed {{osm.agree_pct|f1}}\% of the time. Counted against Census populations of postcode districts and mid-{{county_pop_year}} estimates for counties and unitary authorities, the maps are distinct. Chip shops are densest in seaside resorts (Skegness, {{named_districts.PE25.fish_chips|f1}} per 100,000 residents) and, among larger council areas, in Blackpool ({{stories.fish_chips.county_top.0.rate|f1}}); Indian restaurants and takeaways in Hounslow and Southall; Chinese places in the old Chinatowns of Birmingham, Manchester and Liverpool; kebabs in north London; chicken shops in inner London. Wales has the most chip shops per head, Scotland the most takeaways and curry houses, Northern Ireland the most pizza places. Takeaways outnumber restaurants in only {{headline.n_counties_T_gt_R|int}} council areas of 100,000 or more. Takeaways rate lower for hygiene than restaurants, and chain takeaways higher than independents. Every count is a floor, because a third of takeaways have names that do not say what they sell.
+
+\textbf{Keywords:} takeaways; restaurants; food hygiene ratings; Food Standards Agency; name classification; OpenStreetMap; postcode districts; food geography; United Kingdom; open data
+\end{quote}
+
+\section{Introduction}
+
+Which part of the country eats the most fish and chips, and where is the curry capital? These are pub questions, but answering them properly needs a list of every food business in the country and some way of knowing what each one sells. Such a list exists. Every place in the United Kingdom that serves or sells food to the public is registered with and inspected by its local council, and the Food Standards Agency (FSA) publishes the results as open data through its food hygiene ratings service (Food Standards Agency 2026). Each record gives the business name, a business type such as ``Takeaway/sandwich shop'' or ``Restaurant/Cafe/Canteen'', an address and postcode, usually a map point, and the hygiene rating from the last inspection. Scotland's businesses appear in the same register under the Food Hygiene Information Scheme, which rates them Pass or Improvement Required rather than 0 to 5.
+
+What the register does not record is the food. A chip shop and a Chinese takeaway are both ``Takeaway/sandwich shop''. Public health work on the food environment usually counts all takeaways together (Burgoine et al. 2014; Public Health England 2018). For the questions here, the kind of food is the point. Fortunately most British takeaways announce it in their names: \textit{Jubilee Fish Bar}, \textit{Simla Tandoori}, \textit{Happy Garden}, \textit{Bosphorus Istanbul}.
+
+This note sorts the whole register by name, tests how often the sorting is right, and maps the result per head of population by postcode district and by county or unitary authority. It asks four questions. Where is each kind of takeaway most common, relative to the people who live there? How do the four nations differ? Where do takeaways outnumber restaurants? And do hygiene ratings differ by kind of food? An interactive version, with every postcode district and county, a search box and a ``Map layers'' panel, is at \url{https://maps.tristanhotham.com/takeaways/}.
+
+\section{Data}
+
+\subsection{The food hygiene register}
+
+I retrieved the register from the FSA's ratings API (version 2) on {{retrieved}}, one page of 5,000 records at a time for each of the fourteen business types. The register held {{n_all_types|int}} establishments: {{n_T|int}} takeaways and sandwich shops, {{n_R|int}} restaurants, cafes and canteens, {{n_P|int}} pubs, bars and nightclubs, {{n_M|int}} mobile caterers and the rest retailers, manufacturers, schools, hospitals and other premises. For the four business types studied here I kept the name, business type, postcode, coordinates, rating, rating year and inspecting council of each record; for all fourteen types I kept counts by postcode district and type, and the distribution of ratings by type. {{geocoded_pct|f1}}\% of the four studied types have coordinates. The data are published under the Open Government Licence v3.0.
+
+The register is a register of inspected premises, not a census of shops open on a given day. New businesses appear before their first inspection (``Awaiting Inspection''), some that have closed linger, and one business may hold several entries, for example kiosks in a stadium. The business type is chosen by each council, and councils do not all choose alike: a sit-down curry house with a takeaway counter may be a restaurant in one council and a takeaway in the next.
+
+\subsection{Population}
+
+There are no official population figures for postcode districts in a single UK table, so I assembled them. For England and Wales I used the Census 2021 counts of usual residents by postcode district (table P004, Office for National Statistics, via Nomis). For Scotland I summed Scotland's Census 2022 usual resident counts for each postcode (National Records of Scotland) into districts. For Northern Ireland I used NISRA's Census 2021 counts by postcode district. Together these cover {{n_districts|int}} districts with residents and {{pop_total|int}} people. For counties and unitary authorities I used the ONS mid-{{county_pop_year}} population estimates (via Nomis) on the April 2023 geography, with the ONS generalised boundaries of December 2023. All are under the Open Government Licence.
+
+\subsection{OpenStreetMap}
+
+As an independent check I downloaded every \texttt{amenity=fast\_food} and \texttt{amenity=restaurant} in OpenStreetMap within the UK through the Overpass API: {{osm.n_osm|int}} places, {{osm.pct_osm_cuisine|f1}}\% of them with a \texttt{cuisine} tag. OpenStreetMap data are \copyright{} OpenStreetMap contributors, under the Open Database Licence.
+
+\section{Methods}
+
+\subsection{Sorting names into kinds of food}
+
+A set of keyword rules (\texttt{code/classify.py} in the repository) reads each lower-cased name in three passes. First, national and regional chains are recognised by name (Domino's, KFC, McDonald's, Greggs, Subway, Harry Ramsden's and others). Second, strong words decide: \textit{fish bar}, \textit{chippy}, \textit{fisheries} and \textit{fish and chips} for fish and chips; \textit{tandoori}, \textit{balti}, \textit{curry}, \textit{masala} and the names of South Asian cities and regions for Indian; \textit{chinese}, \textit{peking}, \textit{canton}, \textit{wok} for Chinese; \textit{pizza}, \textit{kebab}, \textit{doner}, \textit{chicken}, \textit{peri peri}, \textit{burger}, and so on for sixteen families in all. A name with two strong families, common in hybrids such as \textit{Fish Bar and Chinese} or \textit{Pizza and Kebab House}, goes to the first in a fixed order (fish and chips, Indian, Thai, Japanese, Chinese, kebab, pizza, chicken, then the rest), except that pizza and kebab are decided by which word comes first. Third, only if no strong word fires, weak hints are used: words such as \textit{dragon}, \textit{jade}, \textit{lucky} and \textit{golden} that are very common in Chinese takeaway names, and \textit{spice}, \textit{raj} and \textit{taj} in Indian ones. Pubs are not sorted. Names that match nothing are left as ``not classified''.
+
+The families are: fish and chips; Indian and curry (including Bangladeshi, Pakistani, Nepalese and Sri Lankan); Chinese; pizza; kebab and Turkish; chicken shops (fried and peri-peri); burgers; Thai; Japanese and sushi; other East and South East Asian; Italian; Caribbean and African; Mexican; Greek and Middle Eastern; sandwiches, bakeries and delis; and cafes, coffee and sweet things.
+
+\subsection{Testing the rules}
+
+I drew two random samples of names. Sample A ({{accuracy.A.all.n|int}} names: {{accuracy.A.T.n|int}} takeaways and {{accuracy.A.R.n|int}} restaurants) was used while writing the rules. Sample B ({{accuracy.B.all.n|int}} names: {{accuracy.B.T.n|int}} takeaways and {{accuracy.B.R.n|int}} restaurants, excluding sample A) was drawn after the rules were fixed and is the held-out test. Each name was labelled individually by reading it, without the rules' answer (the labelling was done as part of the AI-assisted analysis and reviewed by the author), and given the family the name plainly points to, or ``unknown'' when it does not say; a name naming two foods counts as right for either. Knowledge of chains and some regional names was allowed. I report precision (of names the rules sorted, the share sorted right) and recall (of names that plainly say the food, the share the rules caught), with Wilson 95\% intervals.
+
+As a second check I matched OpenStreetMap places to the register: an OpenStreetMap place matches the register entry within 100 metres whose name shares the most words with it, if at least half of the words (after dropping ``the'', ``takeaway'', ``ltd'' and similar) are shared. OpenStreetMap cuisine values were mapped to the same families.
+
+\subsection{Places and rates}
+
+Each business is counted in its postcode district (the part of the postcode before the space) and in the county or unitary authority of its inspecting council. Councils nest within counties and unitary authorities, so I took each council's county as the one holding most of its geocoded businesses and gave that county to all its businesses, including the {{not_geocoded_pct|f1}}\% without coordinates. Rates are per 100,000 residents. To avoid tiny denominators, rankings use postcode districts of {{min_pop_rank|int}} residents or more and counties and unitary authorities of {{min_pop_rank_county|int}} or more; the maps grey out districts under 1,000 residents.
+
+Postcode districts have no official boundaries. For mapping only, I drew approximate ones on a 750 metre Web Mercator grid: each land square, within the ONS coastline, takes the district most common among its nine nearest labelled points (geocoded businesses, 1 km cell centres of all other food businesses, and Scotland's census postcode points), weighted towards nearer points. {{n_districts_drawn|int}} of the {{n_districts|int}} districts are drawn; the rest are tiny city centre districts, counted but too small to show. Counts and rates never depend on these shapes.
+
+Mobile caterers are registered at their owner's base, not where they trade, so they are excluded from the maps and rates. The takeaway to restaurant ratio divides the number of takeaways by the number of restaurants, cafes and canteens.
+
+\section{Results}
+
+\subsection{How much the names tell}
+
+The rules gave a kind of food to {{classified.T.classified_pct|f1}}\% of takeaways, {{classified.R.classified_pct|f1}}\% of restaurants, cafes and canteens and {{classified.M.classified_pct|f1}}\% of mobile caterers (Table~\ref{tab:acc}). Fish and chips is the most common named takeaway ({{classified.T.by_family.fish_chips|int}}), just ahead of pizza ({{classified.T.by_family.pizza|int}}) and Chinese ({{classified.T.by_family.chinese|int}}); it is the most common named takeaway in {{stories.lead_family_counts.fish_chips|int}} of the {{n_counties|int}} counties and unitary authorities, pizza in {{stories.lead_family_counts.pizza|int}} and Chinese in {{stories.lead_family_counts.chinese|int}}.
+
+In the held-out sample, {{accuracy.B.all.precision_pct|f1}}\% of the rules' answers were right; of the names that plainly say what the business sells, the rules caught {{accuracy.B.all.recall_pct|f1}}\%. The misses were mostly names that need outside knowledge (\textit{Erawan}, a Thai restaurant; \textit{Chettinad}, a south Indian one) or words the rules do not know. The errors were mostly weak hints applied to names that say nothing (\textit{Lucky Red} sorted as Chinese). Against OpenStreetMap, {{osm.n_matched|int}} places matched; where both sources gave a family ({{osm.n_both|int}} places) they agreed {{osm.agree_pct|f1}}\% of the time (Figure~\ref{fig:osm}). Agreement is lowest for Japanese, where OpenStreetMap often tags chains such as Wagamama as Asian, and for cafes, which this download did not target. Of matched places the rules left unsorted but OpenStreetMap gave a cuisine, most were Chinese, Indian and Italian places with names that do not say so; this is the main reason every count here is a floor.
+
+{{TABLE_ACC}}
+
+\subsection{Capitals}
+
+Figure~\ref{fig:maps} maps six kinds of takeaway and restaurant per head by postcode district, and Figure~\ref{fig:caps} ranks the council areas. The fish and chip map is a seaside map. The districts with most chip shops per resident are resorts: Skegness (PE25, {{named_districts.PE25.fish_chips|f1}} per 100,000), Bridlington (YO15, {{named_districts.YO15.fish_chips|f1}}) and Filey (YO14, {{named_districts.YO14.fish_chips|f1}}), where shops serve visitors as well as residents. Among council areas of 100,000 or more, Blackpool leads with {{stories.fish_chips.county_top.0.rate|f1}}, ahead of {{stories.fish_chips.county_top.1.name}} ({{stories.fish_chips.county_top.1.rate|f1}}) and {{stories.fish_chips.county_top.2.name}} ({{stories.fish_chips.county_top.2.rate|f1}}).
+
+Indian restaurants and takeaways follow the settlement of Britain's South Asian communities: the curry capital by postcode is Hounslow's TW3 ({{named_districts.TW3.indian|f1}} per 100,000), with Southall's UB1 ({{named_districts.UB1.indian|f1}}) close behind, and by council area {{stories.indian.county_top.0.name}} ({{stories.indian.county_top.0.rate|f1}}), {{stories.indian.county_top.1.name}} and {{stories.indian.county_top.2.name}}. Chinese takeaways spread to almost every town after the Second World War, and with Indian places they are the most evenly spread of the big six across council areas (coefficient of variation {{evenness_cv.chinese|f2}} and {{evenness_cv.indian|f2}}, against {{evenness_cv.chicken|f2}} for chicken shops). Their top districts are the old Chinatowns: Birmingham's B5 ({{named_districts.B5.chinese|f1}}), Manchester's M1 ({{named_districts.M1.chinese|f1}}) and Liverpool's L1 ({{named_districts.L1.chinese|f1}}). Kebab and Turkish places are densest in {{stories.kebab.county_top.0.name}}, {{stories.kebab.county_top.1.name}} and {{stories.kebab.county_top.2.name}}; chicken shops in {{stories.chicken.county_top.0.name}}, {{stories.chicken.county_top.1.name}} and {{stories.chicken.county_top.2.name}}, and all of the top ten areas for chicken shops are London boroughs. Pizza leads in {{stories.pizza.county_top.0.name}} ({{stories.pizza.county_top.0.rate|f1}}) and {{stories.pizza.county_top.1.name}} ({{stories.pizza.county_top.1.rate|f1}}).
+
+Across council areas, Spearman's rank correlation between latitude and places per head is {{lat_rho.chinese|f2}} for Chinese places, {{lat_rho.fish_chips|f2}} for chip shops, {{lat_rho.kebab|f2}} for kebab places and {{lat_rho.chicken|f2}} for chicken shops: Chinese places are relatively more common further north, kebabs and chicken shops further south.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\linewidth]{fig1_six_maps.png}
+\caption{Takeaways and restaurants of six kinds per 100,000 residents, by postcode district (approximate boundaries). Palest: none; the six darker classes each hold a sixth of the remaining districts. Districts under 1,000 residents in grey. Shetland is not shown.}\label{fig:maps}
+\end{figure}
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\linewidth]{fig2_capitals.png}
+\caption{The eight counties and unitary authorities of 100,000 or more people with most takeaways and restaurants of each kind per 100,000 people (ONS mid-{{county_pop_year}} estimates).}\label{fig:caps}
+\end{figure}
+
+\subsection{Four nations}
+
+Scotland has the most takeaways per head ({{nations.Scotland.T_all_100k|f1}} per 100,000, against {{nations.England.T_all_100k|f1}} in England, {{nations.Wales.T_all_100k|f1}} in Wales and {{nations.Northern Ireland.T_all_100k|f1}} in Northern Ireland). Wales has the most chip shops ({{nations.Wales.TR_fish_chips_100k|f1}} per 100,000) and kebab places ({{nations.Wales.TR_kebab_100k|f1}}), Scotland the most Indian places ({{nations.Scotland.TR_indian_100k|f1}}), and Northern Ireland the most pizza places ({{nations.Northern Ireland.TR_pizza_100k|f1}}). Northern Ireland and Scotland have the fewest kebab and chicken shops (Figure~\ref{fig:nat}).
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\linewidth]{fig3_nations.png}
+\caption{Takeaways and restaurants of six kinds per 100,000 people by nation (bars left to right: England, Wales, Scotland, Northern Ireland).}\label{fig:nat}
+\end{figure}
+
+\subsection{Takeaways and restaurants}
+
+The register holds {{stories.ratio.uk|f2}} takeaways for every restaurant, cafe or canteen in the UK. Only {{headline.n_counties_T_gt_R|int}} council areas of 100,000 or more have more takeaways than restaurants: {{stories.ratio.county_top.0.name}} ({{stories.ratio.county_top.0.ratio|f2}}), {{stories.ratio.county_top.1.name}} ({{stories.ratio.county_top.1.ratio|f2}}), {{stories.ratio.county_top.2.name}} ({{stories.ratio.county_top.2.ratio|f2}}) and {{stories.ratio.county_top.3.name}} ({{stories.ratio.county_top.3.ratio|f2}}). At the other end, {{stories.ratio.county_bottom.0.name}} has {{stories.ratio.county_bottom.0.ratio|f2}} and {{stories.ratio.county_bottom.1.name}} {{stories.ratio.county_bottom.1.ratio|f2}} (Figure~\ref{fig:ratio}). Takeaways per head range from {{stories.T_all.county_top.0.rate|f1}} per 100,000 in {{stories.T_all.county_top.0.name}} to {{stories.T_all.county_bottom.0.rate|f1}} in {{stories.T_all.county_bottom.0.name}}.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.92\linewidth]{fig4_ratio.png}
+\caption{Takeaways per restaurant, cafe or canteen: the ten highest and ten lowest counties and unitary authorities of 100,000 or more people. Dashed line: the UK.}\label{fig:ratio}
+\end{figure}
+
+\subsection{Chains}
+
+Most takeaways are independent. Only {{chains.fish_chips.chain_n|int}} of {{chains.fish_chips.n_family|int}} chip shops carry a recognisable chain name. Burgers are the opposite: McDonald's is {{chains.burger.McDonald's.share|f1}}\% of burger places and Burger King {{chains.burger.Burger King.share|f1}}\%. Domino's, Papa John's and Pizza Hut together are {{chains.pizza.big_share|f1}}\% of pizza places, KFC {{chains.chicken.KFC.share|f1}}\% of chicken shops, and Subway and Greggs {{chains.sandwich.big_share|f1}}\% of sandwich shops and bakeries.
+
+\subsection{Hygiene}
+
+Of rated takeaways in England, Wales and Northern Ireland, {{hygiene.by_group.T.pct5|f1}}\% have the top rating of 5 and {{hygiene.by_group.T.pct_le2|f1}}\% are rated 2 or below; for restaurants, cafes and canteens the figures are {{hygiene.by_group.R.pct5|f1}}\% and {{hygiene.by_group.R.pct_le2|f1}}\%, for pubs {{hygiene.by_group.P.pct5|f1}}\% and {{hygiene.by_group.P.pct_le2|f1}}\%. In Scotland, {{hygiene.by_nation_T.Scotland.fhis_pass_pct|f1}}\% of takeaways and {{hygiene.by_nation_R.Scotland.fhis_pass_pct|f1}}\% of restaurants have a Pass. Among takeaways, Japanese and sushi places rate best ({{hygiene.by_family_T.japanese.pct5|f1}}\% with a 5) and Indian takeaways lowest ({{hygiene.by_family_T.indian.pct5|f1}}\%, with {{hygiene.by_family_T.indian.pct_le2|f1}}\% rated 2 or below), with Chinese ({{hygiene.by_family_T.chinese.pct5|f1}}\%) and kebab places ({{hygiene.by_family_T.kebab.pct5|f1}}\%) close above (Figure~\ref{fig:hyg}). Chain takeaways have a 5 far more often than independents ({{hygiene.chain_vs_indep_T.chain.pct5|f1}}\% against {{hygiene.chain_vs_indep_T.independent.pct5|f1}}\%). These are differences in the ratings, not causes: chains have central training and procedures, and the kinds of food differ in how hard they are to handle safely and in where the businesses are.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.92\linewidth]{fig5_hygiene.png}
+\caption{Share of rated takeaways in England, Wales and Northern Ireland with a hygiene rating of 5, and with 0, 1 or 2, by the kind of food in their names (kinds with at least 150 rated takeaways).}\label{fig:hyg}
+\end{figure}
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.85\linewidth]{fig6_osm_check.png}
+\caption{Agreement with OpenStreetMap among matched places with a cuisine tag: the share of places the rules put in a family that OpenStreetMap agrees with, and the share of OpenStreetMap's places in a family that the rules found.}\label{fig:osm}
+\end{figure}
+
+\section{Discussion}
+
+The register turns out to be a good source for the geography of British food, once it is read by name. The patterns are mostly the familiar ones, now measured: chip shops at the seaside and in the old industrial towns of the north, the Midlands and Wales; curry houses where Britain's South Asian communities live; Chinese takeaways almost everywhere, thickest in the old Chinatowns; kebabs and chicken shops in London and other big cities. Two findings were less expected. Chinese places are the big kind most strongly tied to the north, and Northern Ireland, not England or Scotland, has the most pizza places per head.
+
+Per head rates mix two things: how many places there are and how many people live nearby. In seaside resorts and city centres the shops serve many people who do not live there, so the highest rates belong to Skegness and Birmingham's Chinese Quarter rather than to any ordinary suburb. The ``share of places'' measure on the interactive map asks a different question, what a district's takeaways sell, and is less affected by visitors.
+
+\section{Limitations}
+
+Every count is a lower bound for the kind of food named. A third of takeaways and more than half of restaurants have names that do not say what they sell; OpenStreetMap shows that many of these are Chinese, Indian and Italian. The rules could miss more in some places than others, for example where names are in Welsh or Gaelic or follow local naming habits.
+
+Business types are set by councils and are not applied consistently, so the takeaway to restaurant ratio is a broad pattern. The register lists inspected premises, with lags for openings and closures, and kitchens that only deliver or run several brands from one kitchen may appear once or several times. Hygiene ratings are from the last inspection, which may be several years old, and ratings in Scotland are not comparable with those elsewhere.
+
+Populations come from three censuses (2021 in England, Wales and Northern Ireland, 2022 in Scotland) for districts and from mid-{{county_pop_year}} estimates for counties, so district and county rates are not on exactly the same base. Postcode district shapes are approximate and are for display only. Mobile caterers are excluded from the maps because they are registered at a base address.
+
+\section{Conclusion}
+
+Sorting the UK's food hygiene register by name gives a reproducible, testable picture of what Britain eats out and where. The rules are simple, right about {{accuracy.B.all.precision_pct|f0}} times in a hundred when they give an answer, and agree with OpenStreetMap's volunteers about as often. The chip shop capital is Blackpool, or Skegness by postcode; the curry capital is Hounslow; the Chinatowns of Birmingham, Manchester and Liverpool still show; and the takeaway is commoner than the restaurant in only a handful of old industrial places.
+
+\section*{Data and code availability}
+
+Code, the derived data (business tables with the classifier's family and rule, postcode district and county tables with counts and rates, the accuracy samples and the OpenStreetMap match table) and this paper are at \url{https://github.com/Tristan-Hotham/takeaways} and archived at \url{https://doi.org/10.5281/zenodo.23748252}. The interactive version is at \url{https://maps.tristanhotham.com/takeaways/}. FSA, ONS, NRS and NISRA data are under the Open Government Licence v3.0; OpenStreetMap-derived files under the Open Database Licence 1.0. In the published files, {{n_names_dash|int}} business names containing en or em dashes are written with plain hyphens.
+
+\section*{AI statement}
+
+I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.
+
+\section*{References}
+\begingroup\small
+\setlength{\parskip}{0.3em}
+
+Burgoine, T., Forouhi, N. G., Griffin, S. J., Wareham, N. J. and Monsivais, P. (2014) Associations between exposure to takeaway food outlets, takeaway food consumption, and body weight in Cambridgeshire, UK: population based, cross sectional study. \textit{BMJ}, 348, g1464.
+
+Food Standards Agency (2026) Food Hygiene Rating Scheme API, version 2. \url{https://api.ratings.food.gov.uk/}. Open Government Licence v3.0. Retrieved {{retrieved}}.
+
+National Records of Scotland. Scotland's Census 2022: postcode usual resident population. Accessed 2026. Open Government Licence v3.0.
+
+Northern Ireland Statistics and Research Agency. Census 2021 person and household estimates for postcodes in Northern Ireland. \url{https://www.nisra.gov.uk/}. Accessed 2026. Open Government Licence v3.0.
+
+Office for National Statistics. Census 2021 postcode headcounts, table P004: usual residents by postcode district. Via Nomis, \url{https://www.nomisweb.co.uk/}. Open Government Licence v3.0.
+
+Office for National Statistics. Population estimates for the UK, mid-{{county_pop_year}}, local authority based. Via Nomis. Open Government Licence v3.0.
+
+Office for National Statistics. Counties and Unitary Authorities (December 2023) Boundaries UK BGC. ONS Open Geography Portal. Open Government Licence v3.0.
+
+OpenStreetMap contributors (2026) OpenStreetMap, via the Overpass API. \url{https://www.openstreetmap.org/}. Open Database Licence 1.0.
+
+Public Health England (2018) Fast food outlets: density by local authority in England. London: Public Health England.
+
+\endgroup
+\end{document}

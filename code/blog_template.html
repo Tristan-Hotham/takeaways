@@ -1,0 +1,150 @@
+<!-- wp:paragraph -->
+<p><em>Where is Britain's chip shop capital? Its curry capital? I sorted every takeaway and restaurant on the UK's food hygiene register by what its name says it sells, and counted them against the people who live nearby.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/takeaways/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.23748252">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>Every place in the UK that serves food to the public, from the chippy to the school canteen, is inspected by its council and given a food hygiene rating. The Food Standards Agency publishes the whole register as open data: {{n_all_types|int}} food businesses, each with a name, a kind of business, a postcode and, for most, a point on the map. Among them are {{n_T|int}} takeaways and sandwich shops and {{n_R|int}} restaurants, cafes and canteens.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The register tells you a place is a takeaway. It does not tell you what it sells. But the names usually do: Jubilee Fish Bar, Simla Tandoori, Happy Garden, Bosphorus Istanbul. So I wrote a set of simple, open rules that read each name and sort it into one of sixteen kinds of food, tested the rules on samples of individually labelled names, and put the results on a map of every postcode district.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Six maps of Britain's takeaways</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_six_maps.png|Six maps of the UK by postcode district, each in its own colour: fish and chips in blue, Indian in orange, Chinese in red, pizza in green, kebab in brown and chicken shops in gold. Fish and chips is dark almost everywhere outside London; Chinese is dark across Scotland, Wales and the north; kebab and chicken shops are pale in most rural areas and dark in cities.|Takeaways and restaurants of six kinds per 100,000 residents, by postcode district. Palest means none; each darker shade holds a sixth of the other districts.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Fish and chips is still the commonest takeaway with a name that says what it sells: {{classified.T.by_family.fish_chips|int}} of them, just ahead of pizza ({{classified.T.by_family.pizza|int}}) and Chinese ({{classified.T.by_family.chinese|int}}). It is the most common named takeaway in {{stories.lead_family_counts.fish_chips|int}} of the UK's {{n_counties|int}} counties and unitary authorities. But the six maps are strikingly different. Chinese takeaways are everywhere, and thickest in Scotland, Wales and the north. Kebabs and chicken shops are city foods, and above all London foods.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The chip shop capital is the seaside</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_chip_map.png|Map of chip shops per 100,000 residents by postcode district, in shades of blue, with labels for Skegness (130), Bridlington (90), Filey (70), Blackpool's FY1 (70), Cleethorpes (58), Hemsby (52) and Oban (49).|Chip shops per 100,000 residents. The resorts lead, because their chip shops feed day trippers as well as residents.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The postcode district with the most chip shops per resident is Skegness, with {{named_districts.PE25.fish_chips|f1}} for every 100,000 people, then Bridlington ({{named_districts.YO15.fish_chips|f1}}) and Filey ({{named_districts.YO14.fish_chips|f1}}). These are resorts, and their chippies are feeding visitors as much as locals. Among council areas of 100,000 people or more, Blackpool wins with {{stories.fish_chips.county_top.0.rate|f1}} per 100,000, ahead of {{stories.fish_chips.county_top.1.name|raw}} and {{stories.fish_chips.county_top.2.name|raw}}. By nation, Wales has the most chip shops per head.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Curry in Hounslow, Chinatowns still on the map</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The curry capital is Hounslow. By postcode it is TW3, in the middle of Hounslow, with {{named_districts.TW3.indian|f1}} Indian, Bangladeshi, Pakistani and Nepalese places per 100,000 residents, and Southall's UB1 ({{named_districts.UB1.indian|f1}}) is close behind. The Chinese map is the most even of the big foods, because Chinese takeaways spread to almost every town after the war. But its peaks are where they always were: Birmingham's Chinese Quarter (B5), Manchester's Chinatown (M1) and Liverpool's (L1) are the three postcode districts with most Chinese places per head.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_capitals.png|Six bar charts of the top eight council areas per 100,000 people for fish and chips (Blackpool first), Indian (Hounslow), Chinese (Westminster), pizza (North East Lincolnshire), kebab (Islington) and chicken shops (Lewisham).|The top council areas of 100,000 people or more for each kind of food.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Kebabs are a north London speciality: {{stories.kebab.county_top.0.name|raw}}, {{stories.kebab.county_top.1.name|raw}} and {{stories.kebab.county_top.2.name|raw}} top the list, the boroughs of north London's Turkish and Kurdish high streets. Every one of the top ten council areas for chicken shops is a London borough, led by {{stories.chicken.county_top.0.name|raw}}. Pizza is the odd one: it peaks around the Humber and Teesside, in {{stories.pizza.county_top.0.name|raw}} and {{stories.pizza.county_top.1.name|raw}}.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Four nations, four tastes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_nations.png|Grouped bar chart of six kinds of food per 100,000 people in England, Wales, Scotland and Northern Ireland. Wales is highest for fish and chips and kebab, Scotland for Indian, Northern Ireland for pizza, and England for chicken shops.|Takeaways and restaurants per 100,000 people by nation.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Scotland has the most takeaways per head of the four nations, {{nations.Scotland.T_all_100k|f1}} per 100,000 against {{nations.England.T_all_100k|f1}} in England, and the most curry houses. Wales leads on chip shops and kebabs. Northern Ireland, which I did not expect, has the most pizza places per head ({{nations.Northern Ireland.TR_pizza_100k|f1}} per 100,000). England has by far the most chicken shops.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Where takeaways outnumber restaurants</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Across the UK there are {{stories.ratio.uk|f2}} takeaways for every restaurant or cafe on the register. In only {{headline.n_counties_T_gt_R|int}} council areas of 100,000 people or more are there more takeaways than restaurants: {{stories.ratio.county_top.0.name|raw}}, {{stories.ratio.county_top.1.name|raw}}, {{stories.ratio.county_top.2.name|raw}} and {{stories.ratio.county_top.3.name|raw}}. At the other end, {{stories.ratio.county_bottom.0.name|raw}} has {{stories.ratio.county_bottom.0.ratio|f2}} takeaways per restaurant. One caution: councils decide which places count as takeaways, and they do not all decide alike.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_ratio.png|Bar chart of takeaways per restaurant for the ten highest council areas (North Lanarkshire 1.33, Rochdale 1.31, Caerphilly 1.06 and others) and the ten lowest (Westminster 0.08, Kensington and Chelsea 0.09).|Takeaways per restaurant or cafe, council areas of 100,000 people or more.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Chains and clean kitchens</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Chip shops are the great independent trade: only {{chains.fish_chips.chain_n|int}} of {{chains.fish_chips.n_family|int}} carry a chain name I could recognise. Burgers are the opposite, with McDonald's alone {{chains.burger.McDonald's.share|f1}}% of burger places.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Takeaways rate lower for hygiene than restaurants: {{hygiene.by_group.T.pct5|f1}}% of rated takeaways have the top score of 5, against {{hygiene.by_group.R.pct5|f1}}% of restaurants and cafes. Sushi places do best ({{hygiene.by_family_T.japanese.pct5|f1}}% with a 5) and Indian takeaways worst ({{hygiene.by_family_T.indian.pct5|f1}}%). Chain takeaways score a 5 far more often than independents ({{hygiene.chain_vs_indep_T.chain.pct5|f1}}% against {{hygiene.chain_vs_indep_T.independent.pct5|f1}}%).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_hygiene.png|Two bar charts by kind of takeaway: the share with a hygiene rating of 5, from 86% for Japanese and sushi down to 45% for Indian, and the share rated 0, 1 or 2, from 1.4% for Japanese up to 9.7% for Indian.|Hygiene ratings of takeaways in England, Wales and Northern Ireland by the kind of food in their names.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>A third of takeaways have names like Tasty Bite or Munchies. Every count here is a floor, not a census.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I downloaded the whole register from the Food Standards Agency's ratings service on {{retrieved|raw}}. The name rules look first for chains, then for strong words (fish bar, chippy, tandoori, kebab, pizza, chinese), and only then for weaker hints (dragon, golden, spice). They gave a kind of food to {{classified.T.classified_pct|f1}}% of takeaways. To test them, I drew a fresh random sample of {{accuracy.B.all.n|int}} names after the rules were finished, each labelled individually by reading the name, as part of the AI-assisted analysis, and reviewed by the author: {{accuracy.B.all.precision_pct|f1}}% of the rules' answers were right. OpenStreetMap, whose volunteers tag many takeaways with a cuisine, agreed with the rules {{osm.agree_pct|f1}}% of the time across {{osm.n_both|int}} matched places.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Populations come from the 2021 Census for England, Wales and Northern Ireland and the 2022 Census for Scotland, by postcode district, and from the ONS mid-{{county_pop_year|raw}} estimates for counties. There are no official postcode district boundaries, so the district shapes on the maps are my own approximation, drawn from where each district's businesses are. A city centre or a resort has far more takeaways per head than its residents could eat, so on the interactive map you can also switch to the share of an area's places that sell each kind of food.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/takeaways/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.23748252">Read the paper</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/takeaways">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Food businesses: <a href="https://api.ratings.food.gov.uk/">Food Standards Agency, Food Hygiene Rating Scheme and Food Hygiene Information Scheme open data</a>, Open Government Licence v3.0.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Populations: <a href="https://www.nomisweb.co.uk/">ONS Census 2021 postcode district counts and mid-year estimates (Nomis)</a>; National Records of Scotland, Scotland's Census 2022 postcode counts; <a href="https://www.nisra.gov.uk/">NISRA Census 2021 postcode district counts</a>. All Open Government Licence v3.0.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Boundaries: <a href="https://geoportal.statistics.gov.uk/">ONS Open Geography Portal</a>, Counties and Unitary Authorities (December 2023), Open Government Licence v3.0.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Cuisine check: <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>, Open Database Licence, via the Overpass API.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

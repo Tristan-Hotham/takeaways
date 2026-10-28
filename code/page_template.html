@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Chips, Curry or Kebab?</title>
+<meta name="description" content="Every takeaway and restaurant in the UK's food hygiene register, sorted by what its name says it sells and mapped per head by postcode district and county: chip shop capitals, curry capitals, Chinatowns, kebabs, pizza and fried chicken.">
+<meta property="og:title" content="Chips, curry or kebab? The UK's takeaway map">
+<meta property="og:description" content="{{n_T|int}} takeaways and {{n_R|int}} restaurants and cafes from the Food Standards Agency register, sorted by name into chips, curry, Chinese, pizza, kebab and more, per head for every postcode district.">
+<meta property="og:image" content="https://maps.tristanhotham.com/takeaways/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/takeaways/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Chip paper, ketchup and malt vinegar. */
+:root{
+  --bg:#FBF6EC; --panel:#F2EADB; --fg:#2A1E17; --muted:#6E6157; --rule:#E4D9C6; --card:#FFFCF6; --border:#D6C8B1;
+  --ketchup:#C0392B; --chip:#D99A1E; --vinegar:#5A3E2B; --pea:#5E8C2F; --sea:#E3E8E8; --nodata:#E9E3D8;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1A1613; --panel:#25201B; --fg:#F1E9DF; --muted:#AFA295; --rule:#3A322B; --card:#221D18; --border:#4D4239;
+  --ketchup:#EF6A5A; --chip:#F2B84B; --vinegar:#D9B99B; --pea:#9BC46A; --sea:#1C2124; --nodata:#2E2822; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1A1613; --panel:#25201B; --fg:#F1E9DF; --muted:#AFA295; --rule:#3A322B; --card:#221D18; --border:#4D4239;
+  --ketchup:#EF6A5A; --chip:#F2B84B; --vinegar:#D9B99B; --pea:#9BC46A; --sea:#1C2124; --nodata:#2E2822; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:690px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1140px,calc(100vw - 32px));margin-left:calc((100% - min(1140px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--ketchup);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--ketchup);color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(44px,11vw,94px)/.92 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--chip)} h1 .b{color:var(--ketchup)} h1 .c{color:var(--vinegar)}
+.mark{width:clamp(78px,16vw,128px);height:auto;display:block}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:50ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.06 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--ketchup);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--ketchup)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(25px,5.4vw,36px)/1 var(--display);color:var(--fg)}
+.stats b.k{color:var(--ketchup)} .stats b.c{color:var(--chip)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:280px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.controls label.l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--ketchup);outline-offset:2px}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:3px;overflow:hidden;max-width:100%;flex-wrap:wrap}
+.seg .btn{border:0;border-radius:0;border-right:1px solid var(--border)}
+.seg .btn:last-child{border-right:0}
+select{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 8px;min-height:36px;max-width:100%}
+.searchbox{position:relative;flex:1 1 240px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+.foods{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+.food{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:16px;padding:7px 11px 7px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;min-height:32px}
+.food i{width:12px;height:12px;border-radius:50%;display:inline-block;flex:0 0 auto}
+.food[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}}
+#lmap{height:780px;border:1px solid var(--border);background:var(--sea);border-radius:2px}
+@media (max-width:900px){#lmap{height:640px}}
+@media (max-width:600px){#lmap{height:540px}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.leaflet-image-layer.px{image-rendering:pixelated;image-rendering:crisp-edges}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+@media (max-width:600px){.leaflet-control-attribution{font-size:10px;line-height:1.25}}
+.leaflet-tooltip{font:400 12px/1.4 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border)}
+.city{font:500 11px/1 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none}
+.city.r1{font-size:10.5px;font-weight:400}.city.r0{font-size:10px;font-weight:400;opacity:.9}
+.city i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--fg);margin-right:4px;vertical-align:1px}
+.city.r0 i,.city.r1 i{width:4px;height:4px}
+.lyrBtn{background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:240px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono)}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{display:grid;grid-template-columns:auto 1fr;gap:4px 8px;align-items:center;margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--fg)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{grid-column:1/-1;display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px}
+.lyrPanel .sub span{flex:0 0 52px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.pin{width:18px;height:18px;border:3px solid var(--fg);border-radius:50%;background:transparent;box-shadow:0 0 0 2px var(--bg)}
+.side{background:var(--card);border:1px solid var(--border);padding:14px 14px 10px}
+.side h4{font:500 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+#legend{margin:4px 0 8px}
+.lg{display:flex;height:16px;border:1px solid var(--border)}
+.lg span{flex:1}
+.lgl{display:flex;justify-content:space-between;font:400 11px/1.3 var(--mono);color:var(--muted);margin-top:3px}
+.lgt{font:500 12.5px/1.35 var(--mono);margin:0 0 6px}
+#hov{font:400 12.5px/1.45 var(--mono);min-height:120px;border-top:1px solid var(--rule);padding-top:8px;margin-top:8px}
+#hov b{font-weight:500}
+#hov table{border-collapse:collapse;width:100%;margin-top:6px}
+#hov td{padding:1px 0;font-size:11.5px}
+#hov td.n{text-align:right;color:var(--muted)}
+#top{font:400 12px/1.45 var(--mono);border-top:1px solid var(--rule);padding-top:8px;margin-top:8px}
+#top ol{margin:4px 0 0;padding-left:22px}
+#top li{cursor:pointer}
+#top li:hover{text-decoration:underline}
+#top small{color:var(--muted)}
+.sw{display:inline-block;width:12px;height:12px;vertical-align:-1px;margin-right:6px;border:1px solid var(--border)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+@media (max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-left:10px solid var(--ketchup);padding:12px 14px;font:400 13px/1.5 var(--mono);cursor:pointer}
+.card b{font:600 19px/1.2 var(--display);display:block;margin-bottom:2px}
+.card .big{font:900 28px/1.05 var(--display);margin:6px 0 4px}
+.card .big span{color:var(--muted);font:400 13px/1 var(--mono)}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--chip);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+table.t{width:100%;border-collapse:collapse;font:400 13px/1.35 var(--mono)}
+table.t th{text-align:left;font-weight:500;color:var(--muted);border-bottom:2px solid var(--fg);padding:6px 8px 6px 0}
+table.t td{border-bottom:1px solid var(--rule);padding:7px 8px 7px 0;vertical-align:top}
+table.t td.num,table.t th.num{text-align:right;white-space:nowrap}
+.tablewrap{overflow-x:auto}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--ketchup);border-color:var(--ketchup);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+.loading{font:400 12px/1.4 var(--mono);color:var(--muted)}
+@media print{.theme,.controls,.foods{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>Food</span><span>United Kingdom, 2026</span></div>
+<header class="hero">
+  <h1><span class="a">Chips</span>, <span class="b">curry</span> or <span class="c">kebab</span>?</h1>
+  <svg class="mark" viewBox="0 0 120 120" aria-hidden="true">
+    <g transform="translate(60 62)">
+      <path d="M-44 -6 L44 -6 L36 44 L-36 44 Z" fill="none" stroke="currentColor" stroke-width="5"/>
+      <g stroke-width="7" stroke-linecap="round" fill="none">
+        <path d="M-26 -6 L-32 -44" stroke="#D99A1E"/><path d="M-12 -6 L-14 -50" stroke="#D99A1E"/><path d="M2 -6 L4 -46" stroke="#D99A1E"/><path d="M16 -6 L22 -42" stroke="#D99A1E"/><path d="M28 -6 L36 -34" stroke="#D99A1E"/>
+      </g>
+      <circle cx="0" cy="20" r="9" fill="#C0392B"/>
+    </g>
+  </svg>
+  <p class="dek">Every takeaway and restaurant on the UK's food hygiene register, sorted by what its name says it sells, and mapped per head for every postcode district and county. Where is the chip shop capital? The curry capital? Where do takeaways outnumber restaurants?</p>
+</header>
+<div class="byline">Dr Tristan Hotham, Independent researcher · 2026 · Data: Food Standards Agency food hygiene ratings (Open Government Licence v3); ONS, NRS and NISRA populations; OpenStreetMap (ODbL) as a check</div>
+
+<div class="stats">
+  <div><b>{{n_T|int}}</b><span>takeaways and sandwich shops on the register, one for every {{headline.people_per_T|int}} people</span></div>
+  <div><b class="c">{{headline.fish_chips_TR|int}}</b><span>chip shops whose names say so; Blackpool has the most per head of any larger council</span></div>
+  <div><b class="k">{{stories.indian.district_top.0.rate|f1}}</b><span>curry houses per 100,000 people in Hounslow's TW3, the curry capital by postcode</span></div>
+  <div><b>{{accuracy.B.all.precision_pct|f1}}%</b><span>of name-based guesses were right in a held-out sample of {{accuracy.B.all.n|int}} labelled names</span></div>
+</div>
+
+<p class="lede">Britain's high streets keep a register. Every place that serves food to the public, from the chip shop to the school canteen, is inspected by its council and given a food hygiene rating, and the Food Standards Agency publishes the lot as open data: {{n_all_types|int}} food businesses across England, Wales, Northern Ireland and Scotland, each with its name, its kind of business, its postcode and, for most, a point on the map.</p>
+<p>The register says whether a place is a takeaway or a restaurant. It does not say what it sells. But the names do: <i>Jubilee Fish Bar</i>, <i>Simla Tandoori</i>, <i>Happy Garden</i>, <i>Bosphorus Istanbul</i>. I sorted every takeaway, restaurant, cafe and mobile caterer by its name into sixteen kinds of food with a set of open, checkable rules, tested the rules on hundreds of individually labelled names, compared them with OpenStreetMap's cuisine tags, and counted them against the people who live in each postcode district and county.</p>
+
+<h2><span class="n">01 · The map</span>What does your postcode eat?</h2>
+<div class="figure bleed">
+  <div class="foods" id="foods" role="group" aria-label="Kind of food"></div>
+  <div class="controls">
+    <label class="l">Places</label>
+    <div class="seg" role="group" aria-label="Kind of business" id="grpBtns"><button class="btn" data-g="T" aria-pressed="true">Takeaways</button><button class="btn" data-g="R" aria-pressed="false">Restaurants and cafes</button><button class="btn" data-g="TR" aria-pressed="false">Both</button></div>
+    <label class="l">Areas</label>
+    <div class="seg" role="group" aria-label="Areas" id="areaBtns"><button class="btn" data-a="d" aria-pressed="true">Postcode districts</button><button class="btn" data-a="c" aria-pressed="false">Counties</button></div>
+    <label class="l">Measure</label>
+    <div class="seg" role="group" aria-label="Measure" id="mBtns"><button class="btn" data-m="rate" aria-pressed="true">Per 100,000 people</button><button class="btn" data-m="share" aria-pressed="false">Share of places</button></div>
+  </div>
+  <div class="controls">
+    <div class="searchbox">
+      <input type="search" id="q" placeholder="Town, postcode district (LS6) or postcode" aria-label="Find a place or postcode" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sug">
+      <ul class="suggest" id="sug" role="listbox"></ul>
+    </div>
+    <span class="loading" id="loadMsg">Loading the map…</span>
+  </div>
+  <div class="mapgrid">
+    <div id="lmap" role="region" aria-label="Map of takeaways per head by postcode district and county"></div>
+    <div class="side">
+      <h4>Key</h4>
+      <div id="legend"></div>
+      <div id="hov">Hover or tap the map to read an area.</div>
+      <div id="top"></div>
+    </div>
+  </div>
+  <div class="src">Food Standards Agency register, retrieved {{retrieved|raw}}. Postcode district areas are drawn from where each district's food businesses and (in Scotland) census postcodes are, so their edges are approximate. Areas with fewer than 1,000 residents, or fewer than 5 places of the kind chosen when showing shares, are left grey. Zoom in to see each place as a dot. Map layers (top right) adds hills, labels and place names.</div>
+</div>
+
+<p>Pick a food and the map recolours. Areas with none of that food are palest; the rest are split into six classes with equal numbers of areas, so the darkest class is the top sixth. Two cautions before reading it. First, a postcode district with few residents and a busy high street, a city centre or a seaside resort, will have far more takeaways per head than the people living there could ever eat; switch to "Share of places" to ask what a place's takeaways sell rather than how many there are. Second, about a third of takeaways have names that do not say what they sell (<i>Tasty Bite</i>, <i>Munchies</i>), so every count here is a floor, not a census.</p>
+
+<h2><span class="n">02 · Capitals</span>Chip shops by the sea, curry in Hounslow</h2>
+<div class="cards" id="capCards">
+  <div class="card" data-f="fish_chips" style="border-left-color:#1D5F8A"><b>Chip shop capital</b><div class="big">{{stories.fish_chips.county_top.0.name|raw}}</div>{{stories.fish_chips.county_top.0.rate|f1}} chip shops per 100,000 people, the most of any council area of 100,000 or more. By postcode: Skegness ({{stories.fish_chips.district_top.0.name|raw}}, {{stories.fish_chips.district_top.0.rate|f1}}) and Bridlington ({{stories.fish_chips.district_top.1.name|raw}}, {{stories.fish_chips.district_top.1.rate|f1}}).</div>
+  <div class="card" data-f="indian" style="border-left-color:#D9600B"><b>Curry capital</b><div class="big">{{stories.indian.county_top.0.name|raw}}</div>{{stories.indian.county_top.0.rate|f1}} Indian, Bangladeshi, Pakistani and Nepalese places per 100,000. By postcode: Hounslow's {{stories.indian.district_top.0.name|raw}} ({{stories.indian.district_top.0.rate|f1}}) and Southall's {{stories.indian.district_top.2.name|raw}} ({{stories.indian.district_top.2.rate|f1}}).</div>
+  <div class="card" data-f="chinese" style="border-left-color:#B42318"><b>Chinatowns</b><div class="big">{{stories.chinese.district_top.0.name|raw}}, {{stories.chinese.district_top.1.name|raw}}, {{stories.chinese.district_top.2.name|raw}}</div>The three postcode districts with most Chinese places per head are Birmingham's Chinese Quarter, Manchester's and Liverpool's Chinatowns. Among counties: {{stories.chinese.county_top.0.name|raw}}.</div>
+  <div class="card" data-f="kebab" style="border-left-color:#7A4A1E"><b>Kebab country</b><div class="big">{{stories.kebab.county_top.0.name|raw}}</div>{{stories.kebab.county_top.0.rate|f1}} kebab and Turkish places per 100,000, ahead of {{stories.kebab.county_top.1.name|raw}} and {{stories.kebab.county_top.2.name|raw}}: north London's Turkish and Kurdish high streets.</div>
+  <div class="card" data-f="pizza" style="border-left-color:#2F7D32"><b>Pizza by the Humber</b><div class="big">{{stories.pizza.county_top.0.name|raw}}</div>{{stories.pizza.county_top.0.rate|f1}} pizza places per 100,000, then {{stories.pizza.county_top.1.name|raw}}. Pizza is the takeaway most run by chains: {{chains.pizza.big_share|f1}}% are Domino's, Papa John's or Pizza Hut.</div>
+  <div class="card" data-f="chicken" style="border-left-color:#C9890C"><b>Chicken shops</b><div class="big">{{stories.chicken.county_top.0.name|raw}}</div>{{stories.chicken.county_top.0.rate|f1}} chicken shops per 100,000, then {{stories.chicken.county_top.1.name|raw}} and {{stories.chicken.county_top.2.name|raw}}. All ten of the top ten counties are London boroughs.</div>
+</div>
+<p>Click a card to put that food on the map. The fish and chip map is a seaside map. The postcode districts with most chip shops per resident are resorts: Skegness, Bridlington, Filey and their neighbours, where the shops serve day trippers as well as residents. Among larger council areas, Blackpool leads, followed by {{stories.fish_chips.county_top.1.name|raw}} and {{stories.fish_chips.county_top.2.name|raw}}. By nation, Wales has the most chip shops per head ({{nations.Wales.TR_fish_chips_100k|f1}} per 100,000, against {{nations.England.TR_fish_chips_100k|f1}} in England and {{nations.Scotland.TR_fish_chips_100k|f1}} in Scotland).</p>
+<p>The curry map follows where Britain's South Asian communities settled: west London's Hounslow and Southall, then {{stories.indian.county_top.1.name|raw}} and {{stories.indian.county_top.2.name|raw}}. The Chinese map does something different. Chinese takeaways spread to almost every town in the decades after the war, so with curry houses they are the most evenly spread of the big foods, and the districts that top the list are the old Chinatowns of the big cities. Kebabs and chicken shops are the most urban and the most southern foods: across counties, the rank correlation between latitude and kebab places per head is {{lat_rho.kebab|f2}}, and for chicken shops {{lat_rho.chicken|f2}}; for Chinese places it is {{lat_rho.chinese|f2}}, more of them per head the further north you go.</p>
+<div class="figure">
+  <div class="fig-h">Top ten council areas per head</div>
+  <div class="fig-sub">Takeaways and restaurants of each kind per 100,000 people, counties and unitary authorities of 100,000 people or more (ONS mid-{{county_pop_year|raw}} estimates).</div>
+  <div class="controls"><select id="capSel" aria-label="Kind of food"></select></div>
+  <div class="chart" id="capChart"></div>
+</div>
+
+<h2><span class="n">03 · Four nations</span>Chippies in Wales, Chinese in Scotland</h2>
+<p>Scotland has the most takeaways per head of the four nations ({{nations.Scotland.T_all_100k|f1}} per 100,000, against {{nations.England.T_all_100k|f1}} in England, {{nations.Wales.T_all_100k|f1}} in Wales and {{nations["Northern Ireland"].T_all_100k|f1}} in Northern Ireland), and more Chinese takeaways and restaurants per head than England. Wales leads on chip shops ({{nations.Wales.TR_fish_chips_100k|f1}} per 100,000) and kebabs, Scotland on curry houses ({{nations.Scotland.TR_indian_100k|f1}}), and Northern Ireland on pizza ({{nations["Northern Ireland"].TR_pizza_100k|f1}}, against {{nations.England.TR_pizza_100k|f1}} in England). Northern Ireland and Scotland have the fewest kebab and chicken shops.</p>
+<div class="figure">
+  <div class="fig-h">Takeaways and restaurants per 100,000 people, by nation</div>
+  <div class="fig-sub">Only places whose names say what they sell. Populations: ONS, NRS and NISRA mid-{{county_pop_year|raw}} estimates.</div>
+  <div class="chart" id="natChart"></div>
+</div>
+
+<h2><span class="n">04 · Takeaway Britain</span>Where takeaways outnumber restaurants</h2>
+<p>Across the UK the register holds {{stories.ratio.uk|f2}} takeaways for every restaurant or cafe. In only {{headline.n_counties_T_gt_R|int}} council areas of 100,000 people or more do takeaways outnumber restaurants: {{stories.ratio.county_top.0.name|raw}} ({{stories.ratio.county_top.0.ratio|f2}} takeaways per restaurant), {{stories.ratio.county_top.1.name|raw}} ({{stories.ratio.county_top.1.ratio|f2}}), {{stories.ratio.county_top.2.name|raw}} ({{stories.ratio.county_top.2.ratio|f2}}) and {{stories.ratio.county_top.3.name|raw}} ({{stories.ratio.county_top.3.ratio|f2}}), all old industrial places. At the other end are central and west London: {{stories.ratio.county_bottom.0.name|raw}} has {{stories.ratio.county_bottom.0.ratio|f2}} takeaways per restaurant.</p>
+<div class="figure">
+  <div class="fig-h">Takeaways per restaurant or cafe</div>
+  <div class="fig-sub">The ten highest and ten lowest counties and unitary authorities of 100,000 people or more. The line marks the UK as a whole.</div>
+  <div class="chart" id="ratioChart"></div>
+  <div class="src">Councils decide which business type each place gets, and they do not all decide alike: a sit-down curry house that also does takeaway may be a "restaurant" in one council and a "takeaway" in the next. Read the ratio as a broad pattern, not a precise one.</div>
+</div>
+
+<h2><span class="n">05 · Behind the counter</span>The chains</h2>
+<p>Most takeaways are independent. Of {{chains.fish_chips.n_family|int}} chip shops, only {{chains.fish_chips.chain_n|int}} belong to a chain I could recognise. Burgers are the opposite: McDonald's alone is {{chains.burger.McDonald's.share|f1}}% of burger places. Domino's is {{chains.pizza.Domino's.share|f1}}% of pizza places, KFC {{chains.chicken.KFC.share|f1}}% of chicken shops, and Subway and Greggs together {{chains.sandwich.big_share|f1}}% of sandwich shops and bakeries.</p>
+<div class="figure">
+  <div class="fig-h">How much of each food the big chains sell</div>
+  <div class="fig-sub">Share of takeaways and restaurants of each kind whose names match a national chain.</div>
+  <div class="chart" id="chainChart"></div>
+</div>
+
+<h2><span class="n">06 · Clean kitchens</span>Hygiene ratings by kind of food</h2>
+<p>In England, Wales and Northern Ireland, councils rate hygiene from 0 (urgent improvement necessary) to 5 (very good); Scotland uses Pass or Improvement Required. Takeaways rate lower than restaurants: {{hygiene.by_group.T.pct5|f1}}% of rated takeaways have a 5, against {{hygiene.by_group.R.pct5|f1}}% of restaurants and cafes, {{hygiene.by_group.P.pct5|f1}}% of pubs and {{hygiene.by_group.M.pct5|f1}}% of mobile caterers. Among takeaways, sushi and Japanese places rate best ({{hygiene.by_family_T.japanese.pct5|f1}}% with a 5) and Indian takeaways lowest ({{hygiene.by_family_T.indian.pct5|f1}}%, with {{hygiene.by_family_T.indian.pct_le2|f1}}% rated 2 or below). Chain takeaways do much better than independents ({{hygiene.chain_vs_indep_T.chain.pct5|f1}}% against {{hygiene.chain_vs_indep_T.independent.pct5|f1}}% with a 5).</p>
+<div class="figure">
+  <div class="fig-h">Share of takeaways rated 5, and rated 2 or below</div>
+  <div class="fig-sub">Takeaways in England, Wales and Northern Ireland with a published 0 to 5 rating, by the kind of food their names show. Kinds with fewer than 150 rated takeaways are left out.</div>
+  <div class="chart" id="hygChart"></div>
+  <div class="src">A rating reflects the last inspection, which may be years old; new businesses awaiting inspection and exempt ones are left out. In Scotland, {{hygiene.by_nation_T.Scotland.fhis_pass_pct|f1}}% of takeaways have a Pass.</div>
+</div>
+
+<h2><span class="n">07 · Checking the names</span>How good is a guess from a name?</h2>
+<p>The rules give a kind of food to {{classified.T.classified_pct|f1}}% of takeaways, {{classified.R.classified_pct|f1}}% of restaurants and cafes and {{classified.M.classified_pct|f1}}% of mobile caterers; the rest have names that do not say. To test them, I drew a fresh random sample of {{accuracy.B.all.n|int}} businesses after the rules were finished ({{accuracy.B.T.n|int}} takeaways and {{accuracy.B.R.n|int}} restaurants) and each name was labelled individually by reading the name, as part of the AI-assisted analysis, and reviewed by the author, without looking at the rules' answer. Of the names the rules sorted, {{accuracy.B.all.precision_pct|f1}}% were sorted right (95% interval {{accuracy.B.all.precision_ci.0|f1}} to {{accuracy.B.all.precision_ci.1|f1}}%). Of the names that do plainly say what they sell, the rules caught {{accuracy.B.all.recall_pct|f1}}%; the misses were names like <i>Erawan</i> (Thai) or <i>Chettinad</i> (south Indian) that need outside knowledge.</p>
+<p>OpenStreetMap is an independent check. Its volunteers tag many takeaways with a cuisine. I matched {{osm.n_matched|int}} OpenStreetMap takeaways and restaurants to the register by name and place (within 100 metres). Where both say what the food is, they agree {{osm.agree_pct|f1}}% of the time. OpenStreetMap also shows what the rules miss: of matched places the rules left unsorted but OpenStreetMap gives a cuisine, the most common are Chinese, Indian and Italian places with names that do not say so. And the two sources draw much the same map: across postcode districts the rank correlation between the two counts per head is {{osm.rho_district.chicken|f2}} for chicken shops, {{osm.rho_district.pizza|f2}} for pizza and {{osm.rho_district.fish_chips|f2}} for chip shops; lower than perfect because OpenStreetMap is patchier in some places than others.</p>
+<div class="figure">
+  <div class="fig-h">The held-out check</div>
+  <div class="tablewrap"><table class="t" id="accTable"></table></div>
+  <div class="src">Sample B, drawn after the rules were fixed, is the honest test. Sample A was used while writing the rules and flatters them. Every name and both labels are in <code>data/accuracy_sample.csv</code>.</div>
+</div>
+
+<div class="note" id="method">
+  <h3>How I did this</h3>
+  <p><b>Data.</b> The Food Standards Agency's ratings API (version 2), retrieved on {{retrieved|raw}}: every establishment of each of the fourteen business types, {{n_all_types|int}} in all, of which {{n_T|int}} takeaways and sandwich shops, {{n_R|int}} restaurants, cafes and canteens, {{n_P|int}} pubs, bars and nightclubs and {{n_M|int}} mobile caterers. Scotland's businesses are in the same register under the Food Hygiene Information Scheme. {{geocoded_pct|f1}}% of these businesses have a map point; the rest are counted through their postcode and council.</p>
+  <p><b>Names.</b> A set of keyword rules, in <code>code/classify.py</code>, reads each name: national chains first, then strong words (<i>fish bar</i>, <i>chippy</i>, <i>tandoori</i>, <i>kebab</i>, <i>pizza</i>, <i>chinese</i>), and only when nothing strong fires, weaker hints (<i>dragon</i>, <i>golden</i>, <i>spice</i>). A name with two strong families (<i>Fish Bar and Chinese</i>) goes to the first in a fixed order. Pubs are not sorted. The rules do not read menus, so a curry house called <i>The Rose</i> stays unsorted.</p>
+  <p><b>People.</b> Postcode districts: Census 2021 usual residents (England and Wales, ONS table P004; Northern Ireland, NISRA) and Scotland's Census 2022 postcode counts summed by district (NRS). Counties and unitary authorities: ONS mid-{{county_pop_year|raw}} population estimates, ONS boundaries of December 2023. Each business takes the county of its inspecting council, which sits inside one county or unitary authority.</p>
+  <p><b>Areas.</b> There are no official postcode district boundaries, so I drew my own: each 750 metre square of land takes the district most common among its nearest food businesses and Scottish census postcodes. Edges are approximate; the counts are not, because every business keeps its own postcode. {{n_districts_drawn|int}} of {{n_districts|int}} districts with residents are drawn; the rest are tiny central districts, counted but too small to show.</p>
+  <p><b>Names as published.</b> {{n_names_dash|int}} business names containing en or em dashes are written with plain hyphens in the published files.</p>
+  <p><b>Limits.</b> The register is a register of inspected premises, not of shops open today. Councils assign business types differently. Mobile caterers are registered where their owner is based, so they are left off the maps. A takeaway in a resort or a city centre serves visitors and workers as well as residents. Kitchens that only deliver ("dark kitchens") and several brands run from one kitchen appear as one or several entries depending on how they registered.</p>
+</div>
+<div class="cta">
+  <a class="p" href="https://github.com/Tristan-Hotham/takeaways">Data and code</a>
+  <a href="https://doi.org/10.5281/zenodo.23748252">Paper (Zenodo)</a>
+  <a href="https://blog.tristanhotham.com/">Blog</a>
+</div>
+<footer>
+  <p>Dr Tristan Hotham, Independent researcher. ORCID 0000-0003-4931-9349. Cite as: Hotham, T. (2026) Chips, curry or kebab? The UK's takeaways and restaurants by name, per head and by place. https://doi.org/10.5281/zenodo.23748252</p>
+  <p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+  <p>Food businesses: Food Standards Agency, Food Hygiene Rating Scheme and Food Hygiene Information Scheme open data (api.ratings.food.gov.uk), Open Government Licence v3.0. Populations: ONS Census 2021 postcode district counts and mid-year estimates via Nomis; National Records of Scotland, Scotland's Census 2022 postcode counts; NISRA Census 2021 postcode district counts; all Open Government Licence v3.0. Boundaries: ONS Open Geography Portal, contains OS data © Crown copyright and database right 2023 (OGL v3.0). Cuisine check: © OpenStreetMap contributors, Open Database Licence. Place names: OS Open Names (OGL v3.0), GeoNames (CC BY 4.0). Postcode look-ups: postcodes.io. Map tiles: Esri. Map library: Leaflet.</p>
+  <p>Data files: Open Government Licence v3.0, except <code>osm_*</code> files (ODbL 1.0). Text and figures: CC BY 4.0. Code: MIT. More data studies on the <a href="https://blog.tristanhotham.com/">blog</a>, including <a href="https://maps.tristanhotham.com/bread-rolls/">what Britain calls a bread roll</a>.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const R = /*RESULTS*/;
+const GRID = /*GRIDMETA*/;
+const FCOL = /*FCOL*/;
+const NS = "http://www.w3.org/2000/svg";
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const isDark = () => document.documentElement.dataset.theme === "dark" || (document.documentElement.dataset.theme !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = (v, d = 0) => v == null || !isFinite(v) ? "n/a" : v.toLocaleString("en-GB", { minimumFractionDigits: d, maximumFractionDigits: d });
+const redraws = [];
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+function hover(node, h) { node.style.cursor = "pointer"; node.setAttribute("tabindex", "0"); const s = () => { const r = node.getBoundingClientRect(); showTip(h, r.left + r.width / 2, r.top); }; node.addEventListener("pointerenter", s); node.addEventListener("pointerleave", hideTip); node.addEventListener("focus", s); node.addEventListener("blur", hideTip); }
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+function el(tag, at, parent) { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); if (parent) parent.appendChild(e); return e; }
+function txt(x, y, s, cls, parent, anchor) { const t = el("text", { x, y, class: "lab " + (cls || ""), "text-anchor": anchor || "start" }, parent); t.textContent = s; return t; }
+
+/* theme */
+document.getElementById("theme").onclick = () => { const d = isDark(); document.documentElement.dataset.theme = d ? "light" : "dark"; redraws.forEach(f => f()); };
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => redraws.forEach(f => f()));
+
+/* ===== colours ===== */
+function hex(h) { return [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]; }
+function mix(a, b, t) { return a.map((v, i) => Math.round(v + (b[i] - v) * t)); }
+function ramp(col, n) {
+  const c = hex(col), pale = isDark() ? [58, 50, 44] : [246, 238, 222], deep = isDark() ? mix(c, [255, 255, 255], .35) : mix(c, [20, 12, 8], .45);
+  const out = []; for (let k = 0; k < n; k++) { const t = k / (n - 1); out.push(t < .7 ? mix(pale, c, t / .7) : mix(c, deep, (t - .7) / .3)); } return out;
+}
+const rgb = c => `rgb(${c[0]},${c[1]},${c[2]})`;
+
+/* ===== state ===== */
+const S = { fam: "fish_chips", g: "T", a: "d", m: "rate" };
+let P = null, GRIDIMG = null, IDS = null, CIDS = null, DIDX = null;
+const FAMS = [["all", "All takeaways"]];  // filled from page.json
+const NCLS = 7, MINPOP = 1000, MINN = 5;
+function famIndex(f) { return P.fams.findIndex(x => x[0] === f); }
+function count(row, g, f) {
+  const nf = P.fams.length;
+  if (f === "all") return g === "T" ? row[2 + 2 * nf] : g === "R" ? row[3 + 2 * nf] : row[2 + 2 * nf] + row[3 + 2 * nf];
+  const k = famIndex(f); return g === "T" ? row[2 + k] : g === "R" ? row[2 + nf + k] : row[2 + k] + row[2 + nf + k];
+}
+function value(row) {
+  if (!row || !row[1]) return null;
+  if (S.fam === "ratio") { const nf = P.fams.length, t = row[2 + 2 * nf], r = row[3 + 2 * nf]; return row[1] < MINPOP || r < MINN ? null : t / r; }
+  const n = count(row, S.g, S.fam);
+  if (S.m === "share") { const tot = count(row, S.g, "all"); return tot < MINN || row[1] < MINPOP ? null : 100 * n / tot; }
+  return row[1] < MINPOP ? null : n / row[1] * 1e5;
+}
+function rows() { return S.a === "d" ? P.districts : P.counties; }
+let BR = [], COLS = [], VALS = null;
+function computeBreaks() {
+  VALS = rows().map(value);
+  // zero gets its own class; the rest are split into six classes with equal numbers of areas
+  const v = VALS.filter(x => x != null && x > 0).sort((a, b) => a - b);
+  BR = [0]; for (let k = 1; k < NCLS - 1; k++) BR.push(v[Math.floor(v.length * k / (NCLS - 1))]);
+  COLS = ramp(S.fam === "all" || S.fam === "ratio" ? (isDark() ? "#D9B99B" : "#5A3E2B") : FCOL[S.fam], NCLS);
+}
+function cls(v) { if (v <= 0) return 0; let k = 1; while (k < BR.length && v >= BR[k]) k++; return k; }
+function unit() { return S.fam === "ratio" ? "takeaways per restaurant" : S.m === "share" ? "% of places" : "per 100,000 people"; }
+function famLabel(f) { return f === "all" ? (S.g === "R" ? "All restaurants and cafes" : S.g === "TR" ? "All takeaways and restaurants" : "All takeaways") : f === "ratio" ? "Takeaways per restaurant" : P.fams[famIndex(f)][1]; }
+
+/* ===== map ===== */
+const lmap = L.map("lmap", { zoomSnap: .5, minZoom: 5, maxZoom: 16, scrollWheelZoom: false, maxBounds: [[48.5, -12], [62, 5]] }).fitBounds([[49.9, -8.2], [58.7, 1.8]]);
+lmap.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
+lmap.on("click", () => lmap.scrollWheelZoom.enable());
+["hills", "lines", "labels", "names", "dots"].forEach((n, i) => { lmap.createPane(n); lmap.getPane(n).style.zIndex = 420 + i * 10; lmap.getPane(n).style.pointerEvents = n === "dots" ? "auto" : "none"; });
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const ESRI_ATT = 'Tiles &copy; Esri, HERE, Garmin, USGS, NGA, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, and the GIS user community';
+let base = null, hills = null, labels = null;
+const cv = document.createElement("canvas");
+const CanvasOverlay = L.ImageOverlay.extend({ _initImage() { const c = this._image = this._url; L.DomUtil.addClass(c, "leaflet-image-layer"); L.DomUtil.addClass(c, "px"); if (this._zoomAnimated) L.DomUtil.addClass(c, "leaflet-zoom-animated"); c.onselectstart = L.Util.falseFn; c.onmousemove = L.Util.falseFn; } });
+const overlay = new CanvasOverlay(cv, [[GRID.south, GRID.west], [GRID.north, GRID.east]], { attribution: "Food Standards Agency (OGL v3) | ONS, NRS, NISRA | OS Open Names, GeoNames", interactive: false }).addTo(lmap);
+let ctyLines = L.layerGroup(), nameL = L.layerGroup(), dotL = L.layerGroup();
+const LY = { base: "plain", hills: true, hillK: 45, labels: false, labelK: 80, names: true, nameLvl: 1, lines: true, lineK: 55, colour: 88 };
+const LYDEF = { ...LY };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("takeaways_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("takeaways_layers", JSON.stringify(LY)); } catch (e) {} };
+function setTiles() {
+  [base, hills, labels].forEach(l => { if (l) lmap.removeLayer(l); });
+  const t = isDark() ? "Dark" : "Light";
+  base = LY.base === "none" ? null : L.tileLayer(LY.base === "relief" ? ESRI + "World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}" : LY.base === "satellite" ? ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}" : `${ESRI}Canvas/World_${t}_Gray_Base/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 16, maxNativeZoom: LY.base === "relief" ? 13 : 16, attribution: ESRI_ATT });
+  if (base) base.addTo(lmap);
+  hills = L.tileLayer(ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, pane: "hills" });
+  labels = L.tileLayer(`${ESRI}Canvas/World_${t}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 16, pane: "labels" });
+  applyLayers();
+}
+function applyLayers() {
+  overlay.setOpacity(LY.colour / 100);
+  if (LY.hills) { hills.addTo(lmap); hills.setOpacity(Math.min(1, .1 + LY.hillK / 120)); hills.getContainer && hills.getContainer() && (hills.getContainer().style.mixBlendMode = "multiply"); } else lmap.removeLayer(hills);
+  if (LY.labels) { labels.addTo(lmap); labels.setOpacity(LY.labelK / 100); } else lmap.removeLayer(labels);
+  if (LY.lines) { ctyLines.addTo(lmap); ctyLines.eachLayer(l => l.setStyle({ opacity: .15 + LY.lineK / 100 * .85 })); } else lmap.removeLayer(ctyLines);
+  if (LY.names) nameL.addTo(lmap); else lmap.removeLayer(nameL);
+  placeNames();
+}
+(function layerControl() {
+  const Ctl = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const d = L.DomUtil.create("div"); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false" aria-controls="lyrPanel">Map layers</button>
+<div class="lyrPanel" id="lyrPanel" hidden>
+ <div class="row"><label for="lyBase" style="font-weight:600">Base map</label><div class="sub"><select id="lyBase" aria-label="Base map"><option value="plain">Plain grey</option><option value="relief">Shaded relief</option><option value="satellite">Satellite</option><option value="none">None</option></select></div></div>
+ <div class="row"><label><input type="checkbox" id="lyHills"> Hills</label><div class="sub"><span>strength</span><input type="range" id="lyHillK" min="10" max="100" step="5" aria-label="Hill shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" id="lyNames"> Place names</label><div class="sub"><span>how many</span><select id="lyNameLvl" aria-label="How many place names"><option value="0">Cities only</option><option value="1">Cities and towns</option><option value="2">Down to villages</option></select></div></div>
+ <div class="row"><label><input type="checkbox" id="lyLabels"> Roads and map labels</label><div class="sub"><span>strength</span><input type="range" id="lyLabelK" min="20" max="100" step="5" aria-label="Map label strength"></div></div>
+ <div class="row"><label><input type="checkbox" id="lyLines"> County borders</label><div class="sub"><span>strength</span><input type="range" id="lyLineK" min="10" max="100" step="5" aria-label="Border strength"></div></div>
+ <div class="row"><label style="font-weight:600">Colour</label><div class="sub"><span>strength</span><input type="range" id="lyColour" min="25" max="100" step="5" aria-label="Colour strength"></div></div>
+ <button class="reset" id="lyReset">Reset layers</button>
+</div>`;
+    return d; } });
+  lmap.addControl(new Ctl());
+  const q = id => document.getElementById(id), btn = lmap.getContainer().querySelector(".lyrBtn"), pan = q("lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  const sync = () => { q("lyBase").value = LY.base; q("lyHills").checked = LY.hills; q("lyHillK").value = LY.hillK; q("lyNames").checked = LY.names; q("lyNameLvl").value = LY.nameLvl; q("lyLabels").checked = LY.labels; q("lyLabelK").value = LY.labelK; q("lyLines").checked = LY.lines; q("lyLineK").value = LY.lineK; q("lyColour").value = LY.colour; };
+  const on = (id, ev, f, retile) => q(id).addEventListener(ev, e => { f(e.target); saveLY(); retile ? setTiles() : applyLayers(); });
+  on("lyBase", "change", t => LY.base = t.value, true);
+  on("lyHills", "change", t => LY.hills = t.checked); on("lyHillK", "input", t => { LY.hillK = +t.value; LY.hills = q("lyHills").checked = true; });
+  on("lyNames", "change", t => LY.names = t.checked); on("lyNameLvl", "change", t => { LY.nameLvl = +t.value; LY.names = q("lyNames").checked = true; });
+  on("lyLabels", "change", t => LY.labels = t.checked); on("lyLabelK", "input", t => { LY.labelK = +t.value; LY.labels = q("lyLabels").checked = true; });
+  on("lyLines", "change", t => LY.lines = t.checked); on("lyLineK", "input", t => { LY.lineK = +t.value; LY.lines = q("lyLines").checked = true; });
+  on("lyColour", "input", t => LY.colour = +t.value);
+  q("lyReset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); setTiles(); };
+  sync();
+})();
+
+/* place names from OS Open Names and GeoNames, thinned so they never overlap */
+let PLACES = null;
+const MAJOR = new Set(["London", "Birmingham", "Manchester", "Glasgow", "Edinburgh", "Cardiff", "Belfast", "Leeds", "Liverpool", "Bristol", "Newcastle upon Tyne", "Sheffield"]);
+function placeNames() {
+  nameL.clearLayers(); if (!LY.names || !PLACES) return;
+  const z = lmap.getZoom(), bb = lmap.getBounds().pad(.05), lvl = LY.nameLvl;
+  const minR = lvl === 0 ? (z >= 8 ? 1 : 2) : lvl === 1 ? (z >= 10 ? 0 : z >= 7.5 ? 1 : 2) : (z >= 9 ? 0 : z >= 7 ? 1 : 2);
+  const cand = [];
+  for (const p of PLACES) { const r = MAJOR.has(p[0]) && p[4] === 2 ? 3 : p[4]; if ((r >= minR || (lvl === 0 && r === 3)) && bb.contains([p[2], p[3]])) cand.push({ p, r }); }
+  if (lvl === 0 && z < 7) for (let i = cand.length - 1; i >= 0; i--) if (cand[i].r < 3) cand.splice(i, 1);
+  cand.sort((a, b) => b.r - a.r);
+  const boxes = []; let n = 0;
+  for (const c of cand) {
+    const pt = lmap.latLngToContainerPoint([c.p[2], c.p[3]]), fs = c.r >= 2 ? 11 : 10.5;
+    const bx = [pt.x - 4, pt.y - 8, pt.x + 10 + c.p[0].length * fs * .62, pt.y + 7];
+    if (boxes.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) continue;
+    boxes.push(bx);
+    L.marker([c.p[2], c.p[3]], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "city" + (c.r <= 1 ? " r" + c.r : ""), html: `<i></i>${esc(c.p[0])}`, iconSize: null, iconAnchor: [3, 6] }) }).addTo(nameL);
+    if (++n >= 260) break;
+  }
+}
+lmap.on("zoomend moveend", () => { placeNames(); drawDots(); });
+
+/* pixels: Web Mercator, so the canvas lines up with the tiles */
+const RE = 6378137, mx = lon => RE * lon * Math.PI / 180, my = lat => RE * Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
+const X0 = mx(GRID.west), Y1 = my(GRID.north);
+function pixOf(lat, lon) { const i = Math.floor((mx(lon) - X0) / GRID.px_m), j = Math.floor((Y1 - my(lat)) / GRID.px_m); return i < 0 || j < 0 || i >= GRID.W || j >= GRID.H ? -1 : j * GRID.W + i; }
+let img = null, buf = null;
+function render() {
+  if (!IDS) return;
+  computeBreaks();
+  const nodata = hex(css("--nodata").trim() || "#E9E3D8"), ids = S.a === "d" ? IDS : CIDS, rs = rows();
+  const lut = new Uint32Array(rs.length + 1);
+  const pack = c => (255 << 24) | (c[2] << 16) | (c[1] << 8) | c[0];
+  lut[0] = 0;
+  for (let k = 0; k < rs.length; k++) { const v = VALS[k]; lut[k + 1] = pack(v == null ? nodata : COLS[cls(v)]); }
+  for (let p = 0; p < ids.length; p++) buf[p] = lut[ids[p]];
+  cv.getContext("2d").putImageData(img, 0, 0);
+  legend(); topList(); if (PIN) readout(PIN.k, PIN.a, true);
+}
+function legend() {
+  const e = document.getElementById("legend");
+  const f = S.fam === "ratio" ? 2 : 1;
+  e.innerHTML = `<div class="lgt">${esc(famLabel(S.fam))}${S.fam === "ratio" || S.fam === "all" ? "" : ", " + (S.g === "T" ? "takeaways" : S.g === "R" ? "restaurants and cafes" : "takeaways and restaurants")}<br><span style="color:var(--muted)">${unit()}, by ${S.a === "d" ? "postcode district" : "county"}</span></div>
+  <div class="lg">${COLS.map(c => `<span style="background:${rgb(c)}"></span>`).join("")}<span style="background:var(--nodata);flex:.7;border-left:2px solid var(--card)"></span></div>
+  <div class="lgl" style="position:relative;height:14px"><span style="position:absolute;left:${.5 / (NCLS + .7) * 100}%;transform:translateX(-50%)">0</span>${BR.slice(2).map((b, i) => `<span style="position:absolute;left:${(i + 2) / (NCLS + .7) * 100}%;transform:translateX(-50%)">${fmt(b, f)}</span>`).join("")}<span style="position:absolute;right:0">n/a</span></div>
+  <div class="lgl"><span>Palest: none. Each darker class holds a sixth of the other areas; numbers mark the breaks.</span></div>`;
+}
+function topList() {
+  const rs = rows(), minp = S.a === "d" ? 10000 : 100000;
+  const it = rs.map((r, k) => ({ r, k, v: VALS[k] })).filter(o => o.v != null && o.r[1] >= minp).sort((a, b) => b.v - a.v).slice(0, 10);
+  const f = S.fam === "ratio" ? 2 : 1;
+  document.getElementById("top").innerHTML = `<b>Top ten</b> <small>(${S.a === "d" ? "districts of 10,000+ people" : "areas of 100,000+ people"})</small><ol>${it.map(o => `<li data-k="${o.k}">${esc(o.r[0])}${S.a === "d" && o.r[2 + 2 * P.fams.length + 4] >= 0 ? " <small>" + esc(P.counties[o.r[2 + 2 * P.fams.length + 4]][0]) + "</small>" : ""} <small>${fmt(o.v, f)}</small></li>`).join("")}</ol>`;
+  document.querySelectorAll("#top li").forEach(li => li.onclick = () => flyTo(+li.dataset.k, S.a));
+}
+function areaLatLon(k, a) { const r = (a === "d" ? P.districts : P.counties)[k]; const nf = P.fams.length; return a === "d" ? [r[2 + 2 * nf + 5], r[2 + 2 * nf + 6]] : [r[2 + 2 * nf + 5], r[2 + 2 * nf + 6]]; }
+function flyTo(k, a) { const ll = areaLatLon(k, a); if (ll[0] != null) { lmap.flyTo(ll, a === "d" ? 11 : 9, { duration: .8 }); PIN = { k, a }; readout(k, a, true); } }
+let PIN = null;
+function readout(k, a, pinned) {
+  const r = (a === "d" ? P.districts : P.counties)[k]; if (!r) return;
+  const nf = P.fams.length, v = (a === S.a) ? VALS[k] : null, f = S.fam === "ratio" ? 2 : 1;
+  const ctyName = a === "d" && r[2 + 2 * nf + 4] >= 0 ? P.counties[r[2 + 2 * nf + 4]][0] : (a === "c" ? r[2 + 2 * nf + 4] : "");
+  const fam = P.fams.map((x, i) => [x[1], r[2 + i], r[2 + nf + i], i]).filter(x => x[1] + x[2] > 0).sort((p, q) => (q[1] + q[2]) - (p[1] + p[2])).slice(0, 8);
+  document.getElementById("hov").innerHTML = `<b>${esc(r[0])}</b>${ctyName ? " · " + esc(ctyName) : ""}${pinned ? " <small style='color:var(--muted)'>(pinned)</small>" : ""}<br>${fmt(r[1])} residents${v != null ? `<br><span class="sw" style="background:${rgb(COLS[cls(v)])}"></span>${fmt(v, f)} ${unit()}` : r[1] < MINPOP ? "<br>too few residents to rate" : ""}<br>${fmt(r[2 + 2 * nf])} takeaways, ${fmt(r[3 + 2 * nf])} restaurants and cafes, ${fmt(r[4 + 2 * nf])} pubs
+  <table><tr><td style="color:var(--muted)">by name</td><td class="n">takeaways</td><td class="n">restaurants</td></tr>${fam.map(x => `<tr><td><span class="sw" style="background:${FCOL[P.fams[x[3]][0]]};border-radius:50%"></span>${esc(x[0])}</td><td class="n">${x[1]}</td><td class="n">${x[2]}</td></tr>`).join("")}</table>`;
+}
+lmap.on("mousemove", ev => { if (!IDS || PIN) return; const p = pixOf(ev.latlng.lat, ev.latlng.lng); if (p < 0) return; const id = (S.a === "d" ? IDS : CIDS)[p]; if (id) readout(id - 1, S.a); });
+lmap.on("click", ev => { if (!IDS) return; const p = pixOf(ev.latlng.lat, ev.latlng.lng); const id = p >= 0 ? (S.a === "d" ? IDS : CIDS)[p] : 0; if (id) { PIN = { k: id - 1, a: S.a }; readout(id - 1, S.a, true); } else PIN = null; });
+
+/* dots: each place of the chosen food when zoomed in */
+const DOTS = {};
+const rend = L.canvas({ padding: .3, pane: "dots" });
+function drawDots() {
+  dotL.clearLayers();
+  const f = S.fam; if (lmap.getZoom() < 11 || f === "all" || f === "ratio") { dotL.remove(); return; }
+  dotL.addTo(lmap);
+  if (!DOTS[f]) { DOTS[f] = "loading"; fetch(`data/points/${f}.json`).then(r => r.json()).then(d => { DOTS[f] = d; drawDots(); }); return; }
+  if (DOTS[f] === "loading") return;
+  const bb = lmap.getBounds(), want = S.g === "T" ? [0, 2] : S.g === "R" ? [1] : [0, 1, 2];
+  let n = 0;
+  for (const p of DOTS[f]) {
+    if (!want.includes(p[2]) || !bb.contains([p[0], p[1]])) continue;
+    L.circleMarker([p[0], p[1]], { renderer: rend, radius: 4.5, weight: 1.2, color: isDark() ? "#1A1613" : "#fff", fillColor: FCOL[f], fillOpacity: .95 })
+      .bindTooltip(`<b>${esc(p[4])}</b><br>${["Takeaway", "Restaurant or cafe", "Mobile caterer"][p[2]]}${p[3] ? " · hygiene " + esc(p[3]) : ""}`).addTo(dotL);
+    if (++n > 4000) break;
+  }
+}
+
+/* ===== controls ===== */
+function pressed(groupId, attr, val) { document.querySelectorAll(`#${groupId} .btn`).forEach(b => b.setAttribute("aria-pressed", b.dataset[attr] === val)); }
+function setFam(f) { S.fam = f; document.querySelectorAll("#foods .food").forEach(b => b.setAttribute("aria-pressed", b.dataset.f === f)); render(); drawDots(); }
+document.getElementById("grpBtns").onclick = e => { const b = e.target.closest(".btn"); if (!b) return; S.g = b.dataset.g; pressed("grpBtns", "g", S.g); render(); drawDots(); };
+document.getElementById("areaBtns").onclick = e => { const b = e.target.closest(".btn"); if (!b) return; S.a = b.dataset.a; PIN = null; pressed("areaBtns", "a", S.a); render(); };
+document.getElementById("mBtns").onclick = e => { const b = e.target.closest(".btn"); if (!b) return; S.m = b.dataset.m; pressed("mBtns", "m", S.m); render(); };
+document.querySelectorAll("#capCards .card").forEach(c => c.onclick = () => { setFam(c.dataset.f); document.getElementById("lmap").scrollIntoView({ behavior: "smooth", block: "center" }); });
+
+/* ===== search: places, postcode districts, postcodes ===== */
+const qi = document.getElementById("q"), sug = document.getElementById("sug");
+let sugItems = [], sugIdx = -1;
+function showSug(items) { sugItems = items; sugIdx = -1; sug.innerHTML = items.map((p, k) => `<li role="option" data-k="${k}">${esc(p.label)} <span>${esc(p.sub || "")}</span></li>`).join(""); sug.style.display = items.length ? "block" : "none"; qi.setAttribute("aria-expanded", items.length > 0); }
+qi.addEventListener("input", () => {
+  const v = qi.value.trim(), vl = v.toLowerCase(), vu = v.toUpperCase().replace(/\s+/g, " ");
+  if (v.length < 2 || !P) { showSug([]); return; }
+  const out = [];
+  const dk = P.districts.findIndex(r => r[0] === vu);
+  if (dk >= 0) out.push({ label: P.districts[dk][0], sub: "postcode district", k: dk, a: "d" });
+  if (/^[A-Z]{1,2}[0-9][0-9A-Z]? ?[0-9][A-Z]{2}$/.test(vu)) out.push({ label: "Look up postcode " + vu, sub: "postcodes.io", pc: vu });
+  if (PLACES) for (const p of PLACES) { if (p[0].toLowerCase().startsWith(vl)) { out.push({ label: p[0], sub: p[1], ll: [p[2], p[3]], r: p[4] }); if (out.length > 12) break; } }
+  out.sort((a, b) => (a.k != null ? -1 : 0) - (b.k != null ? -1 : 0) || (b.r || 0) - (a.r || 0));
+  showSug(out.slice(0, 10));
+});
+qi.addEventListener("keydown", e => { if (!sugItems.length) return; if (e.key === "ArrowDown" || e.key === "ArrowUp") { sugIdx = (sugIdx + (e.key === "ArrowDown" ? 1 : -1) + sugItems.length) % sugItems.length; sug.querySelectorAll("li").forEach((l, k) => l.setAttribute("aria-selected", k === sugIdx)); e.preventDefault(); } else if (e.key === "Enter") { pick(sugItems[Math.max(0, sugIdx)]); e.preventDefault(); } else if (e.key === "Escape") showSug([]); });
+sug.addEventListener("click", e => { const li = e.target.closest("li"); if (li) pick(sugItems[+li.dataset.k]); });
+let pinM = null;
+function pinAt(ll) { if (pinM) pinM.remove(); pinM = L.marker(ll, { icon: L.divIcon({ className: "pin", iconSize: [18, 18] }), interactive: false }).addTo(lmap); lmap.flyTo(ll, 11, { duration: .8 }); const p = pixOf(ll[0], ll[1]); const id = p >= 0 ? (S.a === "d" ? IDS : CIDS)[p] : 0; if (id) { PIN = { k: id - 1, a: S.a }; readout(id - 1, S.a, true); } }
+function pick(it) {
+  showSug([]); if (!it) return; qi.value = it.label.replace(/^Look up postcode /, "");
+  if (it.k != null) { const ll = areaLatLon(it.k, "d"); if (S.a !== "d") { S.a = "d"; pressed("areaBtns", "a", "d"); render(); } if (ll[0] != null) pinAt(ll); PIN = { k: it.k, a: "d" }; readout(it.k, "d", true); return; }
+  if (it.ll) { pinAt(it.ll); return; }
+  if (it.pc) fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(it.pc.replace(/ /g, ""))).then(r => r.json()).then(j => { if (j.result) pinAt([j.result.latitude, j.result.longitude]); else document.getElementById("hov").textContent = "Postcode not found."; }).catch(() => { document.getElementById("hov").textContent = "The postcode service did not answer."; });
+}
+
+/* ===== charts ===== */
+function hbarDraw(box, W, narrow, items, opt) {
+  const lw = narrow ? 128 : 190, rh = 26, h = items.length * rh + 26, svg = el("svg", { viewBox: `0 0 ${W} ${h}` }, box);
+  const max = opt.max || Math.max(...items.map(i => i.v)) * 1.08, sx = v => lw + (W - lw - 54) * v / max;
+  items.forEach((it, i) => {
+    const y = i * rh + 4;
+    txt(lw - 8, y + 15, it.label, "lab" + (it.bold ? " b" : ""), svg, "end");
+    const r = el("rect", { x: lw, y: y + 3, width: Math.max(1, sx(it.v) - lw), height: rh - 9, fill: it.col || opt.col || css("--ketchup"), rx: 1 }, svg);
+    txt(sx(it.v) + 5, y + 15, opt.f ? opt.f(it.v) : fmt(it.v, 1), "lab m", svg);
+    if (it.tip) hover(r, it.tip);
+  });
+  if (opt.ref != null) { el("line", { x1: sx(opt.ref), x2: sx(opt.ref), y1: 0, y2: h - 20, stroke: css("--fg"), "stroke-dasharray": "3 3" }, svg); txt(sx(opt.ref) + 4, h - 6, opt.refLabel || "", "lab s m", svg); }
+}
+function hbar(box, items, opt) { resp(box, (W, narrow) => hbarDraw(box, W, narrow, typeof items === "function" ? items() : items, opt)); }
+function capChart() {
+  const sel = document.getElementById("capSel"), box = document.getElementById("capChart");
+  sel.innerHTML = ["fish_chips", "indian", "chinese", "pizza", "kebab", "chicken", "burger", "sandwich", "japanese", "thai", "caribbean", "greek_med"].map(f => `<option value="${f}">${esc(P.fams[famIndex(f)][1])}</option>`).join("");
+  const items = () => { const f = sel.value; return R.stories[f].county_top.map((c, i) => ({ label: c.name, v: c.rate, col: FCOL[f], bold: i === 0, tip: `<b>${esc(c.name)}</b><br>${c.n} places, ${fmt(c.pop)} people` })); };
+  hbar(box, items, {});
+  const rd = redraws[redraws.length - 1]; sel.onchange = rd;
+}
+function natChart() {
+  const fams = ["fish_chips", "chinese", "indian", "pizza", "chicken", "kebab"], nats = ["England", "Wales", "Scotland", "Northern Ireland"];
+  resp(document.getElementById("natChart"), (W, narrow) => {
+    const cols = narrow ? 2 : 3, cw = W / cols, rowsN = Math.ceil(fams.length / cols), ch = 150, svg = el("svg", { viewBox: `0 0 ${W} ${rowsN * ch}` }, document.getElementById("natChart"));
+    const max = Math.max(...fams.flatMap(f => nats.map(n => R.nations[n]["TR_" + f + "_100k"])));
+    fams.forEach((f, i) => {
+      const gx = (i % cols) * cw, gy = Math.floor(i / cols) * ch;
+      txt(gx + 4, gy + 16, P.fams[famIndex(f)][1], "lab b", svg);
+      nats.forEach((n, j) => {
+        const v = R.nations[n]["TR_" + f + "_100k"], y = gy + 26 + j * 28, x0 = gx + 34, w = (cw - 80) * v / max;
+        txt(gx + 4, y + 13, ["Eng", "Wal", "Sco", "NI"][j], "lab s m", svg);
+        const r = el("rect", { x: x0, y: y + 2, width: Math.max(1, w), height: 16, fill: FCOL[f], opacity: .45 + .55 * (v / max) }, svg);
+        hover(r, `<b>${n}</b><br>${fmt(v, 1)} per 100,000 people (${fmt(R.nations[n]["TR_" + f])} places)`);
+        txt(x0 + w + 4, y + 14, fmt(v, 1), "lab s", svg);
+      });
+    });
+  });
+}
+function ratioChart() {
+  const top = R.stories.ratio.county_top, bot = R.stories.ratio.county_bottom.slice().reverse();
+  const it = top.map(c => ({ label: c.name, v: c.ratio, col: css("--vinegar"), tip: `<b>${esc(c.name)}</b><br>${c.T} takeaways, ${c.R} restaurants and cafes` }))
+    .concat([{ label: "· · ·", v: 0, col: "transparent" }])
+    .concat(bot.map(c => ({ label: c.name, v: c.ratio, col: css("--chip"), tip: `<b>${esc(c.name)}</b><br>${c.T} takeaways, ${c.R} restaurants and cafes` })));
+  hbar(document.getElementById("ratioChart"), it, { f: v => v ? fmt(v, 2) : "", ref: R.stories.ratio.uk, refLabel: "UK " + fmt(R.stories.ratio.uk, 2) });
+}
+function chainChart() {
+  const C = R.chains, it = [];
+  const add = (f, b, col) => it.push({ label: b, v: C[f][b].share, col, tip: `<b>${esc(b)}</b><br>${C[f][b].n} of ${C[f].n_family} ${esc(P.fams[famIndex(f)][1].toLowerCase())} places` });
+  add("burger", "McDonald's", FCOL.burger); add("burger", "Burger King", FCOL.burger); add("chicken", "KFC", FCOL.chicken); add("chicken", "Nando's", FCOL.chicken);
+  add("sandwich", "Subway", FCOL.sandwich); add("pizza", "Domino's", FCOL.pizza); add("sandwich", "Greggs", FCOL.sandwich); add("pizza", "Papa John's", FCOL.pizza); add("pizza", "Pizza Hut", FCOL.pizza); add("cafe", "Costa", FCOL.cafe);
+  it.push({ label: "Any fish and chip chain", v: C.fish_chips.chain_share, col: FCOL.fish_chips, tip: `${C.fish_chips.chain_n} of ${C.fish_chips.n_family} chip shops` });
+  hbar(document.getElementById("chainChart"), it, { f: v => fmt(v, 1) + "%", max: 50 });
+}
+function hygChart() {
+  const H = R.hygiene.by_family_T, fams = Object.keys(H).filter(f => f !== "other" && H[f].n_rated >= 150).sort((a, b) => H[b].pct5 - H[a].pct5);
+  resp(document.getElementById("hygChart"), (W, narrow) => {
+    const lw = narrow ? 120 : 200, rh = 28, h = fams.length * rh + 40, svg = el("svg", { viewBox: `0 0 ${W} ${h}` }, document.getElementById("hygChart"));
+    const half = (W - lw) / 2, sx = v => lw + half * 0.92 * v / 100, sx2 = v => lw + half + (half - 40) * v / 15;
+    txt(lw, 12, "% rated 5", "lab s m", svg); txt(lw + half, 12, "% rated 0, 1 or 2", "lab s m", svg);
+    fams.forEach((f, i) => {
+      const y = 22 + i * rh, d = H[f];
+      txt(lw - 8, y + 15, P.fams[famIndex(f)][1], "lab", svg, "end");
+      const a = el("rect", { x: lw, y: y + 3, width: sx(d.pct5) - lw, height: rh - 10, fill: FCOL[f] }, svg); txt(sx(d.pct5) + 4, y + 15, fmt(d.pct5, 0) + "%", "lab s", svg);
+      const b = el("rect", { x: lw + half, y: y + 3, width: Math.max(1, sx2(d.pct_le2) - lw - half), height: rh - 10, fill: css("--ketchup"), opacity: .8 }, svg); txt(sx2(d.pct_le2) + 4, y + 15, fmt(d.pct_le2, 1) + "%", "lab s", svg);
+      const t = `<b>${esc(P.fams[famIndex(f)][1])}</b><br>${fmt(d.n_rated)} rated takeaways, mean ${fmt(d.mean, 2)}`; hover(a, t); hover(b, t);
+    });
+  });
+}
+function accTable() {
+  const A = R.accuracy.B, rowsT = [["", "Takeaways", "Restaurants", "All"]], g = ["T", "R", "all"];
+  const line = (lab, f) => rowsT.push([lab, ...g.map(k => f(A[k]))]);
+  line("Names checked", a => fmt(a.n)); line("Sorted by the rules", a => `${fmt(a.n_classified)} (${fmt(a.classified_pct, 0)}%)`);
+  line("Sorted right", a => `${fmt(a.precision_pct, 1)}%`); line("Names that say the food", a => `${fmt(a.n_known)} (${fmt(a.known_pct, 0)}%)`);
+  line("... caught by the rules", a => `${fmt(a.recall_pct, 1)}%`);
+  document.getElementById("accTable").innerHTML = rowsT.map((r, i) => `<tr>${r.map((c, j) => i === 0 ? `<th class="${j ? "num" : ""}">${c}</th>` : `<td class="${j ? "num" : ""}">${c}</td>`).join("")}</tr>`).join("");
+}
+
+/* ===== load ===== */
+function loadGrid() {
+  return fetch("data/grid/districts.png").then(r => r.blob()).then(bl => createImageBitmap(bl, { colorSpaceConversion: "none", premultiplyAlpha: "none" })).then(bm => {
+    const c = document.createElement("canvas"); c.width = GRID.W; c.height = GRID.H; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(bm, 0, 0);
+    const d = x.getImageData(0, 0, GRID.W, GRID.H).data; const n = GRID.W * GRID.H;
+    IDS = new Uint16Array(n); CIDS = new Uint16Array(n);
+    for (let i = 0; i < n; i++) { IDS[i] = d[i * 4] * 256 + d[i * 4 + 1]; CIDS[i] = d[i * 4 + 2]; }
+    cv.width = GRID.W; cv.height = GRID.H; img = cv.getContext("2d").createImageData(GRID.W, GRID.H); buf = new Uint32Array(img.data.buffer);
+  });
+}
+Promise.all([fetch("data/page.json").then(r => r.json()), loadGrid()]).then(([p]) => {
+  P = p;
+  const foods = document.getElementById("foods"), list = [["all", "All"]].concat(P.fams.map(f => [f[0], f[1]])).concat([["ratio", "Takeaways per restaurant"]]);
+  foods.innerHTML = list.map(([f, l]) => `<button class="food" data-f="${f}" aria-pressed="${f === S.fam}"><i style="background:${f === "all" || f === "ratio" ? "var(--vinegar)" : FCOL[f]}"></i>${esc(l)}</button>`).join("");
+  foods.onclick = e => { const b = e.target.closest(".food"); if (b) setFam(b.dataset.f); };
+  render(); document.getElementById("loadMsg").textContent = "";
+  capChart(); natChart(); ratioChart(); chainChart(); hygChart(); accTable();
+  redraws.push(render);
+}).catch(e => { document.getElementById("loadMsg").textContent = "The map data did not load."; console.error(e); });
+fetch("data/counties.geojson").then(r => r.json()).then(gj => { ctyLines = L.geoJSON(gj, { pane: "lines", interactive: false, style: () => ({ color: isDark() ? "#F1E9DF" : "#2A1E17", weight: 1, opacity: .6, fill: false }) }); applyLayers(); });
+fetch("data/places.json").then(r => r.json()).then(p => { PLACES = p; placeNames(); });
+setTiles();
+</script>
+</body>
+</html>
