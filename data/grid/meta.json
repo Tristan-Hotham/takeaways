@@ -1,0 +1,10 @@
+{
+ "W": 1574,
+ "H": 2937,
+ "px_m": 750.0,
+ "west": -8.75,
+ "east": 1.854611929030952,
+ "south": 49.800000000000004,
+ "north": 60.950478309627464,
+ "encoding": "R*256+G = row of districts list + 1 (0 = sea); B = county index + 1"
+}
