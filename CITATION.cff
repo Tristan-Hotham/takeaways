@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "Chips, Curry or Kebab? The United Kingdom's Takeaways and Restaurants by Name, per Head and by Place"
+type: dataset
+authors:
+  - family-names: Hotham
+    given-names: Tristan
+    orcid: "https://orcid.org/0000-0003-4931-9349"
+    affiliation: "Independent researcher"
+doi: "10.5281/zenodo.23748252"
+url: "https://maps.tristanhotham.com/takeaways/"
+repository-code: "https://github.com/Tristan-Hotham/takeaways"
+license: CC-BY-4.0
+keywords:
+  - "takeaways"
+  - "restaurants"
+  - "food hygiene ratings"
+  - "Food Standards Agency"
+  - "name classification"
+  - "OpenStreetMap"
+  - "postcode districts"
+  - "food geography"
+  - "United Kingdom"
+  - "open data"
